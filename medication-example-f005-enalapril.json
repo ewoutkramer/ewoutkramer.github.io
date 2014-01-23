@@ -1,1 +1,0 @@
-{"resourceType":"Medication","name":"Enalapril","code":{"coding":[{"system":"http://snomed.info/sct","code":"318851002","display":"Enalapril maleate 5mg tablet"}]},"isBrand":true,"kind":"product","package":{"container":{"coding":[{"system":"http://snomed.info/sct","code":"398124009","display":"drug container"}]}}}
