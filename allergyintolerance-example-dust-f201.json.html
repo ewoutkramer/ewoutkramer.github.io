@@ -1,0 +1,40 @@
+﻿<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+ <title>Real-world patient example</title>
+ <link rel="Stylesheet" href="fhir.css" type="text/css" media="screen"/>
+</head>
+<body>
+<p>&nbsp;</p>
+<div class="example">
+<p>Real-world patient example</p>
+<p><a href="allergyintolerance-example-dust-f201.json">Raw JSON</a></p>
+<pre class="json">
+{
+  &quot;resourceType&quot;: &quot;AllergyIntolerance&quot;,
+  &quot;identifier&quot;: [
+    {
+      &quot;label&quot;: &quot;House dust allergy&quot;,
+      &quot;system&quot;: &quot;http://snomed.info/sct&quot;,
+      &quot;value&quot;: &quot;232349006&quot;
+    }
+  ],
+  &quot;criticality&quot;: &quot;medium&quot;,
+  &quot;sensitivityType&quot;: &quot;allergy&quot;,
+  &quot;recordedDate&quot;: &quot;2013-01-28&quot;,
+  &quot;status&quot;: &quot;confirmed&quot;,
+  &quot;subject&quot;: {
+    &quot;reference&quot;: &quot;Patient/f201&quot;,
+    &quot;display&quot;: &quot;Roel&quot;
+  },
+  &quot;recorder&quot;: {
+    &quot;reference&quot;: &quot;Practitioner/f201&quot;
+  },
+  &quot;substance&quot;: {
+    &quot;reference&quot;: &quot;Substance/f201&quot;,
+    &quot;display&quot;: &quot;House dust allergen&quot;
+  }
+}
+</pre>
+</div>
+</body>
+</html>

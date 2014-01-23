@@ -1,0 +1,58 @@
+﻿<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+ <title>Wing within a hospital</title>
+ <link rel="Stylesheet" href="fhir.css" type="text/css" media="screen"/>
+</head>
+<body>
+<p>&nbsp;</p>
+<div class="example">
+<p>Wing within a hospital</p>
+<p><a href="location-example.json">Raw JSON</a></p>
+<pre class="json">
+{
+  &quot;resourceType&quot;: &quot;Location&quot;,
+  &quot;text&quot;: {
+    &quot;status&quot;: &quot;generated&quot;,
+    &quot;div&quot;: &quot;&lt;div&gt;Burgers UMC, South Wing, second floor&lt;/div&gt;&quot;
+  },
+  &quot;identifier&quot;: {
+    &quot;value&quot;: &quot;B1-S.F2&quot;
+  },
+  &quot;name&quot;: &quot;South Wing, second floor&quot;,
+  &quot;description&quot;: &quot;Second floor of the Old South Wing, formerly in use by Psychiatry&quot;,
+  &quot;telecom&quot;: {
+    &quot;system&quot;: &quot;phone&quot;,
+    &quot;value&quot;: &quot;2328&quot;
+  },
+  &quot;address&quot;: {
+    &quot;use&quot;: &quot;work&quot;,
+    &quot;line&quot;: [
+      &quot;Galapagosweg 91, Building A&quot;
+    ],
+    &quot;city&quot;: &quot;Den Burg&quot;,
+    &quot;zip&quot;: &quot;9105 PZ&quot;,
+    &quot;country&quot;: &quot;NLD&quot;
+  },
+  &quot;physicalType&quot;: {
+    &quot;coding&quot;: [
+      {
+        &quot;system&quot;: &quot;http://hl7.org/fhir/location-physical-type&quot;,
+        &quot;code&quot;: &quot;wi&quot;,
+        &quot;display&quot;: &quot;Wing&quot;
+      }
+    ]
+  },
+  &quot;position&quot;: {
+    &quot;longitude&quot;: &quot;4.844614000123024&quot;,
+    &quot;latitude&quot;: &quot;52.37799399970903&quot;,
+    &quot;altitude&quot;: &quot;0&quot;
+  },
+  &quot;managingOrganization&quot;: {
+    &quot;reference&quot;: &quot;Organization/f001&quot;
+  },
+  &quot;status&quot;: &quot;active&quot;
+}
+</pre>
+</div>
+</body>
+</html>

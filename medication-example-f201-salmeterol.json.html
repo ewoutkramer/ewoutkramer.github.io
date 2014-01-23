@@ -1,0 +1,77 @@
+﻿<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+ <title>Real-world medication example</title>
+ <link rel="Stylesheet" href="fhir.css" type="text/css" media="screen"/>
+</head>
+<body>
+<p>&nbsp;</p>
+<div class="example">
+<p>Real-world medication example</p>
+<p><a href="medication-example-f201-salmeterol.json">Raw JSON</a></p>
+<pre class="json">
+{
+  &quot;resourceType&quot;: &quot;Medication&quot;,
+  &quot;name&quot;: &quot;Salmeterol/fluticason&quot;,
+  &quot;code&quot;: {
+    &quot;coding&quot;: [
+      {
+        &quot;system&quot;: &quot;http://snomed.info/sct&quot;,
+        &quot;code&quot;: &quot;411106009&quot;,
+        &quot;display&quot;: &quot;25ug Flutacisone + 250ug Salmeterol&quot;
+      }
+    ]
+  },
+  &quot;isBrand&quot;: false,
+  &quot;kind&quot;: &quot;product&quot;,
+  &quot;product&quot;: {
+    &quot;form&quot;: {
+      &quot;coding&quot;: [
+        {
+          &quot;system&quot;: &quot;http://snomed.info/sct&quot;,
+          &quot;code&quot;: &quot;421606006&quot;,
+          &quot;display&quot;: &quot;Aerosol spray&quot;
+        }
+      ]
+    },
+    &quot;ingredient&quot;: [
+      {
+        &quot;item&quot;: {
+          &quot;display&quot;: &quot;flutacisone&quot;
+        },
+        &quot;amount&quot;: {
+          &quot;numerator&quot;: {
+            &quot;value&quot;: &quot;25&quot;,
+            &quot;system&quot;: &quot;http://unitsofmeasure.org&quot;,
+            &quot;code&quot;: &quot;ug&quot;
+          },
+          &quot;denominator&quot;: {
+            &quot;value&quot;: &quot;1&quot;,
+            &quot;system&quot;: &quot;http://hl7.org/fhir/v3/orderableDrugForm&quot;,
+            &quot;code&quot;: &quot;PUFF&quot;
+          }
+        }
+      },
+      {
+        &quot;item&quot;: {
+          &quot;display&quot;: &quot;salmeterol&quot;
+        },
+        &quot;amount&quot;: {
+          &quot;numerator&quot;: {
+            &quot;value&quot;: &quot;250&quot;,
+            &quot;system&quot;: &quot;http://unitsofmeasure.org&quot;,
+            &quot;code&quot;: &quot;ug&quot;
+          },
+          &quot;denominator&quot;: {
+            &quot;value&quot;: &quot;1&quot;,
+            &quot;system&quot;: &quot;http://hl7.org/fhir/v3/orderableDrugForm&quot;,
+            &quot;code&quot;: &quot;PUFF&quot;
+          }
+        }
+      }
+    ]
+  }
+}
+</pre>
+</div>
+</body>
+</html>

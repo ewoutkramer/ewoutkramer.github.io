@@ -1,0 +1,68 @@
+﻿<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+ <title>General Person Example</title>
+ <link rel="Stylesheet" href="fhir.css" type="text/css" media="screen"/>
+</head>
+<body>
+<p>&nbsp;</p>
+<div class="example">
+<p>General Person Example</p>
+<p><a href="appointment-example.json">Raw JSON</a></p>
+<pre class="json">
+{
+  &quot;resourceType&quot;: &quot;Appointment&quot;,
+  &quot;text&quot;: {
+    &quot;status&quot;: &quot;generated&quot;,
+    &quot;div&quot;: &quot;&lt;div&gt;Brian MRI results discussion&lt;/div&gt;&quot;
+  },
+  &quot;priority&quot;: &quot;5&quot;,
+  &quot;status&quot;: &quot;normal&quot;,
+  &quot;description&quot;: &quot;Discussion on the results of your recent MRI&quot;,
+  &quot;start&quot;: &quot;2013-12-10T09:00:00Z&quot;,
+  &quot;end&quot;: &quot;2013-12-10T11:00:00Z&quot;,
+  &quot;timezone&quot;: &quot;AEST&quot;,
+  &quot;location&quot;: {
+    &quot;reference&quot;: &quot;Location/1&quot;
+  },
+  &quot;comment&quot;: &quot;Further expand on the results of the MRI and determine the next actions that may be appropriate.&quot;,
+  &quot;participant&quot;: [
+    {
+      &quot;individual&quot;: [
+        {
+          &quot;reference&quot;: &quot;Patient/example&quot;,
+          &quot;display&quot;: &quot;Peter James Chalmers&quot;
+        }
+      ],
+      &quot;required&quot;: &quot;required&quot;,
+      &quot;status&quot;: &quot;accepted&quot;
+    },
+    {
+      &quot;type&quot;: [
+        {
+          &quot;coding&quot;: [
+            {
+              &quot;code&quot;: &quot;attending&quot;
+            }
+          ]
+        }
+      ],
+      &quot;individual&quot;: [
+        {
+          &quot;reference&quot;: &quot;Practitioner/example&quot;,
+          &quot;display&quot;: &quot;Dr Adam Careful&quot;
+        }
+      ],
+      &quot;required&quot;: &quot;required&quot;,
+      &quot;status&quot;: &quot;accepted&quot;
+    }
+  ],
+  &quot;recorder&quot;: {
+    &quot;reference&quot;: &quot;Practitioner/example&quot;,
+    &quot;display&quot;: &quot;Dr Adam Careful&quot;
+  },
+  &quot;recordedDate&quot;: &quot;2012-09-17&quot;
+}
+</pre>
+</div>
+</body>
+</html>

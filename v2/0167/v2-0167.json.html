@@ -1,0 +1,83 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+ <title>Example Instance for v2 Substitution Status</title>
+ <link rel="Stylesheet" href="../../fhir.css" type="text/css" media="screen"/>
+</head>
+<body>
+<p>&nbsp;</p>
+<div class="example">
+<p>FHIR Value set/code system definition for HL7 v2 table 0167 ( Substitution Status)</p>
+<p><a href="v2-0167.json">Raw JSON</a></p>
+<pre class="json">
+{
+  &quot;resourceType&quot;: &quot;ValueSet&quot;,
+  &quot;text&quot;: {
+    &quot;status&quot;: &quot;additional&quot;,
+    &quot;div&quot;: &quot;&lt;div&gt;&lt;p&gt;Substitution Status&lt;/p&gt;\r\n&lt;table class=\&quot;grid\&quot;&gt;\r\n &lt;tr&gt;&lt;td&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Description&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Version&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;0&lt;a name=\&quot;0\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;No product selection indicated&lt;/td&gt;&lt;td&gt;added v2.3.1&lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;1&lt;a name=\&quot;1\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Substitution not allowed by prescriber&lt;/td&gt;&lt;td&gt;added v2.3.1&lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;2&lt;a name=\&quot;2\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Substitution allowed - patient requested product dispensed&lt;/td&gt;&lt;td&gt;added v2.3.1&lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;3&lt;a name=\&quot;3\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Substitution allowed - pharmacist selected product dispensed&lt;/td&gt;&lt;td&gt;added v2.3.1&lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;4&lt;a name=\&quot;4\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Substitution allowed - generic drug not in stock&lt;/td&gt;&lt;td&gt;added v2.3.1&lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;5&lt;a name=\&quot;5\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Substitution allowed - brand drug dispensed as a generic&lt;/td&gt;&lt;td&gt;added v2.3.1&lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;7&lt;a name=\&quot;7\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Substitution not allowed - brand drug mandated by law&lt;/td&gt;&lt;td&gt;added v2.3.1&lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;8&lt;a name=\&quot;8\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Substitution allowed - generic drug not available in marketplace&lt;/td&gt;&lt;td&gt;added v2.3.1&lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;G&lt;a name=\&quot;G\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;A generic substitution was dispensed.&lt;/td&gt;&lt;td&gt;added v2.2&lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;N&lt;a name=\&quot;N\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;No substitute was dispensed.  This is equivalent to the default (null) value.&lt;/td&gt;&lt;td&gt;added v2.2&lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;T&lt;a name=\&quot;T\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;A therapeutic substitution was dispensed.&lt;/td&gt;&lt;td&gt;added v2.2&lt;/td&gt;&lt;/tr&gt;\r\n&lt;/table&gt;\r\n&lt;/div&gt;&quot;
+  },
+  &quot;identifier&quot;: &quot;http://hl7.org/fhir/v2/vs/0167&quot;,
+  &quot;name&quot;: &quot;v2 Substitution Status&quot;,
+  &quot;publisher&quot;: &quot;HL7, Inc&quot;,
+  &quot;telecom&quot;: [
+    {
+      &quot;system&quot;: &quot;url&quot;,
+      &quot;value&quot;: &quot;http://hl7.org&quot;
+    }
+  ],
+  &quot;description&quot;: &quot;FHIR Value set/code system definition for HL7 v2 table 0167 ( Substitution Status)&quot;,
+  &quot;status&quot;: &quot;active&quot;,
+  &quot;date&quot;: &quot;2011-01-28&quot;,
+  &quot;define&quot;: {
+    &quot;system&quot;: &quot;http://hl7.org/fhir/v2/0167&quot;,
+    &quot;caseSensitive&quot;: true,
+    &quot;concept&quot;: [
+      {
+        &quot;code&quot;: &quot;0&quot;,
+        &quot;display&quot;: &quot;No product selection indicated&quot;
+      },
+      {
+        &quot;code&quot;: &quot;1&quot;,
+        &quot;display&quot;: &quot;Substitution not allowed by prescriber&quot;
+      },
+      {
+        &quot;code&quot;: &quot;2&quot;,
+        &quot;display&quot;: &quot;Substitution allowed - patient requested product dispensed&quot;
+      },
+      {
+        &quot;code&quot;: &quot;3&quot;,
+        &quot;display&quot;: &quot;Substitution allowed - pharmacist selected product dispensed&quot;
+      },
+      {
+        &quot;code&quot;: &quot;4&quot;,
+        &quot;display&quot;: &quot;Substitution allowed - generic drug not in stock&quot;
+      },
+      {
+        &quot;code&quot;: &quot;5&quot;,
+        &quot;display&quot;: &quot;Substitution allowed - brand drug dispensed as a generic&quot;
+      },
+      {
+        &quot;code&quot;: &quot;7&quot;,
+        &quot;display&quot;: &quot;Substitution not allowed - brand drug mandated by law&quot;
+      },
+      {
+        &quot;code&quot;: &quot;8&quot;,
+        &quot;display&quot;: &quot;Substitution allowed - generic drug not available in marketplace&quot;
+      },
+      {
+        &quot;code&quot;: &quot;G&quot;,
+        &quot;display&quot;: &quot;A generic substitution was dispensed.&quot;
+      },
+      {
+        &quot;code&quot;: &quot;N&quot;,
+        &quot;display&quot;: &quot;No substitute was dispensed.  This is equivalent to the default (null) value.&quot;
+      },
+      {
+        &quot;code&quot;: &quot;T&quot;,
+        &quot;display&quot;: &quot;A therapeutic substitution was dispensed.&quot;
+      }
+    ]
+  }
+}</pre>
+</div>
+</body>
+</html>

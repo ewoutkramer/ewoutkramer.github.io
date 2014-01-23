@@ -1,0 +1,64 @@
+﻿<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+ <title>Real-world encounter example</title>
+ <link rel="Stylesheet" href="fhir.css" type="text/css" media="screen"/>
+</head>
+<body>
+<p>&nbsp;</p>
+<div class="example">
+<p>Real-world encounter example</p>
+<p><a href="encounter-example-f201-20130404.json">Raw JSON</a></p>
+<pre class="json">
+{
+  &quot;resourceType&quot;: &quot;Encounter&quot;,
+  &quot;identifier&quot;: [
+    {
+      &quot;use&quot;: &quot;temp&quot;,
+      &quot;label&quot;: &quot;Roel's encounter on April fourth 2013&quot;,
+      &quot;value&quot;: &quot;Encounter_Roel_20130404&quot;
+    }
+  ],
+  &quot;status&quot;: &quot;finished&quot;,
+  &quot;class&quot;: &quot;outpatient&quot;,
+  &quot;type&quot;: [
+    {
+      &quot;coding&quot;: [
+        {
+          &quot;system&quot;: &quot;http://snomed.info/sct&quot;,
+          &quot;code&quot;: &quot;11429006&quot;,
+          &quot;display&quot;: &quot;Consultation&quot;
+        }
+      ]
+    }
+  ],
+  &quot;subject&quot;: {
+    &quot;reference&quot;: &quot;Patient/f201&quot;,
+    &quot;display&quot;: &quot;Roel&quot;
+  },
+  &quot;participant&quot;: [
+    {
+      &quot;individual&quot;: {
+        &quot;reference&quot;: &quot;Practitioner/f201&quot;
+      }
+    }
+  ],
+  &quot;reason&quot;: {
+    &quot;text&quot;: &quot;The patient had fever peaks over the last couple of days. He is worried about these peaks.&quot;
+  },
+  &quot;priority&quot;: {
+    &quot;coding&quot;: [
+      {
+        &quot;system&quot;: &quot;http://snomed.info/sct&quot;,
+        &quot;code&quot;: &quot;17621005&quot;,
+        &quot;display&quot;: &quot;Normal&quot;
+      }
+    ]
+  },
+  &quot;serviceProvider&quot;: {
+    &quot;reference&quot;: &quot;Organization/f201&quot;
+  }
+}
+</pre>
+</div>
+</body>
+</html>

@@ -1,0 +1,76 @@
+﻿<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+ <title>Patient example showing US extensions</title>
+ <link rel="Stylesheet" href="fhir.css" type="text/css" media="screen"/>
+</head>
+<body>
+<p>&nbsp;</p>
+<div class="example">
+<p>Patient example showing US extensions</p>
+<p><a href="patient-example-us-extensions.json">Raw JSON</a></p>
+<pre class="json">
+{
+  &quot;resourceType&quot;: &quot;Patient&quot;,
+  &quot;extension&quot;: [
+    {
+      &quot;url&quot;: &quot;http://hl7.org/fhir/Profile/us-core#race&quot;,
+      &quot;valueCodeableConcept&quot;: {
+        &quot;coding&quot;: [
+          {
+            &quot;system&quot;: &quot;http://hl7.org/fhir/v3/Race&quot;,
+            &quot;code&quot;: &quot;1096-7&quot;
+          }
+        ]
+      }
+    },
+    {
+      &quot;url&quot;: &quot;http://hl7.org/fhir/Profile/us-core#ethnicity&quot;,
+      &quot;valueCodeableConcept&quot;: {
+        &quot;coding&quot;: [
+          {
+            &quot;system&quot;: &quot;http://hl7.org/fhir/v3/Ethnicity&quot;,
+            &quot;code&quot;: &quot;2162-6&quot;
+          }
+        ]
+      }
+    }
+  ],
+  &quot;text&quot;: {
+    &quot;status&quot;: &quot;generated&quot;,
+    &quot;div&quot;: &quot;&lt;div&gt;\n      &lt;table&gt;\n        &lt;tbody&gt;\n          &lt;tr&gt;\n            &lt;td&gt;Name&lt;/td&gt;\n            &lt;td&gt;Peter James &lt;b&gt;Chalmers&lt;/b&gt; (&amp;quot;Jim&amp;quot;)&lt;/td&gt;\n          &lt;/tr&gt;\n          &lt;tr&gt;\n            &lt;td&gt;Address&lt;/td&gt;\n            &lt;td&gt;534 Erewhon, Pleasantville, Orange County, 3999&lt;/td&gt;\n          &lt;/tr&gt;\n          &lt;tr&gt;\n            &lt;td&gt;Contacts&lt;/td&gt;\n            &lt;td&gt;Home: unknown. Work: (03) 5555 6473&lt;/td&gt;\n          &lt;/tr&gt;\n          &lt;tr&gt;\n            &lt;td&gt;Id&lt;/td&gt;\n            &lt;td&gt;MRN: 12345 (Acme Healthcare)&lt;/td&gt;\n          &lt;/tr&gt;\n        &lt;/tbody&gt;\n      &lt;/table&gt;\n    &lt;/div&gt;&quot;
+  },
+  &quot;name&quot;: [
+    {
+      &quot;use&quot;: &quot;official&quot;,
+      &quot;family&quot;: [
+        &quot;Chalmers&quot;
+      ],
+      &quot;given&quot;: [
+        &quot;Peter&quot;,
+        &quot;James&quot;
+      ]
+    }
+  ],
+  &quot;address&quot;: [
+    {
+      &quot;extension&quot;: [
+        {
+          &quot;url&quot;: &quot;http://hl7.org/fhir/Profile/us-core#county&quot;,
+          &quot;valueString&quot;: &quot;Orange County&quot;
+        }
+      ],
+      &quot;use&quot;: &quot;home&quot;,
+      &quot;line&quot;: [
+        &quot;534 Erewhon St&quot;
+      ],
+      &quot;city&quot;: &quot;PleasantVille&quot;,
+      &quot;state&quot;: &quot;Vic&quot;,
+      &quot;zip&quot;: &quot;3999&quot;
+    }
+  ],
+  &quot;active&quot;: true
+}
+</pre>
+</div>
+</body>
+</html>

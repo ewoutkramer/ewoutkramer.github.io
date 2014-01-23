@@ -1,0 +1,64 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+ <title>Example Instance for v3 Code System ActRelationshipCheckpoint</title>
+ <link rel="Stylesheet" href="../../fhir.css" type="text/css" media="screen"/>
+</head>
+<body>
+<p>&nbsp;</p>
+<div class="example">
+<p>? not found</p>
+<p><a href="v3-ActRelationshipCheckpoint.json">Raw JSON</a></p>
+<pre class="json">
+{
+  &quot;resourceType&quot;: &quot;ValueSet&quot;,
+  &quot;text&quot;: {
+    &quot;status&quot;: &quot;generated&quot;,
+    &quot;div&quot;: &quot;&lt;div&gt;&lt;p&gt;Release Date: 2013-12-07&lt;/p&gt;\r\n&lt;table class=\&quot;grid\&quot;&gt;\r\n &lt;tr&gt;&lt;td&gt;&lt;b&gt;Level&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Definition&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;B&lt;a name=\&quot;B\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;beginning&lt;/td&gt;&lt;td&gt;\n                        Condition is tested every time before execution of the service (WHILE condition DO service).&lt;br/&gt;\r\n\n                     &lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;E&lt;a name=\&quot;E\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;end&lt;/td&gt;&lt;td&gt;\n                        Condition is tested at the end of a repeated service execution.  The service is repeated only if the condition is true (DO service WHILE condition).&lt;br/&gt;\r\n\n                     &lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;S&lt;a name=\&quot;S\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;entry&lt;/td&gt;&lt;td&gt;\n                        Condition is tested once before the service is executed (IF condition THEN service).&lt;br/&gt;\r\n\n                     &lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;T&lt;a name=\&quot;T\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;through&lt;/td&gt;&lt;td&gt;\n                        Condition must be true throughout the execution and the service is interrupted (asynchronously) as soon as the condition turns false (asynchronous WHILE loop).  The service must be interruptible.&lt;br/&gt;\r\n\n                     &lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;X&lt;a name=\&quot;X\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;exit&lt;/td&gt;&lt;td&gt;\n                        Condition is a loop checkpoint, i.e. it is a step of an activity plan and, if negative causes the containing loop to exit.&lt;br/&gt;\r\n\n                     &lt;/td&gt;&lt;/tr&gt;\r\n&lt;/table&gt;\r\n&lt;/div&gt;&quot;
+  },
+  &quot;identifier&quot;: &quot;http://hl7.org/fhir/v3/vs/ActRelationshipCheckpoint&quot;,
+  &quot;name&quot;: &quot;v3 Code System ActRelationshipCheckpoint&quot;,
+  &quot;publisher&quot;: &quot;HL7, Inc&quot;,
+  &quot;telecom&quot;: [
+    {
+      &quot;system&quot;: &quot;url&quot;,
+      &quot;value&quot;: &quot;http://hl7.org&quot;
+    }
+  ],
+  &quot;description&quot;: &quot;? not found&quot;,
+  &quot;status&quot;: &quot;active&quot;,
+  &quot;date&quot;: &quot;2013-12-07T00:00:00-06:00&quot;,
+  &quot;define&quot;: {
+    &quot;system&quot;: &quot;http://hl7.org/fhir/v3/ActRelationshipCheckpoint&quot;,
+    &quot;caseSensitive&quot;: true,
+    &quot;concept&quot;: [
+      {
+        &quot;code&quot;: &quot;B&quot;,
+        &quot;display&quot;: &quot;beginning&quot;,
+        &quot;definition&quot;: &quot;Condition is tested every time before execution of the service (WHILE condition DO service).&quot;
+      },
+      {
+        &quot;code&quot;: &quot;E&quot;,
+        &quot;display&quot;: &quot;end&quot;,
+        &quot;definition&quot;: &quot;Condition is tested at the end of a repeated service execution.  The service is repeated only if the condition is true (DO service WHILE condition).&quot;
+      },
+      {
+        &quot;code&quot;: &quot;S&quot;,
+        &quot;display&quot;: &quot;entry&quot;,
+        &quot;definition&quot;: &quot;Condition is tested once before the service is executed (IF condition THEN service).&quot;
+      },
+      {
+        &quot;code&quot;: &quot;T&quot;,
+        &quot;display&quot;: &quot;through&quot;,
+        &quot;definition&quot;: &quot;Condition must be true throughout the execution and the service is interrupted (asynchronously) as soon as the condition turns false (asynchronous WHILE loop).  The service must be interruptible.&quot;
+      },
+      {
+        &quot;code&quot;: &quot;X&quot;,
+        &quot;display&quot;: &quot;exit&quot;,
+        &quot;definition&quot;: &quot;Condition is a loop checkpoint, i.e. it is a step of an activity plan and, if negative causes the containing loop to exit.&quot;
+      }
+    ]
+  }
+}</pre>
+</div>
+</body>
+</html>

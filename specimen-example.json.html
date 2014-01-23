@@ -1,0 +1,102 @@
+﻿<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+ <title>General Specimen Example</title>
+ <link rel="Stylesheet" href="fhir.css" type="text/css" media="screen"/>
+</head>
+<body>
+<p>&nbsp;</p>
+<div class="example">
+<p>General Specimen Example</p>
+<p><a href="specimen-example.json">Raw JSON</a></p>
+<pre class="json">
+{
+  &quot;resourceType&quot;: &quot;Specimen&quot;,
+  &quot;text&quot;: {
+    &quot;status&quot;: &quot;generated&quot;,
+    &quot;div&quot;: &quot;&lt;div&gt;[Put rendering here]&lt;/div&gt;&quot;
+  },
+  &quot;contained&quot;: [
+    {
+      &quot;resourceType&quot;: &quot;Substance&quot;,
+      &quot;_id&quot;: &quot;hep&quot;,
+      &quot;type&quot;: {
+        &quot;coding&quot;: [
+          {
+            &quot;system&quot;: &quot;http://hl7.org/fhir/v3/EntityCode&quot;,
+            &quot;code&quot;: &quot;HEPL&quot;
+          }
+        ]
+      }
+    }
+  ],
+  &quot;identifier&quot;: [
+    {
+      &quot;system&quot;: &quot;http://ehr.acme.org/identifiers/collections&quot;,
+      &quot;value&quot;: &quot;23234352356&quot;
+    }
+  ],
+  &quot;type&quot;: {
+    &quot;coding&quot;: [
+      {
+        &quot;system&quot;: &quot;http://snomed.info/sct&quot;,
+        &quot;code&quot;: &quot;122555007&quot;,
+        &quot;display&quot;: &quot;Venous blood specimen&quot;
+      }
+    ]
+  },
+  &quot;subject&quot;: {
+    &quot;reference&quot;: &quot;Patient/example&quot;,
+    &quot;display&quot;: &quot;Peter Patient&quot;
+  },
+  &quot;accessionIdentifier&quot;: {
+    &quot;system&quot;: &quot;http://lab.acme.org/specimens/2011&quot;,
+    &quot;value&quot;: &quot;X352356&quot;
+  },
+  &quot;receivedTime&quot;: &quot;2011-03-04T07:03:00&quot;,
+  &quot;collection&quot;: {
+    &quot;collector&quot;: {
+      &quot;reference&quot;: &quot;Practitioner/example&quot;
+    },
+    &quot;collectedDateTime&quot;: &quot;2011-05-30T06:15:00&quot;,
+    &quot;quantity&quot;: {
+      &quot;value&quot;: &quot;10&quot;,
+      &quot;units&quot;: &quot;mL&quot;
+    },
+    &quot;method&quot;: {
+      &quot;coding&quot;: [
+        {
+          &quot;system&quot;: &quot;http://hl7.org/fhir/v2/0488&quot;,
+          &quot;code&quot;: &quot;LNV&quot;
+        }
+      ]
+    }
+  },
+  &quot;container&quot;: [
+    {
+      &quot;identifier&quot;: [
+        {
+          &quot;value&quot;: &quot;48736-15394-75465&quot;
+        }
+      ],
+      &quot;description&quot;: &quot;Green Gel tube&quot;,
+      &quot;type&quot;: {
+        &quot;text&quot;: &quot;Vacutainer&quot;
+      },
+      &quot;capacity&quot;: {
+        &quot;value&quot;: &quot;10&quot;,
+        &quot;units&quot;: &quot;mL&quot;
+      },
+      &quot;specimenQuantity&quot;: {
+        &quot;value&quot;: &quot;10&quot;,
+        &quot;units&quot;: &quot;mL&quot;
+      },
+      &quot;additive&quot;: {
+        &quot;reference&quot;: &quot;#hep&quot;
+      }
+    }
+  ]
+}
+</pre>
+</div>
+</body>
+</html>

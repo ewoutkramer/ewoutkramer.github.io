@@ -1,0 +1,128 @@
+﻿<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+ <title>Real-world patient example</title>
+ <link rel="Stylesheet" href="fhir.css" type="text/css" media="screen"/>
+</head>
+<body>
+<p>&nbsp;</p>
+<div class="example">
+<p>Real-world patient example</p>
+<p><a href="diagnosticreport-example-f001-bloodexam.json">Raw JSON</a></p>
+<pre class="json">
+{
+  &quot;resourceType&quot;: &quot;DiagnosticReport&quot;,
+  &quot;contained&quot;: [
+    {
+      &quot;resourceType&quot;: &quot;DiagnosticOrder&quot;,
+      &quot;_id&quot;: &quot;req&quot;,
+      &quot;subject&quot;: {
+        &quot;reference&quot;: &quot;Patient/f001&quot;,
+        &quot;display&quot;: &quot;P. van den Heuvel&quot;
+      },
+      &quot;orderer&quot;: {
+        &quot;reference&quot;: &quot;Practitioner/f001&quot;,
+        &quot;display&quot;: &quot;E.van den Broek&quot;
+      },
+      &quot;identifier&quot;: [
+        {
+          &quot;use&quot;: &quot;official&quot;,
+          &quot;system&quot;: &quot;http://www.bmc.nl/zorgportal/identifiers/labresults&quot;,
+          &quot;value&quot;: &quot;L2381&quot;
+        }
+      ],
+      &quot;encounter&quot;: {
+        &quot;reference&quot;: &quot;Encounter/f001&quot;
+      },
+      &quot;clinicalNotes&quot;: &quot;patient almost fainted during procedure&quot;,
+      &quot;item&quot;: [
+        {
+          &quot;code&quot;: {
+            &quot;coding&quot;: [
+              {
+                &quot;system&quot;: &quot;http://loinc.org&quot;,
+                &quot;code&quot;: &quot;58410-2&quot;,
+                &quot;display&quot;: &quot;Complete blood count (hemogram) panel - Blood by Automated count&quot;
+              }
+            ]
+          },
+          &quot;bodySite&quot;: {
+            &quot;coding&quot;: [
+              {
+                &quot;system&quot;: &quot;http://snomed.info/sct&quot;,
+                &quot;code&quot;: &quot;14975008&quot;,
+                &quot;display&quot;: &quot;Forearm structure&quot;
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  &quot;status&quot;: &quot;final&quot;,
+  &quot;issued&quot;: &quot;2013-05-15T19:32:52+01:00&quot;,
+  &quot;subject&quot;: {
+    &quot;reference&quot;: &quot;Patient/f001&quot;,
+    &quot;display&quot;: &quot;P. van den Heuvel&quot;
+  },
+  &quot;performer&quot;: {
+    &quot;reference&quot;: &quot;Organization/f001&quot;,
+    &quot;display&quot;: &quot;Burgers University Medical Centre&quot;
+  },
+  &quot;identifier&quot;: {
+    &quot;use&quot;: &quot;official&quot;,
+    &quot;system&quot;: &quot;http://www.bmc.nl/zorgportal/identifiers/reports&quot;,
+    &quot;value&quot;: &quot;nr1239044&quot;
+  },
+  &quot;requestDetail&quot;: [
+    {
+      &quot;reference&quot;: &quot;#req&quot;
+    }
+  ],
+  &quot;serviceCategory&quot;: {
+    &quot;coding&quot;: [
+      {
+        &quot;system&quot;: &quot;http://snomed.info/sct&quot;,
+        &quot;code&quot;: &quot;252275004&quot;,
+        &quot;display&quot;: &quot;Haematology test&quot;
+      },
+      {
+        &quot;system&quot;: &quot;http://hl7.org/fhir/v2/0074&quot;,
+        &quot;code&quot;: &quot;HM&quot;
+      }
+    ]
+  },
+  &quot;diagnosticDateTime&quot;: &quot;2013-04-02&quot;,
+  &quot;results&quot;: {
+    &quot;name&quot;: {
+      &quot;coding&quot;: [
+        {
+          &quot;system&quot;: &quot;http://loinc.org&quot;,
+          &quot;code&quot;: &quot;58410-2&quot;,
+          &quot;display&quot;: &quot;Complete blood count (hemogram) panel - Blood by Automated count&quot;
+        }
+      ]
+    },
+    &quot;result&quot;: [
+      {
+        &quot;reference&quot;: &quot;Observation/f001&quot;
+      },
+      {
+        &quot;reference&quot;: &quot;Observation/f002&quot;
+      },
+      {
+        &quot;reference&quot;: &quot;Observation/f003&quot;
+      },
+      {
+        &quot;reference&quot;: &quot;Observation/f004&quot;
+      },
+      {
+        &quot;reference&quot;: &quot;Observation/f005&quot;
+      }
+    ]
+  },
+  &quot;conclusion&quot;: &quot;Core lab&quot;
+}
+</pre>
+</div>
+</body>
+</html>

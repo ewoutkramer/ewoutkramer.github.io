@@ -1,0 +1,79 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+ <title>Example Instance for diagnostic-order-status</title>
+ <link rel="Stylesheet" href="fhir.css" type="text/css" media="screen"/>
+</head>
+<body>
+<p>&nbsp;</p>
+<div class="example">
+<p>Definition for Value SetDiagnosticOrderStatus</p>
+<p><a href="diagnostic-order-status.json">Raw JSON</a></p>
+<pre class="json">
+{
+  &quot;resourceType&quot;: &quot;ValueSet&quot;,
+  &quot;text&quot;: {
+    &quot;status&quot;: &quot;generated&quot;,
+    &quot;div&quot;: &quot;&lt;div&gt;&lt;h2&gt;DiagnosticOrderStatus&lt;/h2&gt;&lt;p&gt;The status of a diagnostic order&lt;/p&gt;&lt;p&gt;This value set defines its own terms in the system http://hl7.org/fhir/diagnostic-order-status&lt;/p&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Definition&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;requested&lt;a name=\&quot;requested\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;td&gt;The request has been placed.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;received&lt;a name=\&quot;received\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;td&gt;The receiving system has received the order, but not yet decided whether it will be performed.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;accepted&lt;a name=\&quot;accepted\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;td&gt;The receiving system has accepted the order, but work has not yet commenced.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;in progress&lt;a name=\&quot;inprogress\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;td&gt;The work to fulfill the order is happening.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;review&lt;a name=\&quot;review\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;td&gt;The work is complete, and the outcomes are being reviewed for approval.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;completed&lt;a name=\&quot;completed\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;td&gt;The work has been complete, the report(s) released, and no further work is planned.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;suspended&lt;a name=\&quot;suspended\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;td&gt;The request has been held by originating system/user request.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;rejected&lt;a name=\&quot;rejected\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;td&gt;The receiving system has declined to fulfill the request.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;failed&lt;a name=\&quot;failed\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;td&gt;The diagnostic investigation was attempted, but due to some procedural error, it could not be completed.&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&quot;
+  },
+  &quot;identifier&quot;: &quot;http://hl7.org/fhir/vs/diagnostic-order-status&quot;,
+  &quot;name&quot;: &quot;DiagnosticOrderStatus&quot;,
+  &quot;publisher&quot;: &quot;HL7 (FHIR Project)&quot;,
+  &quot;telecom&quot;: [
+    {
+      &quot;system&quot;: &quot;url&quot;,
+      &quot;value&quot;: &quot;http://hl7.org/fhir&quot;
+    },
+    {
+      &quot;system&quot;: &quot;email&quot;,
+      &quot;value&quot;: &quot;fhir@lists.hl7.org&quot;
+    }
+  ],
+  &quot;description&quot;: &quot;The status of a diagnostic order&quot;,
+  &quot;status&quot;: &quot;draft&quot;,
+  &quot;date&quot;: &quot;2014-01-22T23:46:10.708-06:00&quot;,
+  &quot;define&quot;: {
+    &quot;system&quot;: &quot;http://hl7.org/fhir/diagnostic-order-status&quot;,
+    &quot;caseSensitive&quot;: true,
+    &quot;concept&quot;: [
+      {
+        &quot;code&quot;: &quot;requested&quot;,
+        &quot;definition&quot;: &quot;The request has been placed.&quot;
+      },
+      {
+        &quot;code&quot;: &quot;received&quot;,
+        &quot;definition&quot;: &quot;The receiving system has received the order, but not yet decided whether it will be performed.&quot;
+      },
+      {
+        &quot;code&quot;: &quot;accepted&quot;,
+        &quot;definition&quot;: &quot;The receiving system has accepted the order, but work has not yet commenced.&quot;
+      },
+      {
+        &quot;code&quot;: &quot;in progress&quot;,
+        &quot;definition&quot;: &quot;The work to fulfill the order is happening.&quot;
+      },
+      {
+        &quot;code&quot;: &quot;review&quot;,
+        &quot;definition&quot;: &quot;The work is complete, and the outcomes are being reviewed for approval.&quot;
+      },
+      {
+        &quot;code&quot;: &quot;completed&quot;,
+        &quot;definition&quot;: &quot;The work has been complete, the report(s) released, and no further work is planned.&quot;
+      },
+      {
+        &quot;code&quot;: &quot;suspended&quot;,
+        &quot;definition&quot;: &quot;The request has been held by originating system/user request.&quot;
+      },
+      {
+        &quot;code&quot;: &quot;rejected&quot;,
+        &quot;definition&quot;: &quot;The receiving system has declined to fulfill the request.&quot;
+      },
+      {
+        &quot;code&quot;: &quot;failed&quot;,
+        &quot;definition&quot;: &quot;The diagnostic investigation was attempted, but due to some procedural error, it could not be completed.&quot;
+      }
+    ]
+  }
+}</pre>
+</div>
+</body>
+</html>

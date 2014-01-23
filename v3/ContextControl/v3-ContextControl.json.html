@@ -1,0 +1,111 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+ <title>Example Instance for v3 Code System ContextControl</title>
+ <link rel="Stylesheet" href="../../fhir.css" type="text/css" media="screen"/>
+</head>
+<body>
+<p>&nbsp;</p>
+<div class="example">
+<p> A code that specifies how an ActRelationship or Participation contributes to the context of an Act, and whether it may be propagated to descendent Acts whose association allows such propagation (see also attributes Participation.contextControlCode, ActRelationship.contextControlCode, ActRelationship.contextConductionInd).</p>
+<p><a href="v3-ContextControl.json">Raw JSON</a></p>
+<pre class="json">
+{
+  &quot;resourceType&quot;: &quot;ValueSet&quot;,
+  &quot;text&quot;: {
+    &quot;status&quot;: &quot;generated&quot;,
+    &quot;div&quot;: &quot;&lt;div&gt;&lt;p&gt;Release Date: 2013-12-07&lt;/p&gt;\r\n&lt;h2&gt;Description&lt;/h2&gt;\r\n&lt;p&gt;\n                  A code that specifies how an ActRelationship or Participation contributes to the context of an Act, and whether it may be propagated to descendent Acts whose association allows such propagation (see also attributes Participation.contextControlCode, ActRelationship.contextControlCode, ActRelationship.contextConductionInd).&lt;br/&gt;\r\n\n               &lt;/p&gt;\r\n&lt;hr/&gt;\r\n&lt;table class=\&quot;grid\&quot;&gt;\r\n &lt;tr&gt;&lt;td&gt;&lt;b&gt;Level&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Definition&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;&lt;span style=\&quot;color: grey\&quot;&gt;&lt;i&gt;(_ContextControlAdditive)&lt;/i&gt;&lt;/span&gt;&lt;/td&gt;&lt;td&gt;&lt;a name=\&quot;_ContextControlAdditive\&quot;&gt;&amp;nbsp;&lt;/a&gt;&lt;/td&gt;&lt;td&gt;\n                        The association adds to the existing context associated with the Act.  Both this association and any associations propagated from ancestor Acts are interpreted as being related to this Act.&lt;br/&gt;\r\n\n                     &lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td&gt;&amp;nbsp;&amp;nbsp;AN&lt;a name=\&quot;AN\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;additive, non-propagating&lt;/td&gt;&lt;td&gt;\n                        The association adds to the existing context associated with the Act, but will not propagate to any descendant Acts reached by conducting ActRelationships (see contextControlCode). Examples: If an 'Author' Participation were marked as &amp;quot;Additive, Non-Propagating&amp;quot; it means that the author will be added to the set of author participations that have propagated from ancestor Acts for the purpose of this Act. However only the previously propagated authors will propagate to any child Acts that allow context to be propagated.&lt;br/&gt;\r\n\n                     &lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td&gt;&amp;nbsp;&amp;nbsp;AP&lt;a name=\&quot;AP\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;additive, propagating&lt;/td&gt;&lt;td&gt;\n                        The association adds to the existing context associated with the Act, and will propagate to any descendant Acts reached by conducting ActRelationships (see contextControlCode). Examples: If an 'Author' Participation were marked as &amp;quot;Additive, Propagating&amp;quot; it means that the author will be added to the set of author participations that have propagated from ancestor Acts, and will itself propagate with the other authors to any child Acts that allow context to be propagated.&lt;br/&gt;\r\n\n                     &lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;&lt;span style=\&quot;color: grey\&quot;&gt;&lt;i&gt;(_ContextControlNonPropagating)&lt;/i&gt;&lt;/span&gt;&lt;/td&gt;&lt;td&gt;&lt;a name=\&quot;_ContextControlNonPropagating\&quot;&gt;&amp;nbsp;&lt;/a&gt;&lt;/td&gt;&lt;td&gt;\n                        The association applies only to the current Act and will not propagate to any child Acts that are related via a conducting ActRelationship (refer to contextConductionInd).&lt;br/&gt;\r\n\n                     &lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td&gt;&amp;nbsp;&amp;nbsp;&lt;a href=\&quot;#AN\&quot;&gt;AN&lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;td/&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td&gt;&amp;nbsp;&amp;nbsp;ON&lt;a name=\&quot;ON\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;overriding, non-propagating&lt;/td&gt;&lt;td&gt;\n                        The association is added to the existing context associated with the Act, but overrides an association with the same typeCode. However, this overriding association will not propagate to any descendant Acts reached by conducting ActRelationships (see contextControlCode). Examples: If an 'Author' Participation were marked as &amp;quot;Overriding, Non-Propagating&amp;quot; it means that the author will replace the set of author participations that have propagated from ancestor Acts. Furthermore, no author participations whatsoever will propagate to any child Acts that allow context to be propagated.&lt;br/&gt;\r\n\n                     &lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;&lt;span style=\&quot;color: grey\&quot;&gt;&lt;i&gt;(_ContextControlOverriding)&lt;/i&gt;&lt;/span&gt;&lt;/td&gt;&lt;td&gt;&lt;a name=\&quot;_ContextControlOverriding\&quot;&gt;&amp;nbsp;&lt;/a&gt;&lt;/td&gt;&lt;td&gt;\n                        The association adds to the existing context associated with the Act, but replaces associations propagated from ancestor Acts whose typeCodes are the same or more specific.&lt;br/&gt;\r\n\n                     &lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td&gt;&amp;nbsp;&amp;nbsp;&lt;a href=\&quot;#ON\&quot;&gt;ON&lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;td/&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td&gt;&amp;nbsp;&amp;nbsp;OP&lt;a name=\&quot;OP\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;overriding, propagating&lt;/td&gt;&lt;td&gt;\n                        The association is added to the existing context associated with the Act, but overrides an association with the same typeCode. This overriding association will propagate to any descendant Acts reached by conducting ActRelationships (see contextControlCode). Examples: If an 'Author' Participation were marked as &amp;quot;Overriding, Propagating&amp;quot; it means that the author will replace the set of author participations that have propagated from ancestor Acts, and will itself be the only author to propagate to any child Acts that allow context to be propagated.&lt;br/&gt;\r\n\n                     &lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;&lt;span style=\&quot;color: grey\&quot;&gt;&lt;i&gt;(_ContextControlPropagating)&lt;/i&gt;&lt;/span&gt;&lt;/td&gt;&lt;td&gt;&lt;a name=\&quot;_ContextControlPropagating\&quot;&gt;&amp;nbsp;&lt;/a&gt;&lt;/td&gt;&lt;td&gt;\n                        The association propagates to any child Acts that are related via a conducting ActRelationship (refer to contextConductionInd).&lt;br/&gt;\r\n\n                     &lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td&gt;&amp;nbsp;&amp;nbsp;&lt;a href=\&quot;#AP\&quot;&gt;AP&lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;td/&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td&gt;&amp;nbsp;&amp;nbsp;&lt;a href=\&quot;#OP\&quot;&gt;OP&lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;td/&gt;&lt;/tr&gt;\r\n&lt;/table&gt;\r\n&lt;/div&gt;&quot;
+  },
+  &quot;identifier&quot;: &quot;http://hl7.org/fhir/v3/vs/ContextControl&quot;,
+  &quot;name&quot;: &quot;v3 Code System ContextControl&quot;,
+  &quot;publisher&quot;: &quot;HL7, Inc&quot;,
+  &quot;telecom&quot;: [
+    {
+      &quot;system&quot;: &quot;url&quot;,
+      &quot;value&quot;: &quot;http://hl7.org&quot;
+    }
+  ],
+  &quot;description&quot;: &quot; A code that specifies how an ActRelationship or Participation contributes to the context of an Act, and whether it may be propagated to descendent Acts whose association allows such propagation (see also attributes Participation.contextControlCode, ActRelationship.contextControlCode, ActRelationship.contextConductionInd).&quot;,
+  &quot;status&quot;: &quot;active&quot;,
+  &quot;date&quot;: &quot;2013-12-07T00:00:00-06:00&quot;,
+  &quot;define&quot;: {
+    &quot;system&quot;: &quot;http://hl7.org/fhir/v3/ContextControl&quot;,
+    &quot;caseSensitive&quot;: true,
+    &quot;concept&quot;: [
+      {
+        &quot;code&quot;: &quot;_ContextControlAdditive&quot;,
+        &quot;abstract&quot;: true,
+        &quot;display&quot;: &quot;ContextControlAdditive&quot;,
+        &quot;definition&quot;: &quot;The association adds to the existing context associated with the Act.  Both this association and any associations propagated from ancestor Acts are interpreted as being related to this Act.&quot;,
+        &quot;concept&quot;: [
+          {
+            &quot;code&quot;: &quot;AN&quot;,
+            &quot;display&quot;: &quot;additive, non-propagating&quot;,
+            &quot;definition&quot;: &quot;The association adds to the existing context associated with the Act, but will not propagate to any descendant Acts reached by conducting ActRelationships (see contextControlCode). Examples: If an 'Author' Participation were marked as \&quot;Additive, Non-Propagating\&quot; it means that the author will be added to the set of author participations that have propagated from ancestor Acts for the purpose of this Act. However only the previously propagated authors will propagate to any child Acts that allow context to be propagated.&quot;
+          },
+          {
+            &quot;code&quot;: &quot;AP&quot;,
+            &quot;display&quot;: &quot;additive, propagating&quot;,
+            &quot;definition&quot;: &quot;The association adds to the existing context associated with the Act, and will propagate to any descendant Acts reached by conducting ActRelationships (see contextControlCode). Examples: If an 'Author' Participation were marked as \&quot;Additive, Propagating\&quot; it means that the author will be added to the set of author participations that have propagated from ancestor Acts, and will itself propagate with the other authors to any child Acts that allow context to be propagated.&quot;
+          }
+        ]
+      },
+      {
+        &quot;modifierExtension&quot;: [
+          {
+            &quot;url&quot;: &quot;http://hl7.org/fhir/Profile/tools-extensions#subsumes&quot;,
+            &quot;valueCode&quot;: &quot;AN&quot;
+          }
+        ],
+        &quot;code&quot;: &quot;_ContextControlNonPropagating&quot;,
+        &quot;abstract&quot;: true,
+        &quot;display&quot;: &quot;ContextControlNonPropagating&quot;,
+        &quot;definition&quot;: &quot;The association applies only to the current Act and will not propagate to any child Acts that are related via a conducting ActRelationship (refer to contextConductionInd).&quot;,
+        &quot;concept&quot;: [
+          {
+            &quot;code&quot;: &quot;ON&quot;,
+            &quot;display&quot;: &quot;overriding, non-propagating&quot;,
+            &quot;definition&quot;: &quot;The association is added to the existing context associated with the Act, but overrides an association with the same typeCode. However, this overriding association will not propagate to any descendant Acts reached by conducting ActRelationships (see contextControlCode). Examples: If an 'Author' Participation were marked as \&quot;Overriding, Non-Propagating\&quot; it means that the author will replace the set of author participations that have propagated from ancestor Acts. Furthermore, no author participations whatsoever will propagate to any child Acts that allow context to be propagated.&quot;
+          }
+        ]
+      },
+      {
+        &quot;modifierExtension&quot;: [
+          {
+            &quot;url&quot;: &quot;http://hl7.org/fhir/Profile/tools-extensions#subsumes&quot;,
+            &quot;valueCode&quot;: &quot;ON&quot;
+          }
+        ],
+        &quot;code&quot;: &quot;_ContextControlOverriding&quot;,
+        &quot;abstract&quot;: true,
+        &quot;display&quot;: &quot;ContextControlOverriding&quot;,
+        &quot;definition&quot;: &quot;The association adds to the existing context associated with the Act, but replaces associations propagated from ancestor Acts whose typeCodes are the same or more specific.&quot;,
+        &quot;concept&quot;: [
+          {
+            &quot;code&quot;: &quot;OP&quot;,
+            &quot;display&quot;: &quot;overriding, propagating&quot;,
+            &quot;definition&quot;: &quot;The association is added to the existing context associated with the Act, but overrides an association with the same typeCode. This overriding association will propagate to any descendant Acts reached by conducting ActRelationships (see contextControlCode). Examples: If an 'Author' Participation were marked as \&quot;Overriding, Propagating\&quot; it means that the author will replace the set of author participations that have propagated from ancestor Acts, and will itself be the only author to propagate to any child Acts that allow context to be propagated.&quot;
+          }
+        ]
+      },
+      {
+        &quot;modifierExtension&quot;: [
+          {
+            &quot;url&quot;: &quot;http://hl7.org/fhir/Profile/tools-extensions#subsumes&quot;,
+            &quot;valueCode&quot;: &quot;AP&quot;
+          },
+          {
+            &quot;url&quot;: &quot;http://hl7.org/fhir/Profile/tools-extensions#subsumes&quot;,
+            &quot;valueCode&quot;: &quot;OP&quot;
+          }
+        ],
+        &quot;code&quot;: &quot;_ContextControlPropagating&quot;,
+        &quot;abstract&quot;: true,
+        &quot;display&quot;: &quot;ContextControlPropagating&quot;,
+        &quot;definition&quot;: &quot;The association propagates to any child Acts that are related via a conducting ActRelationship (refer to contextConductionInd).&quot;
+      }
+    ]
+  }
+}</pre>
+</div>
+</body>
+</html>

@@ -1,0 +1,132 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+ <title>Example Instance for valueset-extensions.profile</title>
+ <link rel="Stylesheet" href="fhir.css" type="text/css" media="screen"/>
+</head>
+<body>
+<p>&nbsp;</p>
+<div class="example">
+<p>Profile for Defines common extensions used with or related to the ValueSet resource</p>
+<p><a href="valueset-extensions.profile.json">Raw JSON</a></p>
+<pre class="json">
+{
+  &quot;resourceType&quot;: &quot;Profile&quot;,
+  &quot;text&quot;: {
+    &quot;status&quot;: &quot;generated&quot;,
+    &quot;div&quot;: &quot;&lt;div&gt;&lt;pre&gt; &lt;span style=\&quot;float: right\&quot;&gt;&lt;a title=\&quot;Documentation for this format\&quot; href=\&quot;formats.html\&quot;&gt;&lt;img alt=\&quot;doco\&quot; src=\&quot;help.png\&quot;/&gt;&lt;/a&gt;&lt;/span&gt;\r\n&lt;span style=\&quot; color: Gray\&quot;&gt;&amp;lt;!-- &lt;span style=\&quot;color: Darkviolet\&quot;&gt;Extensions&lt;/span&gt; --&amp;gt;&lt;/span&gt;\r\n&amp;lt;&lt;span title=\&quot;Comparison value for ordinal codes.\&quot;&gt;&lt;b&gt;extension&lt;/b&gt;&lt;/span&gt;&amp;gt;&lt;a name=\&quot;ordinalValue\&quot;&gt; &lt;/a&gt;&amp;lt;!--  &lt;span style=\&quot;color: brown\&quot;&gt;&lt;b&gt;0..1&lt;/b&gt;&lt;/span&gt; &lt;span style=\&quot;color: navy\&quot;&gt;Context: Resource = ValueSet.compose.include.code&lt;/span&gt; --&amp;gt;\r\n &amp;lt;&lt;b&gt;url&lt;/b&gt; value=&amp;quot;&lt;span style=\&quot;color: maroon\&quot;&gt;http://hl7.org/fhir/extensions/ValueSet#ordinalValue&lt;/span&gt;&amp;quot;/&amp;gt;\r\n &amp;lt;&lt;span title=\&quot;Comparison value for ordinal codes.\&quot;&gt;&lt;b&gt;valueInteger&lt;/b&gt;&lt;/span&gt; value=&amp;quot;[&lt;span style=\&quot;color: darkgreen\&quot;&gt;&lt;a href=\&quot;http://hl7.org/fhir/datatypes.html#integer\&quot;&gt;integer&lt;/a&gt;&lt;/span&gt;]&amp;quot;/&amp;gt;&lt;span style=\&quot; color: Gray\&quot;&gt;&amp;lt;!-- &lt;/span&gt;&lt;span style=\&quot;color: navy\&quot;&gt;Comparison value for ordinal codes&lt;/span&gt;&lt;span style=\&quot; color: Gray\&quot;&gt; --&amp;gt;&lt;/span&gt;\r\n&amp;lt;/extension&amp;gt;\r\n\r\n&amp;lt;&lt;span title=\&quot;Appearance order for user selection.\&quot;&gt;&lt;b&gt;extension&lt;/b&gt;&lt;/span&gt;&amp;gt;&lt;a name=\&quot;conceptOrder\&quot;&gt; &lt;/a&gt;&amp;lt;!--  &lt;span style=\&quot;color: brown\&quot;&gt;&lt;b&gt;0..1&lt;/b&gt;&lt;/span&gt; &lt;span style=\&quot;color: navy\&quot;&gt;Context: Resource = ValueSet.compose.include.code&lt;/span&gt; --&amp;gt;\r\n &amp;lt;&lt;b&gt;url&lt;/b&gt; value=&amp;quot;&lt;span style=\&quot;color: maroon\&quot;&gt;http://hl7.org/fhir/extensions/ValueSet#conceptOrder&lt;/span&gt;&amp;quot;/&amp;gt;\r\n &amp;lt;&lt;span title=\&quot;Appearance order for user selection.\&quot;&gt;&lt;b&gt;valueInteger&lt;/b&gt;&lt;/span&gt; value=&amp;quot;[&lt;span style=\&quot;color: darkgreen\&quot;&gt;&lt;a href=\&quot;http://hl7.org/fhir/datatypes.html#integer\&quot;&gt;integer&lt;/a&gt;&lt;/span&gt;]&amp;quot;/&amp;gt;&lt;span style=\&quot; color: Gray\&quot;&gt;&amp;lt;!-- &lt;/span&gt;&lt;span style=\&quot;color: navy\&quot;&gt;Appearance order for user selection&lt;/span&gt;&lt;span style=\&quot; color: Gray\&quot;&gt; --&amp;gt;&lt;/span&gt;\r\n&amp;lt;/extension&amp;gt;\r\n\r\n&amp;lt;&lt;span title=\&quot;Display value for the code.\&quot;&gt;&lt;b&gt;extension&lt;/b&gt;&lt;/span&gt;&amp;gt;&lt;a name=\&quot;display\&quot;&gt; &lt;/a&gt;&amp;lt;!--  &lt;span style=\&quot;color: brown\&quot;&gt;&lt;b&gt;0..*&lt;/b&gt;&lt;/span&gt; &lt;span style=\&quot;color: navy\&quot;&gt;Context: Resource = ValueSet.compose.include.code&lt;/span&gt; --&amp;gt;\r\n &amp;lt;&lt;b&gt;url&lt;/b&gt; value=&amp;quot;&lt;span style=\&quot;color: maroon\&quot;&gt;http://hl7.org/fhir/extensions/ValueSet#display&lt;/span&gt;&amp;quot;/&amp;gt;\r\n &amp;lt;&lt;span title=\&quot;Display value for the code.\&quot;&gt;&lt;b&gt;valueString&lt;/b&gt;&lt;/span&gt; value=&amp;quot;[&lt;span style=\&quot;color: darkgreen\&quot;&gt;&lt;a href=\&quot;http://hl7.org/fhir/datatypes.html#string\&quot;&gt;string&lt;/a&gt;&lt;/span&gt;]&amp;quot;/&amp;gt;&lt;span style=\&quot; color: Gray\&quot;&gt;&amp;lt;!-- &lt;/span&gt;&lt;span style=\&quot;color: navy\&quot;&gt;Display value for the code&lt;/span&gt;&lt;span style=\&quot; color: Gray\&quot;&gt; --&amp;gt;&lt;/span&gt;\r\n&amp;lt;/extension&amp;gt;\r\n\r\n&amp;lt;&lt;span title=\&quot;Code system name.\&quot;&gt;&lt;b&gt;extension&lt;/b&gt;&lt;/span&gt;&amp;gt;&lt;a name=\&quot;systemName\&quot;&gt; &lt;/a&gt;&amp;lt;!--  &lt;span style=\&quot;color: brown\&quot;&gt;&lt;b&gt;0..1&lt;/b&gt;&lt;/span&gt; &lt;span style=\&quot;color: navy\&quot;&gt;Context: Resource = ValueSet.compose.include&lt;/span&gt; --&amp;gt;\r\n &amp;lt;&lt;b&gt;url&lt;/b&gt; value=&amp;quot;&lt;span style=\&quot;color: maroon\&quot;&gt;http://hl7.org/fhir/extensions/ValueSet#systemName&lt;/span&gt;&amp;quot;/&amp;gt;\r\n &amp;lt;&lt;span title=\&quot;Code system name.\&quot;&gt;&lt;b&gt;valueString&lt;/b&gt;&lt;/span&gt; value=&amp;quot;[&lt;span style=\&quot;color: darkgreen\&quot;&gt;&lt;a href=\&quot;http://hl7.org/fhir/datatypes.html#string\&quot;&gt;string&lt;/a&gt;&lt;/span&gt;]&amp;quot;/&amp;gt;&lt;span style=\&quot; color: Gray\&quot;&gt;&amp;lt;!-- &lt;/span&gt;&lt;span style=\&quot;color: navy\&quot;&gt;Code system name&lt;/span&gt;&lt;span style=\&quot; color: Gray\&quot;&gt; --&amp;gt;&lt;/span&gt;\r\n&amp;lt;/extension&amp;gt;\r\n\r\n&amp;lt;&lt;span title=\&quot;Where to find code system.\&quot;&gt;&lt;b&gt;extension&lt;/b&gt;&lt;/span&gt;&amp;gt;&lt;a name=\&quot;systemRef\&quot;&gt; &lt;/a&gt;&amp;lt;!--  &lt;span style=\&quot;color: brown\&quot;&gt;&lt;b&gt;0..1&lt;/b&gt;&lt;/span&gt; &lt;span style=\&quot;color: navy\&quot;&gt;Context: Resource = ValueSet.compose.include&lt;/span&gt; --&amp;gt;\r\n &amp;lt;&lt;b&gt;url&lt;/b&gt; value=&amp;quot;&lt;span style=\&quot;color: maroon\&quot;&gt;http://hl7.org/fhir/extensions/ValueSet#systemRef&lt;/span&gt;&amp;quot;/&amp;gt;\r\n &amp;lt;&lt;span title=\&quot;Where to find code system.\&quot;&gt;&lt;b&gt;valueUri&lt;/b&gt;&lt;/span&gt; value=&amp;quot;[&lt;span style=\&quot;color: darkgreen\&quot;&gt;&lt;a href=\&quot;http://hl7.org/fhir/datatypes.html#uri\&quot;&gt;uri&lt;/a&gt;&lt;/span&gt;]&amp;quot;/&amp;gt;&lt;span style=\&quot; color: Gray\&quot;&gt;&amp;lt;!-- &lt;/span&gt;&lt;span style=\&quot;color: navy\&quot;&gt;Where to find code system&lt;/span&gt;&lt;span style=\&quot; color: Gray\&quot;&gt; --&amp;gt;&lt;/span&gt;\r\n&amp;lt;/extension&amp;gt;\r\n\r\n&lt;/pre&gt;&lt;/div&gt;&quot;
+  },
+  &quot;name&quot;: &quot;ValueSet HL7 Extensions&quot;,
+  &quot;publisher&quot;: &quot;HL7&quot;,
+  &quot;description&quot;: &quot;Defines common extensions used with or related to the ValueSet resource&quot;,
+  &quot;status&quot;: &quot;draft&quot;,
+  &quot;extensionDefn&quot;: [
+    {
+      &quot;code&quot;: &quot;ordinalValue&quot;,
+      &quot;display&quot;: &quot;Comparison value for ordinal codes&quot;,
+      &quot;contextType&quot;: &quot;resource&quot;,
+      &quot;context&quot;: [
+        &quot;ValueSet.compose.include.code&quot;
+      ],
+      &quot;definition&quot;: {
+        &quot;short&quot;: &quot;Comparison value for ordinal codes&quot;,
+        &quot;formal&quot;: &quot;Comparison value for ordinal codes.&quot;,
+        &quot;min&quot;: &quot;0&quot;,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;integer&quot;
+          }
+        ],
+        &quot;mustSupport&quot;: false,
+        &quot;isModifier&quot;: false
+      }
+    },
+    {
+      &quot;code&quot;: &quot;conceptOrder&quot;,
+      &quot;display&quot;: &quot;Appearance order for user selection&quot;,
+      &quot;contextType&quot;: &quot;resource&quot;,
+      &quot;context&quot;: [
+        &quot;ValueSet.compose.include.code&quot;
+      ],
+      &quot;definition&quot;: {
+        &quot;short&quot;: &quot;Appearance order for user selection&quot;,
+        &quot;formal&quot;: &quot;Appearance order for user selection.&quot;,
+        &quot;min&quot;: &quot;0&quot;,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;integer&quot;
+          }
+        ],
+        &quot;mustSupport&quot;: false,
+        &quot;isModifier&quot;: false
+      }
+    },
+    {
+      &quot;code&quot;: &quot;display&quot;,
+      &quot;display&quot;: &quot;Display value for the code&quot;,
+      &quot;contextType&quot;: &quot;resource&quot;,
+      &quot;context&quot;: [
+        &quot;ValueSet.compose.include.code&quot;
+      ],
+      &quot;definition&quot;: {
+        &quot;short&quot;: &quot;Display value for the code&quot;,
+        &quot;formal&quot;: &quot;Display value for the code.&quot;,
+        &quot;min&quot;: &quot;0&quot;,
+        &quot;max&quot;: &quot;*&quot;,
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;string&quot;
+          }
+        ],
+        &quot;mustSupport&quot;: false,
+        &quot;isModifier&quot;: false
+      }
+    },
+    {
+      &quot;code&quot;: &quot;systemName&quot;,
+      &quot;display&quot;: &quot;Code system name&quot;,
+      &quot;contextType&quot;: &quot;resource&quot;,
+      &quot;context&quot;: [
+        &quot;ValueSet.compose.include&quot;
+      ],
+      &quot;definition&quot;: {
+        &quot;short&quot;: &quot;Code system name&quot;,
+        &quot;formal&quot;: &quot;Code system name.&quot;,
+        &quot;min&quot;: &quot;0&quot;,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;string&quot;
+          }
+        ],
+        &quot;mustSupport&quot;: false,
+        &quot;isModifier&quot;: false
+      }
+    },
+    {
+      &quot;code&quot;: &quot;systemRef&quot;,
+      &quot;display&quot;: &quot;Where to find code system&quot;,
+      &quot;contextType&quot;: &quot;resource&quot;,
+      &quot;context&quot;: [
+        &quot;ValueSet.compose.include&quot;
+      ],
+      &quot;definition&quot;: {
+        &quot;short&quot;: &quot;Where to find code system&quot;,
+        &quot;formal&quot;: &quot;Where to find code system.&quot;,
+        &quot;min&quot;: &quot;0&quot;,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;uri&quot;
+          }
+        ],
+        &quot;mustSupport&quot;: false,
+        &quot;isModifier&quot;: false
+      }
+    }
+  ]
+}</pre>
+</div>
+</body>
+</html>

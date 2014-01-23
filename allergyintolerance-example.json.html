@@ -1,0 +1,45 @@
+﻿<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+ <title>General Person Example</title>
+ <link rel="Stylesheet" href="fhir.css" type="text/css" media="screen"/>
+</head>
+<body>
+<p>&nbsp;</p>
+<div class="example">
+<p>General Person Example</p>
+<p><a href="allergyintolerance-example.json">Raw JSON</a></p>
+<pre class="json">
+{
+  &quot;resourceType&quot;: &quot;AllergyIntolerance&quot;,
+  &quot;text&quot;: {
+    &quot;status&quot;: &quot;generated&quot;,
+    &quot;div&quot;: &quot;&lt;div&gt;Sensitivity to Bee Stings&lt;/div&gt;&quot;
+  },
+  &quot;criticality&quot;: &quot;fatal&quot;,
+  &quot;sensitivityType&quot;: &quot;allergy&quot;,
+  &quot;recordedDate&quot;: &quot;2012-09-17&quot;,
+  &quot;status&quot;: &quot;confirmed&quot;,
+  &quot;subject&quot;: {
+    &quot;reference&quot;: &quot;Patient/example&quot;
+  },
+  &quot;recorder&quot;: {
+    &quot;reference&quot;: &quot;Practitioner/example&quot;
+  },
+  &quot;substance&quot;: {
+    &quot;reference&quot;: &quot;Substance/example&quot;
+  },
+  &quot;reaction&quot;: [
+    {
+      &quot;reference&quot;: &quot;AdverseReaction/example&quot;
+    }
+  ],
+  &quot;sensitivityTest&quot;: [
+    {
+      &quot;reference&quot;: &quot;Observation/example&quot;
+    }
+  ]
+}
+</pre>
+</div>
+</body>
+</html>

@@ -1,0 +1,44 @@
+﻿<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+ <title>Example of an availability resource</title>
+ <link rel="Stylesheet" href="fhir.css" type="text/css" media="screen"/>
+</head>
+<body>
+<p>&nbsp;</p>
+<div class="example">
+<p>Example of an availability resource</p>
+<p><a href="availability-example.json">Raw JSON</a></p>
+<pre class="json">
+{
+  &quot;resourceType&quot;: &quot;Availability&quot;,
+  &quot;text&quot;: {
+    &quot;status&quot;: &quot;generated&quot;,
+    &quot;div&quot;: &quot;&lt;div&gt;\n\t\t\tBurgers UMC, South Wing, second floor Physiotherapy Availability\n\t\t&lt;/div&gt;&quot;
+  },
+  &quot;type&quot;: {
+    &quot;coding&quot;: [
+      {
+        &quot;code&quot;: &quot;45&quot;,
+        &quot;display&quot;: &quot;Physiotherapy&quot;
+      }
+    ]
+  },
+  &quot;individual&quot;: {
+    &quot;reference&quot;: &quot;Location/1&quot;,
+    &quot;display&quot;: &quot;Burgers UMC, South Wing, second floor&quot;
+  },
+  &quot;period&quot;: {
+    &quot;start&quot;: &quot;2013-12-25T09:15:00Z&quot;,
+    &quot;end&quot;: &quot;2013-12-25T09:30:00Z&quot;
+  },
+  &quot;comment&quot;: &quot;Assessments should be performed before requesting appointments in this slot.&quot;,
+  &quot;author&quot;: {
+    &quot;reference&quot;: &quot;Practitioner/example&quot;,
+    &quot;display&quot;: &quot;Dr Adam Careful&quot;
+  },
+  &quot;authorDate&quot;: &quot;2012-09-17&quot;
+}
+</pre>
+</div>
+</body>
+</html>

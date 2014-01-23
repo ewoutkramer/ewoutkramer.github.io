@@ -1,0 +1,63 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+ <title>Example Instance for v2 BP Observation Status Codes Interpretation</title>
+ <link rel="Stylesheet" href="../../fhir.css" type="text/css" media="screen"/>
+</head>
+<body>
+<p>&nbsp;</p>
+<div class="example">
+<p>FHIR Value set/code system definition for HL7 v2 table 0511 ( BP Observation Status Codes Interpretation)</p>
+<p><a href="v2-0511.json">Raw JSON</a></p>
+<pre class="json">
+{
+  &quot;resourceType&quot;: &quot;ValueSet&quot;,
+  &quot;text&quot;: {
+    &quot;status&quot;: &quot;additional&quot;,
+    &quot;div&quot;: &quot;&lt;div&gt;&lt;p&gt;BP Observation Status Codes Interpretation&lt;/p&gt;\r\n&lt;table class=\&quot;grid\&quot;&gt;\r\n &lt;tr&gt;&lt;td&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Description&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Version&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;C&lt;a name=\&quot;C\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Record coming over is a correction and thus replaces a final status&lt;/td&gt;&lt;td&gt;added v2.5&lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;D&lt;a name=\&quot;D\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Deletes the BPX record&lt;/td&gt;&lt;td&gt;added v2.5&lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;F&lt;a name=\&quot;F\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Final status; Can only be changed with a corrected status&lt;/td&gt;&lt;td&gt;added v2.5&lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;O&lt;a name=\&quot;O\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Order detail description only (no status)&lt;/td&gt;&lt;td&gt;added v2.5&lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;P&lt;a name=\&quot;P\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Preliminary status&lt;/td&gt;&lt;td&gt;added v2.5&lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;W&lt;a name=\&quot;W\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Post original as wrong, e.g., transmitted for wrong patient&lt;/td&gt;&lt;td&gt;added v2.5&lt;/td&gt;&lt;/tr&gt;\r\n&lt;/table&gt;\r\n&lt;/div&gt;&quot;
+  },
+  &quot;identifier&quot;: &quot;http://hl7.org/fhir/v2/vs/0511&quot;,
+  &quot;name&quot;: &quot;v2 BP Observation Status Codes Interpretation&quot;,
+  &quot;publisher&quot;: &quot;HL7, Inc&quot;,
+  &quot;telecom&quot;: [
+    {
+      &quot;system&quot;: &quot;url&quot;,
+      &quot;value&quot;: &quot;http://hl7.org&quot;
+    }
+  ],
+  &quot;description&quot;: &quot;FHIR Value set/code system definition for HL7 v2 table 0511 ( BP Observation Status Codes Interpretation)&quot;,
+  &quot;status&quot;: &quot;active&quot;,
+  &quot;date&quot;: &quot;2011-01-28&quot;,
+  &quot;define&quot;: {
+    &quot;system&quot;: &quot;http://hl7.org/fhir/v2/0511&quot;,
+    &quot;caseSensitive&quot;: true,
+    &quot;concept&quot;: [
+      {
+        &quot;code&quot;: &quot;C&quot;,
+        &quot;display&quot;: &quot;Record coming over is a correction and thus replaces a final status&quot;
+      },
+      {
+        &quot;code&quot;: &quot;D&quot;,
+        &quot;display&quot;: &quot;Deletes the BPX record&quot;
+      },
+      {
+        &quot;code&quot;: &quot;F&quot;,
+        &quot;display&quot;: &quot;Final status; Can only be changed with a corrected status&quot;
+      },
+      {
+        &quot;code&quot;: &quot;O&quot;,
+        &quot;display&quot;: &quot;Order detail description only (no status)&quot;
+      },
+      {
+        &quot;code&quot;: &quot;P&quot;,
+        &quot;display&quot;: &quot;Preliminary status&quot;
+      },
+      {
+        &quot;code&quot;: &quot;W&quot;,
+        &quot;display&quot;: &quot;Post original as wrong, e.g., transmitted for wrong patient&quot;
+      }
+    ]
+  }
+}</pre>
+</div>
+</body>
+</html>

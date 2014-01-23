@@ -1,0 +1,47 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+ <title>Example Instance for x_BasicConfidentialityKind</title>
+ <link rel="Stylesheet" href="../../fhir.css" type="text/css" media="screen"/>
+</head>
+<body>
+<p>&nbsp;</p>
+<div class="example">
+<p>  Description:
+Used to enumerate the typical confidentiality constraints placed upon a clinical document.  Usage Note:
+x_BasicConfidentialityKind is a subset of Confidentiality codes that are used as metadata indicating the receiver responsibility to comply with normally applicable jurisdictional privacy law or disclosure authorization; that the receiver may not disclose this information except as directed by the information custodian, who may be the information subject; or that the receiver may not disclose this information except as directed by the information custodian, who may be the information subject. (OID = 2.16.840.1.113883.1.11.16926)</p>
+<p><a href="v3-x_BasicConfidentialityKind.json">Raw JSON</a></p>
+<pre class="json">
+{
+  &quot;resourceType&quot;: &quot;ValueSet&quot;,
+  &quot;text&quot;: {
+    &quot;status&quot;: &quot;generated&quot;,
+    &quot;div&quot;: &quot;&lt;div&gt;&lt;h2&gt;x_BasicConfidentialityKind&lt;/h2&gt;&lt;p&gt;  Description:&lt;br/&gt;Used to enumerate the typical confidentiality constraints placed upon a clinical document.  Usage Note:&lt;br/&gt;x_BasicConfidentialityKind is a subset of Confidentiality codes that are used as metadata indicating the receiver responsibility to comply with normally applicable jurisdictional privacy law or disclosure authorization; that the receiver may not disclose this information except as directed by the information custodian, who may be the information subject; or that the receiver may not disclose this information except as directed by the information custodian, who may be the information subject. (OID = 2.16.840.1.113883.1.11.16926)&lt;/p&gt;&lt;p&gt;This value set includes codes defined in other code systems, using the following rules:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Include these codes as defined in &lt;a href=\&quot;../../../v3/Confidentiality/index.html\&quot;&gt;http://hl7.org/fhir/v3/Confidentiality&lt;/a&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Definition&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;N&lt;/td&gt;&lt;td&gt;normal&lt;/td&gt;&lt;td&gt;Definition: Privacy metadata indicating that the information is typical, non-stigmatizing health information, which presents typical risk of harm if disclosed without authorization.&lt;br/&gt;\n                        \n                           Examples: In the US, this includes what HIPAA identifies as the minimum necessary protected health information (PHI) given a covered purpose of use (treatment, payment, or operations).  Includes typical, non-stigmatizing health information disclosed in an application for health, workers compensation, disability, or life insurance.&lt;br/&gt;\n                        \n                           Map: Partial Map to ISO 13606-4 Sensitivity Level (3) Clinical Care:   Default for normal clinical care access (i.e. most clinical staff directly caring for the patient should be able to access nearly all of the EHR).   Maps to normal confidentiality for treatment information but not to ancillary care, payment and operations.&lt;br/&gt;\n                        \n                           Usage Note: This metadata indicates that the receiver may be obligated to comply with applicable jurisdictional privacy law or disclosure authorization.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;R&lt;/td&gt;&lt;td&gt;restricted&lt;/td&gt;&lt;td&gt;Privacy metadata indicating highly sensitive, potentially stigmatizing information, which presents a high risk to the information subject if disclosed without authorization.  May be preempted by jurisdictional law, e.g., for public health reporting or emergency treatment.&lt;br/&gt;&amp;gt;\n                           Examples: In the US, this includes what HIPAA identifies as the minimum necessary protected health information (PHI) given a covered purpose of use (treatment, payment, or operations).  Includes typical, non-stigmatizing health information disclosed in an application for health, workers compensation, disability, or life insurance.&lt;br/&gt;\n                        \n                           Map: Partial Map to ISO 13606-4 Sensitivity Level (3) Clinical Care:   Default for normal clinical care access (i.e. most clinical staff directly caring for the patient should be able to access nearly all of the EHR).   Maps to normal confidentiality for treatment information but not to ancillary care, payment and operations.&lt;br/&gt;\n                        \n                           Usage Note: This metadata indicates that the receiver may be obligated to comply with applicable, prevailing (default)  jurisdictional privacy law or disclosure authorization.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;V&lt;/td&gt;&lt;td&gt;very restricted&lt;/td&gt;&lt;td&gt;. Privacy metadata indicating that the information is extremely sensitive and likely stigmatizing health information that presents a very high risk if disclosed without authorization.  This information must be kept in the highest confidence.  &lt;br/&gt;\n                        \n                           Examples:  Includes information about a victim of abuse, patient requested information sensitivity, and taboo subjects relating to health status that must be discussed with the patient by an attending provider before sharing with the patient.  May also include information held under â€œlegal lockâ€? or attorney-client privilege&lt;br/&gt;\n                        \n                           Map:  This metadata indicates that the receiver may not disclose this information except as directed by the information custodian, who may be the information subject.&lt;br/&gt;\n                        \n                           Usage Note:  This metadata indicates that the receiver may not disclose this information except as directed by the information custodian, who may be the information subject.&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&quot;
+  },
+  &quot;identifier&quot;: &quot;http://hl7.org/fhir/v3/vs/x_BasicConfidentialityKind&quot;,
+  &quot;version&quot;: &quot;2013-12-07&quot;,
+  &quot;name&quot;: &quot;x_BasicConfidentialityKind&quot;,
+  &quot;publisher&quot;: &quot;HL7 v3&quot;,
+  &quot;telecom&quot;: [
+    {
+      &quot;system&quot;: &quot;url&quot;,
+      &quot;value&quot;: &quot;http://www.hl7.org&quot;
+    }
+  ],
+  &quot;description&quot;: &quot;  Description:\r\nUsed to enumerate the typical confidentiality constraints placed upon a clinical document.  Usage Note:\r\nx_BasicConfidentialityKind is a subset of Confidentiality codes that are used as metadata indicating the receiver responsibility to comply with normally applicable jurisdictional privacy law or disclosure authorization; that the receiver may not disclose this information except as directed by the information custodian, who may be the information subject; or that the receiver may not disclose this information except as directed by the information custodian, who may be the information subject. (OID = 2.16.840.1.113883.1.11.16926)&quot;,
+  &quot;status&quot;: &quot;active&quot;,
+  &quot;compose&quot;: {
+    &quot;include&quot;: [
+      {
+        &quot;system&quot;: &quot;http://hl7.org/fhir/v3/Confidentiality&quot;,
+        &quot;code&quot;: [
+          &quot;N&quot;,
+          &quot;R&quot;,
+          &quot;V&quot;
+        ]
+      }
+    ]
+  }
+}</pre>
+</div>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+ <title>Example Instance for valueset-substance-type</title>
+ <link rel="Stylesheet" href="fhir.css" type="text/css" media="screen"/>
+</head>
+<body>
+<p>&nbsp;</p>
+<div class="example">
+<p>Definition for Value SetSubstance Type</p>
+<p><a href="valueset-substance-type.json">Raw JSON</a></p>
+<pre class="json">
+{
+  &quot;resourceType&quot;: &quot;ValueSet&quot;,
+  &quot;text&quot;: {
+    &quot;status&quot;: &quot;generated&quot;,
+    &quot;div&quot;: &quot;&lt;div&gt;&lt;h2&gt;Substance Type&lt;/h2&gt;&lt;p&gt;This value sets refers to a substance type&lt;/p&gt;&lt;p&gt;This value set includes codes defined in other code systems, using the following rules:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Include codes from http://snomed.info/sct where concept  is-a  105590001&lt;/li&gt;&lt;li&gt;Include codes from http://snomed.info/sct where concept  is-a  373873005&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&quot;
+  },
+  &quot;identifier&quot;: &quot;http://hl7.org/fhir/vs/substance-type&quot;,
+  &quot;name&quot;: &quot;Substance Type&quot;,
+  &quot;publisher&quot;: &quot;FHIR Project team&quot;,
+  &quot;telecom&quot;: [
+    {
+      &quot;system&quot;: &quot;url&quot;,
+      &quot;value&quot;: &quot;http://hl7.org/fhir&quot;
+    }
+  ],
+  &quot;description&quot;: &quot;This value sets refers to a substance type&quot;,
+  &quot;status&quot;: &quot;draft&quot;,
+  &quot;compose&quot;: {
+    &quot;include&quot;: [
+      {
+        &quot;system&quot;: &quot;http://snomed.info/sct&quot;,
+        &quot;filter&quot;: [
+          {
+            &quot;property&quot;: &quot;concept&quot;,
+            &quot;op&quot;: &quot;is-a&quot;,
+            &quot;value&quot;: &quot;105590001&quot;
+          }
+        ]
+      },
+      {
+        &quot;system&quot;: &quot;http://snomed.info/sct&quot;,
+        &quot;filter&quot;: [
+          {
+            &quot;property&quot;: &quot;concept&quot;,
+            &quot;op&quot;: &quot;is-a&quot;,
+            &quot;value&quot;: &quot;373873005&quot;
+          }
+        ]
+      }
+    ]
+  }
+}</pre>
+</div>
+</body>
+</html>

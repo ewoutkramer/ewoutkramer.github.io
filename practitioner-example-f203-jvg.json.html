@@ -1,0 +1,88 @@
+﻿<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+ <title>Fictive Physiotherapist</title>
+ <link rel="Stylesheet" href="fhir.css" type="text/css" media="screen"/>
+</head>
+<body>
+<p>&nbsp;</p>
+<div class="example">
+<p>Fictive Physiotherapist</p>
+<p><a href="practitioner-example-f203-jvg.json">Raw JSON</a></p>
+<pre class="json">
+{
+  &quot;resourceType&quot;: &quot;Practitioner&quot;,
+  &quot;identifier&quot;: [
+    {
+      &quot;use&quot;: &quot;official&quot;,
+      &quot;label&quot;: &quot;UZI-nummer&quot;,
+      &quot;system&quot;: &quot;urn:oid:2.16.528.1.1007.3.1&quot;,
+      &quot;value&quot;: &quot;12345678903&quot;
+    },
+    {
+      &quot;use&quot;: &quot;official&quot;,
+      &quot;label&quot;: &quot;BIG-nummer&quot;,
+      &quot;system&quot;: &quot;https://www.bigregister.nl/&quot;,
+      &quot;value&quot;: &quot;12345678903&quot;
+    }
+  ],
+  &quot;name&quot;: {
+    &quot;use&quot;: &quot;official&quot;,
+    &quot;text&quot;: &quot;Juri van Gelder&quot;
+  },
+  &quot;telecom&quot;: [
+    {
+      &quot;system&quot;: &quot;phone&quot;,
+      &quot;value&quot;: &quot;+31715269111&quot;,
+      &quot;use&quot;: &quot;work&quot;
+    }
+  ],
+  &quot;address&quot;: {
+    &quot;use&quot;: &quot;work&quot;,
+    &quot;line&quot;: [
+      &quot;Walvisbaai 3&quot;
+    ],
+    &quot;city&quot;: &quot;Den helder&quot;,
+    &quot;zip&quot;: &quot;2333ZA&quot;,
+    &quot;country&quot;: &quot;NLD&quot;
+  },
+  &quot;gender&quot;: {
+    &quot;coding&quot;: [
+      {
+        &quot;system&quot;: &quot;http://snomed.info/sct&quot;,
+        &quot;code&quot;: &quot;248153007&quot;,
+        &quot;display&quot;: &quot;Male&quot;
+      }
+    ]
+  },
+  &quot;birthDate&quot;: &quot;1983-04-20&quot;,
+  &quot;organization&quot;: {
+    &quot;reference&quot;: &quot;Organization/f201&quot;,
+    &quot;display&quot;: &quot;AUMC&quot;
+  },
+  &quot;role&quot;: [
+    {
+      &quot;coding&quot;: [
+        {
+          &quot;system&quot;: &quot;http://snomed.info/sct&quot;,
+          &quot;code&quot;: &quot;36682004&quot;,
+          &quot;display&quot;: &quot;Physical therapist&quot;
+        }
+      ]
+    }
+  ],
+  &quot;specialty&quot;: [
+    {
+      &quot;coding&quot;: [
+        {
+          &quot;system&quot;: &quot;http://snomed.info/sct&quot;,
+          &quot;code&quot;: &quot;410158009&quot;,
+          &quot;display&quot;: &quot;Assess physical therapist service&quot;
+        }
+      ]
+    }
+  ]
+}
+</pre>
+</div>
+</body>
+</html>

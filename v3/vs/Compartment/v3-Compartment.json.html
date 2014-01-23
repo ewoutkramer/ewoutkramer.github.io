@@ -1,0 +1,48 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+ <title>Example Instance for Compartment</title>
+ <link rel="Stylesheet" href="../../fhir.css" type="text/css" media="screen"/>
+</head>
+<body>
+<p>&nbsp;</p>
+<div class="example">
+<p> A named tag set for metadata used to populate a security category label field that &quot;segments&quot; an IT resource per policy by indicating that access and use is restricted to members of a defined community or project. (HL7 Healthcare Privacy and Security Classification System)  Usage Note:
+This is the healthcare analog to the US Intelligence Community's concept of a Special Access Program.  Compartment codes may be used in as a field value in an initiator's clearance to indicate permission to access and use an IT Resource with a security label having the same compartment value in security category label field. Map: Aligns with ISO 2382-8 definition of Compartment -  &quot;A division of data into isolated blocks with separate security controls for the purpose of reducing risk.&quot; (OID = 2.16.840.1.113883.1.11.20478)</p>
+<p><a href="v3-Compartment.json">Raw JSON</a></p>
+<pre class="json">
+{
+  &quot;resourceType&quot;: &quot;ValueSet&quot;,
+  &quot;text&quot;: {
+    &quot;status&quot;: &quot;generated&quot;,
+    &quot;div&quot;: &quot;&lt;div&gt;&lt;h2&gt;Compartment&lt;/h2&gt;&lt;p&gt; A named tag set for metadata used to populate a security category label field that &amp;quot;segments&amp;quot; an IT resource per policy by indicating that access and use is restricted to members of a defined community or project. (HL7 Healthcare Privacy and Security Classification System)  Usage Note:&lt;br/&gt;This is the healthcare analog to the US Intelligence Community's concept of a Special Access Program.  Compartment codes may be used in as a field value in an initiator's clearance to indicate permission to access and use an IT Resource with a security label having the same compartment value in security category label field. Map: Aligns with ISO 2382-8 definition of Compartment -  &amp;quot;A division of data into isolated blocks with separate security controls for the purpose of reducing risk.&amp;quot; (OID = 2.16.840.1.113883.1.11.20478)&lt;/p&gt;&lt;p&gt;This value set includes codes defined in other code systems, using the following rules:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Include codes from &lt;a href=\&quot;../../../v3/ActCode/index.html\&quot;&gt;http://hl7.org/fhir/v3/ActCode&lt;/a&gt; where concept  is-a  &lt;a href=\&quot;../../../v3/ActCode/index.html#COMPT\&quot;&gt;COMPT&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&quot;
+  },
+  &quot;identifier&quot;: &quot;http://hl7.org/fhir/v3/vs/Compartment&quot;,
+  &quot;version&quot;: &quot;2013-12-07&quot;,
+  &quot;name&quot;: &quot;Compartment&quot;,
+  &quot;publisher&quot;: &quot;HL7 v3&quot;,
+  &quot;telecom&quot;: [
+    {
+      &quot;system&quot;: &quot;url&quot;,
+      &quot;value&quot;: &quot;http://www.hl7.org&quot;
+    }
+  ],
+  &quot;description&quot;: &quot; A named tag set for metadata used to populate a security category label field that \&quot;segments\&quot; an IT resource per policy by indicating that access and use is restricted to members of a defined community or project. (HL7 Healthcare Privacy and Security Classification System)  Usage Note:\r\nThis is the healthcare analog to the US Intelligence Community's concept of a Special Access Program.  Compartment codes may be used in as a field value in an initiator's clearance to indicate permission to access and use an IT Resource with a security label having the same compartment value in security category label field. Map: Aligns with ISO 2382-8 definition of Compartment -  \&quot;A division of data into isolated blocks with separate security controls for the purpose of reducing risk.\&quot; (OID = 2.16.840.1.113883.1.11.20478)&quot;,
+  &quot;status&quot;: &quot;active&quot;,
+  &quot;compose&quot;: {
+    &quot;include&quot;: [
+      {
+        &quot;system&quot;: &quot;http://hl7.org/fhir/v3/ActCode&quot;,
+        &quot;filter&quot;: [
+          {
+            &quot;property&quot;: &quot;concept&quot;,
+            &quot;op&quot;: &quot;is-a&quot;,
+            &quot;value&quot;: &quot;COMPT&quot;
+          }
+        ]
+      }
+    ]
+  }
+}</pre>
+</div>
+</body>
+</html>

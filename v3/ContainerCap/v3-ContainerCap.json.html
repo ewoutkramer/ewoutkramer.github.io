@@ -1,0 +1,77 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+ <title>Example Instance for v3 Code System ContainerCap</title>
+ <link rel="Stylesheet" href="../../fhir.css" type="text/css" media="screen"/>
+</head>
+<body>
+<p>&nbsp;</p>
+<div class="example">
+<p> The type of cap associated with a container</p>
+<p><a href="v3-ContainerCap.json">Raw JSON</a></p>
+<pre class="json">
+{
+  &quot;resourceType&quot;: &quot;ValueSet&quot;,
+  &quot;text&quot;: {
+    &quot;status&quot;: &quot;generated&quot;,
+    &quot;div&quot;: &quot;&lt;div&gt;&lt;p&gt;Release Date: 2013-12-07&lt;/p&gt;\r\n&lt;h2&gt;Description&lt;/h2&gt;\r\n&lt;p&gt;\n                  The type of cap associated with a container&lt;br/&gt;\r\n\n               &lt;/p&gt;\r\n&lt;hr/&gt;\r\n&lt;table class=\&quot;grid\&quot;&gt;\r\n &lt;tr&gt;&lt;td&gt;&lt;b&gt;Level&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Definition&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;&lt;span style=\&quot;color: grey\&quot;&gt;&lt;i&gt;(_MedicationCap)&lt;/i&gt;&lt;/span&gt;&lt;/td&gt;&lt;td&gt;&lt;a name=\&quot;_MedicationCap\&quot;&gt;&amp;nbsp;&lt;/a&gt;&lt;/td&gt;&lt;td&gt;\n                        Cap types for medication containers&lt;br/&gt;\r\n\n                     &lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td&gt;&amp;nbsp;&amp;nbsp;CHILD&lt;a name=\&quot;CHILD\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;ChildProof&lt;/td&gt;&lt;td&gt;\n                        A cap designed to be difficult to open for children.  Generally requires multiple simultaneous actions (e.g. squeeze and twist) to open.  Used for products that may be dangerous if ingested or overdosed by children.&lt;br/&gt;\r\n\n                     &lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td&gt;&amp;nbsp;&amp;nbsp;EASY&lt;a name=\&quot;EASY\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;EasyOpen&lt;/td&gt;&lt;td&gt;\n                        A cap designed to be easily removed.  For products intended to be opened by persons with limited strength or dexterity.&lt;br/&gt;\r\n\n                     &lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;FILM&lt;a name=\&quot;FILM\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Film&lt;/td&gt;&lt;td&gt;\n                        A non-reactive plastic film covering over the opening of a container.&lt;br/&gt;\r\n\n                     &lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;FOIL&lt;a name=\&quot;FOIL\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Foil&lt;/td&gt;&lt;td&gt;\n                        A foil covering (type of foil not specified) over the opening of a container&lt;br/&gt;\r\n\n                     &lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;PUSH&lt;a name=\&quot;PUSH\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Push Cap&lt;/td&gt;&lt;td&gt;\n                        A non-threaded cap that forms a tight-fitting closure on a container by pushing the fitted end into the conatiner opening&lt;br/&gt;\r\n\n                     &lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;SCR&lt;a name=\&quot;SCR\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Screw Cap&lt;/td&gt;&lt;td&gt;\n                        A threaded cap that is screwed onto the opening of a container&lt;br/&gt;\r\n\n                     &lt;/td&gt;&lt;/tr&gt;\r\n&lt;/table&gt;\r\n&lt;/div&gt;&quot;
+  },
+  &quot;identifier&quot;: &quot;http://hl7.org/fhir/v3/vs/ContainerCap&quot;,
+  &quot;name&quot;: &quot;v3 Code System ContainerCap&quot;,
+  &quot;publisher&quot;: &quot;HL7, Inc&quot;,
+  &quot;telecom&quot;: [
+    {
+      &quot;system&quot;: &quot;url&quot;,
+      &quot;value&quot;: &quot;http://hl7.org&quot;
+    }
+  ],
+  &quot;description&quot;: &quot; The type of cap associated with a container&quot;,
+  &quot;status&quot;: &quot;active&quot;,
+  &quot;date&quot;: &quot;2013-12-07T00:00:00-06:00&quot;,
+  &quot;define&quot;: {
+    &quot;system&quot;: &quot;http://hl7.org/fhir/v3/ContainerCap&quot;,
+    &quot;caseSensitive&quot;: true,
+    &quot;concept&quot;: [
+      {
+        &quot;code&quot;: &quot;_MedicationCap&quot;,
+        &quot;abstract&quot;: true,
+        &quot;display&quot;: &quot;MedicationCap&quot;,
+        &quot;definition&quot;: &quot;Cap types for medication containers&quot;,
+        &quot;concept&quot;: [
+          {
+            &quot;code&quot;: &quot;CHILD&quot;,
+            &quot;display&quot;: &quot;ChildProof&quot;,
+            &quot;definition&quot;: &quot;A cap designed to be difficult to open for children.  Generally requires multiple simultaneous actions (e.g. squeeze and twist) to open.  Used for products that may be dangerous if ingested or overdosed by children.&quot;
+          },
+          {
+            &quot;code&quot;: &quot;EASY&quot;,
+            &quot;display&quot;: &quot;EasyOpen&quot;,
+            &quot;definition&quot;: &quot;A cap designed to be easily removed.  For products intended to be opened by persons with limited strength or dexterity.&quot;
+          }
+        ]
+      },
+      {
+        &quot;code&quot;: &quot;FILM&quot;,
+        &quot;display&quot;: &quot;Film&quot;,
+        &quot;definition&quot;: &quot;A non-reactive plastic film covering over the opening of a container.&quot;
+      },
+      {
+        &quot;code&quot;: &quot;FOIL&quot;,
+        &quot;display&quot;: &quot;Foil&quot;,
+        &quot;definition&quot;: &quot;A foil covering (type of foil not specified) over the opening of a container&quot;
+      },
+      {
+        &quot;code&quot;: &quot;PUSH&quot;,
+        &quot;display&quot;: &quot;Push Cap&quot;,
+        &quot;definition&quot;: &quot;A non-threaded cap that forms a tight-fitting closure on a container by pushing the fitted end into the conatiner opening&quot;
+      },
+      {
+        &quot;code&quot;: &quot;SCR&quot;,
+        &quot;display&quot;: &quot;Screw Cap&quot;,
+        &quot;definition&quot;: &quot;A threaded cap that is screwed onto the opening of a container&quot;
+      }
+    ]
+  }
+}</pre>
+</div>
+</body>
+</html>

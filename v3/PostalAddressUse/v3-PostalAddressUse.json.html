@@ -1,0 +1,101 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+ <title>Example Instance for v3 Code System PostalAddressUse</title>
+ <link rel="Stylesheet" href="../../fhir.css" type="text/css" media="screen"/>
+</head>
+<body>
+<p>&nbsp;</p>
+<div class="example">
+<p>  Deprecation Comment:
+This code system was deprecated as of the November 2007 harmonization meeting. The content was folded into AddressUse (2.16.840.1.113883.5.1119), which replaces this code system.</p>
+<p><a href="v3-PostalAddressUse.json">Raw JSON</a></p>
+<pre class="json">
+{
+  &quot;resourceType&quot;: &quot;ValueSet&quot;,
+  &quot;text&quot;: {
+    &quot;status&quot;: &quot;generated&quot;,
+    &quot;div&quot;: &quot;&lt;div&gt;&lt;p&gt;Release Date: 2013-12-07&lt;/p&gt;\r\n&lt;h2&gt;Description&lt;/h2&gt;\r\n&lt;p&gt;\n                  \n                     Deprecation Comment: This code system was deprecated as of the November 2007 harmonization meeting. The content was folded into AddressUse (2.16.840.1.113883.5.1119), which replaces this code system.&lt;br/&gt;\r\n\n               &lt;/p&gt;\r\n&lt;hr/&gt;\r\n&lt;table class=\&quot;grid\&quot;&gt;\r\n &lt;tr&gt;&lt;td&gt;&lt;b&gt;Level&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Definition&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;&lt;span style=\&quot;color: grey\&quot;&gt;&lt;i&gt;(_AddressUse)&lt;/i&gt;&lt;/span&gt;&lt;/td&gt;&lt;td&gt;&lt;a name=\&quot;_AddressUse\&quot;&gt;&amp;nbsp;&lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td&gt;&amp;nbsp;&amp;nbsp;BAD&lt;a name=\&quot;BAD\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;bad address&lt;/td&gt;&lt;td&gt;\n                        A flag indicating that the address is bad, in fact, useless.&lt;br/&gt;\r\n\n                     &lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td&gt;&amp;nbsp;&amp;nbsp;H&lt;a name=\&quot;H\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;home address&lt;/td&gt;&lt;td&gt;\n                        A communication address at a home, attempted contacts for business purposes might intrude privacy and chances are one will contact family or other household members instead of the person one wishes to call.  Typically used with urgent cases, or if no other contacts are available.&lt;br/&gt;\r\n\n                     &lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;3&lt;/td&gt;&lt;td&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;HP&lt;a name=\&quot;HP\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;primary home&lt;/td&gt;&lt;td&gt;\n                        The primary home, to reach a person after business hours.&lt;br/&gt;\r\n\n                     &lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;3&lt;/td&gt;&lt;td&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;HV&lt;a name=\&quot;HV\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;vacation home&lt;/td&gt;&lt;td&gt;\n                        A vacation home, to reach a person while on vacation.&lt;br/&gt;\r\n\n                     &lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td&gt;&amp;nbsp;&amp;nbsp;TMP&lt;a name=\&quot;TMP\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;temporary address&lt;/td&gt;&lt;td&gt;\n                        A temporary address, may be good for visit or mailing.  Note that an address history can provide more detailed information.&lt;br/&gt;\r\n\n                     &lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td&gt;&amp;nbsp;&amp;nbsp;WP&lt;a name=\&quot;WP\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;work place&lt;/td&gt;&lt;td&gt;\n                        An office address.  First choice for business related contacts during business hours.&lt;br/&gt;\r\n\n                     &lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;3&lt;/td&gt;&lt;td&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;DIR&lt;a name=\&quot;DIR\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Direct&lt;/td&gt;&lt;td&gt;\n                        Indicates a work place address or telecommunication address that reaches the individual or organization directly without intermediaries. For phones, often referred to as a 'private line'.&lt;br/&gt;\r\n\n                     &lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;3&lt;/td&gt;&lt;td&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;PUB&lt;a name=\&quot;PUB\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Public&lt;/td&gt;&lt;td&gt;\n                        Indicates a work place address or telecommunication address that is a 'standard' address which may reach a reception service, mail-room, or other intermediary prior to the target entity.&lt;br/&gt;\r\n\n                     &lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;PHYS&lt;a name=\&quot;PHYS\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;physical visit address&lt;/td&gt;&lt;td&gt;\n                        Used primarily to visit an address.&lt;br/&gt;\r\n\n                     &lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;PST&lt;a name=\&quot;PST\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;postal address&lt;/td&gt;&lt;td&gt;\n                        Used to send mail.&lt;br/&gt;\r\n\n                     &lt;/td&gt;&lt;/tr&gt;\r\n&lt;/table&gt;\r\n&lt;/div&gt;&quot;
+  },
+  &quot;identifier&quot;: &quot;http://hl7.org/fhir/v3/vs/PostalAddressUse&quot;,
+  &quot;name&quot;: &quot;v3 Code System PostalAddressUse&quot;,
+  &quot;publisher&quot;: &quot;HL7, Inc&quot;,
+  &quot;telecom&quot;: [
+    {
+      &quot;system&quot;: &quot;url&quot;,
+      &quot;value&quot;: &quot;http://hl7.org&quot;
+    }
+  ],
+  &quot;description&quot;: &quot;  Deprecation Comment:\r\nThis code system was deprecated as of the November 2007 harmonization meeting. The content was folded into AddressUse (2.16.840.1.113883.5.1119), which replaces this code system.&quot;,
+  &quot;status&quot;: &quot;active&quot;,
+  &quot;date&quot;: &quot;2013-12-07T00:00:00-06:00&quot;,
+  &quot;define&quot;: {
+    &quot;system&quot;: &quot;http://hl7.org/fhir/v3/PostalAddressUse&quot;,
+    &quot;caseSensitive&quot;: true,
+    &quot;concept&quot;: [
+      {
+        &quot;code&quot;: &quot;_AddressUse&quot;,
+        &quot;abstract&quot;: true,
+        &quot;display&quot;: &quot;AddressUse&quot;,
+        &quot;concept&quot;: [
+          {
+            &quot;code&quot;: &quot;BAD&quot;,
+            &quot;display&quot;: &quot;bad address&quot;,
+            &quot;definition&quot;: &quot;A flag indicating that the address is bad, in fact, useless.&quot;
+          },
+          {
+            &quot;code&quot;: &quot;H&quot;,
+            &quot;display&quot;: &quot;home address&quot;,
+            &quot;definition&quot;: &quot;A communication address at a home, attempted contacts for business purposes might intrude privacy and chances are one will contact family or other household members instead of the person one wishes to call.  Typically used with urgent cases, or if no other contacts are available.&quot;,
+            &quot;concept&quot;: [
+              {
+                &quot;code&quot;: &quot;HP&quot;,
+                &quot;display&quot;: &quot;primary home&quot;,
+                &quot;definition&quot;: &quot;The primary home, to reach a person after business hours.&quot;
+              },
+              {
+                &quot;code&quot;: &quot;HV&quot;,
+                &quot;display&quot;: &quot;vacation home&quot;,
+                &quot;definition&quot;: &quot;A vacation home, to reach a person while on vacation.&quot;
+              }
+            ]
+          },
+          {
+            &quot;code&quot;: &quot;TMP&quot;,
+            &quot;display&quot;: &quot;temporary address&quot;,
+            &quot;definition&quot;: &quot;A temporary address, may be good for visit or mailing.  Note that an address history can provide more detailed information.&quot;
+          },
+          {
+            &quot;code&quot;: &quot;WP&quot;,
+            &quot;display&quot;: &quot;work place&quot;,
+            &quot;definition&quot;: &quot;An office address.  First choice for business related contacts during business hours.&quot;,
+            &quot;concept&quot;: [
+              {
+                &quot;code&quot;: &quot;DIR&quot;,
+                &quot;display&quot;: &quot;Direct&quot;,
+                &quot;definition&quot;: &quot;Indicates a work place address or telecommunication address that reaches the individual or organization directly without intermediaries. For phones, often referred to as a 'private line'.&quot;
+              },
+              {
+                &quot;code&quot;: &quot;PUB&quot;,
+                &quot;display&quot;: &quot;Public&quot;,
+                &quot;definition&quot;: &quot;Indicates a work place address or telecommunication address that is a 'standard' address which may reach a reception service, mail-room, or other intermediary prior to the target entity.&quot;
+              }
+            ]
+          }
+        ]
+      },
+      {
+        &quot;code&quot;: &quot;PHYS&quot;,
+        &quot;display&quot;: &quot;physical visit address&quot;,
+        &quot;definition&quot;: &quot;Used primarily to visit an address.&quot;
+      },
+      {
+        &quot;code&quot;: &quot;PST&quot;,
+        &quot;display&quot;: &quot;postal address&quot;,
+        &quot;definition&quot;: &quot;Used to send mail.&quot;
+      }
+    ]
+  }
+}</pre>
+</div>
+</body>
+</html>

@@ -1,0 +1,117 @@
+﻿<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+ <title>Real-world patient example</title>
+ <link rel="Stylesheet" href="fhir.css" type="text/css" media="screen"/>
+</head>
+<body>
+<p>&nbsp;</p>
+<div class="example">
+<p>Real-world patient example</p>
+<p><a href="careplan-example-f201-renal.json">Raw JSON</a></p>
+<pre class="json">
+{
+  &quot;resourceType&quot;: &quot;CarePlan&quot;,
+  &quot;patient&quot;: {
+    &quot;reference&quot;: &quot;Patient/f201&quot;,
+    &quot;display&quot;: &quot;Roel&quot;
+  },
+  &quot;status&quot;: &quot;planned&quot;,
+  &quot;period&quot;: {
+    &quot;start&quot;: &quot;2013-03-11&quot;,
+    &quot;end&quot;: &quot;2013-03-13&quot;
+  },
+  &quot;modified&quot;: &quot;2013-03-11&quot;,
+  &quot;concern&quot;: [
+    {
+      &quot;reference&quot;: &quot;Condition/f204&quot;,
+      &quot;display&quot;: &quot;Roel's renal insufficiency&quot;
+    }
+  ],
+  &quot;participant&quot;: [
+    {
+      &quot;role&quot;: {
+        &quot;coding&quot;: [
+          {
+            &quot;system&quot;: &quot;http://snomed.info/sct&quot;,
+            &quot;code&quot;: &quot;425268008&quot;,
+            &quot;display&quot;: &quot;Review of care plan&quot;
+          }
+        ]
+      },
+      &quot;member&quot;: {
+        &quot;reference&quot;: &quot;Practitioner/f201&quot;,
+        &quot;display&quot;: &quot;Dokter Bronsig&quot;
+      }
+    },
+    {
+      &quot;role&quot;: {
+        &quot;coding&quot;: [
+          {
+            &quot;system&quot;: &quot;http://snomed.info/sct&quot;,
+            &quot;code&quot;: &quot;229774002&quot;,
+            &quot;display&quot;: &quot;Carer&quot;
+          }
+        ]
+      },
+      &quot;member&quot;: {
+        &quot;reference&quot;: &quot;Practitioner/f204&quot;,
+        &quot;display&quot;: &quot;Nurse Carla Espinosa&quot;
+      }
+    }
+  ],
+  &quot;goal&quot;: [
+    {
+      &quot;description&quot;: &quot;Re-established renal function with at least healthy nutrients.&quot;,
+      &quot;status&quot;: &quot;achieved&quot;
+    }
+  ],
+  &quot;activity&quot;: [
+    {
+      &quot;status&quot;: &quot;completed&quot;,
+      &quot;prohibited&quot;: false,
+      &quot;simple&quot;: {
+        &quot;category&quot;: &quot;diet&quot;,
+        &quot;code&quot;: {
+          &quot;coding&quot;: [
+            {
+              &quot;system&quot;: &quot;http://snomed.info/sct&quot;,
+              &quot;code&quot;: &quot;284093001&quot;,
+              &quot;display&quot;: &quot;Potassium supplementation&quot;
+            }
+          ]
+        },
+        &quot;timingString&quot;: &quot;daily&quot;,
+        &quot;product&quot;: {
+          &quot;reference&quot;: &quot;Substance/f203&quot;,
+          &quot;display&quot;: &quot;Potassium&quot;
+        },
+        &quot;dailyAmount&quot;: {
+          &quot;value&quot;: &quot;80&quot;,
+          &quot;units&quot;: &quot;mmol&quot;,
+          &quot;system&quot;: &quot;http://snomed.info/sct&quot;,
+          &quot;code&quot;: &quot;258718000&quot;
+        }
+      }
+    },
+    {
+      &quot;status&quot;: &quot;completed&quot;,
+      &quot;prohibited&quot;: false,
+      &quot;simple&quot;: {
+        &quot;category&quot;: &quot;observation&quot;,
+        &quot;code&quot;: {
+          &quot;coding&quot;: [
+            {
+              &quot;system&quot;: &quot;http://snomed.info/sct&quot;,
+              &quot;code&quot;: &quot;306005&quot;,
+              &quot;display&quot;: &quot;Echography of kidney&quot;
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
+</pre>
+</div>
+</body>
+</html>

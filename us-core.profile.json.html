@@ -1,0 +1,105 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+ <title>Example Instance for us-core.profile</title>
+ <link rel="Stylesheet" href="fhir.css" type="text/css" media="screen"/>
+</head>
+<body>
+<p>&nbsp;</p>
+<div class="example">
+<p>Profile for Contains constraints and extensions to the FHIR specification specific to the US realm</p>
+<p><a href="us-core.profile.json">Raw JSON</a></p>
+<pre class="json">
+{
+  &quot;resourceType&quot;: &quot;Profile&quot;,
+  &quot;text&quot;: {
+    &quot;status&quot;: &quot;generated&quot;,
+    &quot;div&quot;: &quot;&lt;div&gt;&lt;pre&gt; &lt;span style=\&quot;float: right\&quot;&gt;&lt;a title=\&quot;Documentation for this format\&quot; href=\&quot;formats.html\&quot;&gt;&lt;img alt=\&quot;doco\&quot; src=\&quot;help.png\&quot;/&gt;&lt;/a&gt;&lt;/span&gt;\r\n&lt;span style=\&quot; color: Gray\&quot;&gt;&amp;lt;!-- &lt;span style=\&quot;color: Darkviolet\&quot;&gt;Extensions&lt;/span&gt; --&amp;gt;&lt;/span&gt;\r\n&amp;lt;&lt;span title=\&quot;A code classifying the person into a named category of humans sharing common history, traits, geographical origin or nationality.\&quot;&gt;&lt;b&gt;extension&lt;/b&gt;&lt;/span&gt;&amp;gt;&lt;a name=\&quot;race\&quot;&gt; &lt;/a&gt;&amp;lt;!--  &lt;span style=\&quot;color: brown\&quot;&gt;&lt;b&gt;0..1&lt;/b&gt;&lt;/span&gt; &lt;span style=\&quot;color: navy\&quot;&gt;Context: Resource = Patient&lt;/span&gt; --&amp;gt;\r\n &amp;lt;&lt;b&gt;url&lt;/b&gt; value=&amp;quot;&lt;span style=\&quot;color: maroon\&quot;&gt;http://hl7.org/fhir/Profile/us-core#race&lt;/span&gt;&amp;quot;/&amp;gt;\r\n &amp;lt;&lt;span title=\&quot;A code classifying the person into a named category of humans sharing common history, traits, geographical origin or nationality.\&quot;&gt;&lt;b&gt;valueCodeableConcept&lt;/b&gt;&lt;/span&gt;&amp;gt;&lt;span style=\&quot; color: Gray\&quot;&gt;&amp;lt;!-- &lt;/span&gt; &lt;span style=\&quot;color: brown;\&quot;&gt;&lt;b&gt;0..1&lt;/b&gt;&lt;/span&gt;  &lt;span style=\&quot;color: darkgreen\&quot;&gt;&lt;a href=\&quot;http://hl7.org/fhir/datatypes.html#CodeableConcept\&quot;&gt;CodeableConcept&lt;/a&gt;&lt;/span&gt; &lt;span style=\&quot;color: navy\&quot;&gt;A category of humans sharing history, origin or nationality&lt;/span&gt; &lt;span style=\&quot; color: Gray\&quot;&gt;--&amp;gt; &lt;/span&gt;&amp;lt;/valueCodeableConcept&amp;gt;\r\n&amp;lt;/extension&amp;gt;\r\n\r\n&amp;lt;&lt;span title=\&quot;A code classifying the person into a named category of humans sharing a common real or presumed heritage.\&quot;&gt;&lt;b&gt;extension&lt;/b&gt;&lt;/span&gt;&amp;gt;&lt;a name=\&quot;ethnicity\&quot;&gt; &lt;/a&gt;&amp;lt;!--  &lt;span style=\&quot;color: brown\&quot;&gt;&lt;b&gt;0..1&lt;/b&gt;&lt;/span&gt; &lt;span style=\&quot;color: navy\&quot;&gt;Context: Resource = Patient&lt;/span&gt; --&amp;gt;\r\n &amp;lt;&lt;b&gt;url&lt;/b&gt; value=&amp;quot;&lt;span style=\&quot;color: maroon\&quot;&gt;http://hl7.org/fhir/Profile/us-core#ethnicity&lt;/span&gt;&amp;quot;/&amp;gt;\r\n &amp;lt;&lt;span title=\&quot;A code classifying the person into a named category of humans sharing a common real or presumed heritage.\&quot;&gt;&lt;b&gt;valueCodeableConcept&lt;/b&gt;&lt;/span&gt;&amp;gt;&lt;span style=\&quot; color: Gray\&quot;&gt;&amp;lt;!-- &lt;/span&gt; &lt;span style=\&quot;color: brown;\&quot;&gt;&lt;b&gt;0..1&lt;/b&gt;&lt;/span&gt;  &lt;span style=\&quot;color: darkgreen\&quot;&gt;&lt;a href=\&quot;http://hl7.org/fhir/datatypes.html#CodeableConcept\&quot;&gt;CodeableConcept&lt;/a&gt;&lt;/span&gt; &lt;span style=\&quot;color: navy\&quot;&gt;A category of human sharing heritage&lt;/span&gt; &lt;span style=\&quot; color: Gray\&quot;&gt;--&amp;gt; &lt;/span&gt;&amp;lt;/valueCodeableConcept&amp;gt;\r\n&amp;lt;/extension&amp;gt;\r\n\r\n&amp;lt;&lt;span title=\&quot;Name of county.\&quot;&gt;&lt;b&gt;extension&lt;/b&gt;&lt;/span&gt;&amp;gt;&lt;a name=\&quot;county\&quot;&gt; &lt;/a&gt;&amp;lt;!--  &lt;span style=\&quot;color: brown\&quot;&gt;&lt;b&gt;0..1&lt;/b&gt;&lt;/span&gt; &lt;span style=\&quot;color: navy\&quot;&gt;Context: DataType = Address&lt;/span&gt; --&amp;gt;\r\n &amp;lt;&lt;b&gt;url&lt;/b&gt; value=&amp;quot;&lt;span style=\&quot;color: maroon\&quot;&gt;http://hl7.org/fhir/Profile/us-core#county&lt;/span&gt;&amp;quot;/&amp;gt;\r\n &amp;lt;&lt;span title=\&quot;Name of county.\&quot;&gt;&lt;b&gt;valueString&lt;/b&gt;&lt;/span&gt; value=&amp;quot;[&lt;span style=\&quot;color: darkgreen\&quot;&gt;&lt;a href=\&quot;http://hl7.org/fhir/datatypes.html#string\&quot;&gt;string&lt;/a&gt;&lt;/span&gt;]&amp;quot;/&amp;gt;&lt;span style=\&quot; color: Gray\&quot;&gt;&amp;lt;!-- &lt;/span&gt;&lt;span style=\&quot;color: navy\&quot;&gt;Name of county&lt;/span&gt;&lt;span style=\&quot; color: Gray\&quot;&gt; --&amp;gt;&lt;/span&gt;\r\n&amp;lt;/extension&amp;gt;\r\n\r\n&lt;/pre&gt;&lt;/div&gt;&quot;
+  },
+  &quot;name&quot;: &quot;United Stated realm FHIR Profile&quot;,
+  &quot;publisher&quot;: &quot;Fhir Core Team&quot;,
+  &quot;description&quot;: &quot;Contains constraints and extensions to the FHIR specification specific to the US realm&quot;,
+  &quot;status&quot;: &quot;draft&quot;,
+  &quot;date&quot;: &quot;2013-12-03&quot;,
+  &quot;extensionDefn&quot;: [
+    {
+      &quot;code&quot;: &quot;race&quot;,
+      &quot;display&quot;: &quot;A category of humans sharing history, origin or nationality&quot;,
+      &quot;contextType&quot;: &quot;resource&quot;,
+      &quot;context&quot;: [
+        &quot;Patient&quot;
+      ],
+      &quot;definition&quot;: {
+        &quot;short&quot;: &quot;A category of humans sharing history, origin or nationality&quot;,
+        &quot;formal&quot;: &quot;A code classifying the person into a named category of humans sharing common history, traits, geographical origin or nationality.&quot;,
+        &quot;min&quot;: &quot;0&quot;,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;CodeableConcept&quot;
+          }
+        ],
+        &quot;mustSupport&quot;: false,
+        &quot;isModifier&quot;: false,
+        &quot;binding&quot;: {
+          &quot;name&quot;: &quot;Race&quot;,
+          &quot;isExtensible&quot;: true,
+          &quot;referenceResource&quot;: {
+            &quot;reference&quot;: &quot;http://hl7.org/fhir/v3/vs/Race&quot;
+          }
+        }
+      }
+    },
+    {
+      &quot;code&quot;: &quot;ethnicity&quot;,
+      &quot;display&quot;: &quot;A category of human sharing heritage&quot;,
+      &quot;contextType&quot;: &quot;resource&quot;,
+      &quot;context&quot;: [
+        &quot;Patient&quot;
+      ],
+      &quot;definition&quot;: {
+        &quot;short&quot;: &quot;A category of human sharing heritage&quot;,
+        &quot;formal&quot;: &quot;A code classifying the person into a named category of humans sharing a common real or presumed heritage.&quot;,
+        &quot;min&quot;: &quot;0&quot;,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;CodeableConcept&quot;
+          }
+        ],
+        &quot;mustSupport&quot;: false,
+        &quot;isModifier&quot;: false,
+        &quot;binding&quot;: {
+          &quot;name&quot;: &quot;Ethnicity&quot;,
+          &quot;isExtensible&quot;: true,
+          &quot;referenceResource&quot;: {
+            &quot;reference&quot;: &quot;http://hl7.org/fhir/v3/vs/Ethnicity&quot;
+          }
+        }
+      }
+    },
+    {
+      &quot;code&quot;: &quot;county&quot;,
+      &quot;display&quot;: &quot;Name of county&quot;,
+      &quot;contextType&quot;: &quot;datatype&quot;,
+      &quot;context&quot;: [
+        &quot;Address&quot;
+      ],
+      &quot;definition&quot;: {
+        &quot;short&quot;: &quot;Name of county&quot;,
+        &quot;formal&quot;: &quot;Name of county.&quot;,
+        &quot;min&quot;: &quot;0&quot;,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;string&quot;
+          }
+        ],
+        &quot;mustSupport&quot;: false,
+        &quot;isModifier&quot;: false
+      }
+    }
+  ]
+}</pre>
+</div>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+ <title>Example Instance for v2 Order status</title>
+ <link rel="Stylesheet" href="../../fhir.css" type="text/css" media="screen"/>
+</head>
+<body>
+<p>&nbsp;</p>
+<div class="example">
+<p>FHIR Value set/code system definition for HL7 v2 table 0038 ( Order status)</p>
+<p><a href="v2-0038.json">Raw JSON</a></p>
+<pre class="json">
+{
+  &quot;resourceType&quot;: &quot;ValueSet&quot;,
+  &quot;text&quot;: {
+    &quot;status&quot;: &quot;additional&quot;,
+    &quot;div&quot;: &quot;&lt;div&gt;&lt;p&gt;Order status&lt;/p&gt;\r\n&lt;table class=\&quot;grid\&quot;&gt;\r\n &lt;tr&gt;&lt;td&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Description&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Version&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;A&lt;a name=\&quot;A\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Some, but not all, results available&lt;/td&gt;&lt;td&gt;added v2.3&lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;CA&lt;a name=\&quot;CA\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Order was canceled&lt;/td&gt;&lt;td&gt;from v2.1&lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;CM&lt;a name=\&quot;CM\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Order is completed&lt;/td&gt;&lt;td&gt;from v2.1&lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;DC&lt;a name=\&quot;DC\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Order was discontinued&lt;/td&gt;&lt;td&gt;from v2.1&lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;ER&lt;a name=\&quot;ER\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Error, order not found&lt;/td&gt;&lt;td&gt;from v2.1&lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;HD&lt;a name=\&quot;HD\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Order is on hold&lt;/td&gt;&lt;td&gt;from v2.1&lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;IP&lt;a name=\&quot;IP\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;In process, unspecified&lt;/td&gt;&lt;td&gt;from v2.1&lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;RP&lt;a name=\&quot;RP\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Order has been replaced&lt;/td&gt;&lt;td&gt;added v2.2&lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;SC&lt;a name=\&quot;SC\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;In process, scheduled&lt;/td&gt;&lt;td&gt;from v2.1&lt;/td&gt;&lt;/tr&gt;\r\n&lt;/table&gt;\r\n&lt;/div&gt;&quot;
+  },
+  &quot;identifier&quot;: &quot;http://hl7.org/fhir/v2/vs/0038&quot;,
+  &quot;name&quot;: &quot;v2 Order status&quot;,
+  &quot;publisher&quot;: &quot;HL7, Inc&quot;,
+  &quot;telecom&quot;: [
+    {
+      &quot;system&quot;: &quot;url&quot;,
+      &quot;value&quot;: &quot;http://hl7.org&quot;
+    }
+  ],
+  &quot;description&quot;: &quot;FHIR Value set/code system definition for HL7 v2 table 0038 ( Order status)&quot;,
+  &quot;status&quot;: &quot;active&quot;,
+  &quot;date&quot;: &quot;2011-01-28&quot;,
+  &quot;define&quot;: {
+    &quot;system&quot;: &quot;http://hl7.org/fhir/v2/0038&quot;,
+    &quot;caseSensitive&quot;: true,
+    &quot;concept&quot;: [
+      {
+        &quot;code&quot;: &quot;A&quot;,
+        &quot;display&quot;: &quot;Some, but not all, results available&quot;
+      },
+      {
+        &quot;code&quot;: &quot;CA&quot;,
+        &quot;display&quot;: &quot;Order was canceled&quot;
+      },
+      {
+        &quot;code&quot;: &quot;CM&quot;,
+        &quot;display&quot;: &quot;Order is completed&quot;
+      },
+      {
+        &quot;code&quot;: &quot;DC&quot;,
+        &quot;display&quot;: &quot;Order was discontinued&quot;
+      },
+      {
+        &quot;code&quot;: &quot;ER&quot;,
+        &quot;display&quot;: &quot;Error, order not found&quot;
+      },
+      {
+        &quot;code&quot;: &quot;HD&quot;,
+        &quot;display&quot;: &quot;Order is on hold&quot;
+      },
+      {
+        &quot;code&quot;: &quot;IP&quot;,
+        &quot;display&quot;: &quot;In process, unspecified&quot;
+      },
+      {
+        &quot;code&quot;: &quot;RP&quot;,
+        &quot;display&quot;: &quot;Order has been replaced&quot;
+      },
+      {
+        &quot;code&quot;: &quot;SC&quot;,
+        &quot;display&quot;: &quot;In process, scheduled&quot;
+      }
+    ]
+  }
+}</pre>
+</div>
+</body>
+</html>

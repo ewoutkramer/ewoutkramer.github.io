@@ -1,0 +1,124 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+ <title>Example Instance for valueset-referencerange-meaning</title>
+ <link rel="Stylesheet" href="fhir.css" type="text/css" media="screen"/>
+</head>
+<body>
+<p>&nbsp;</p>
+<div class="example">
+<p>Definition for Value SetObservation Reference Range Meaning Codes</p>
+<p><a href="valueset-referencerange-meaning.json">Raw JSON</a></p>
+<pre class="json">
+{
+  &quot;resourceType&quot;: &quot;ValueSet&quot;,
+  &quot;text&quot;: {
+    &quot;status&quot;: &quot;generated&quot;,
+    &quot;div&quot;: &quot;&lt;div&gt;&lt;h2&gt;Observation Reference Range Meaning Codes&lt;/h2&gt;&lt;p&gt;This value set defines a set of codes that can be used to indicate the meaning/use of a reference range&lt;/p&gt;&lt;p&gt;This value set defines its own terms in the system http://hl7.org/fhir/referencerange-meaning&lt;/p&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Definition&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;type&lt;a name=\&quot;type\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;td&gt;General types of reference range&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;..normal&lt;a name=\&quot;normal\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Normal Range&lt;/td&gt;&lt;td&gt;Based on 95th percentile for the relevant control population&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;..recommended&lt;a name=\&quot;recommended\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Recommended Range&lt;/td&gt;&lt;td&gt;The range that is recommended by a relevant professional body&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;..treatment&lt;a name=\&quot;treatment\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Treatment Range&lt;/td&gt;&lt;td&gt;The range at which treatment would/should be considered&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;..therapeutic&lt;a name=\&quot;therapeutic\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Therapeutic Desired Level&lt;/td&gt;&lt;td&gt;The optimal range for best therapeutic outcomes&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;....pre&lt;a name=\&quot;pre\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Pre Therapeutic Desired Level&lt;/td&gt;&lt;td&gt;The optimal range for best therapeutic outcomes for a specimen taken immediately before administration&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;....post&lt;a name=\&quot;post\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Post Therapeutic Desired Level&lt;/td&gt;&lt;td&gt;The optimal range for best therapeutic outcomes for a specimen taken immediately after administration&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;endocrine&lt;a name=\&quot;endocrine\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Endocrine related states that change the expected value&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;..pre-puberty&lt;a name=\&quot;pre-puberty\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Pre-Puberty&lt;/td&gt;&lt;td&gt;An expected range in an individual prior to puberty&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;..follicular&lt;a name=\&quot;follicular\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Follicular Stage&lt;/td&gt;&lt;td&gt;An expected range in an individual during the follicular stage of the cycle&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;..midcycle&lt;a name=\&quot;midcycle\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;MidCycle&lt;/td&gt;&lt;td&gt;An expected range in an individual during the follicular stage of the cycle&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;..luteal&lt;a name=\&quot;luteal\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Luteal&lt;/td&gt;&lt;td&gt;An expected range in an individual during the luteal stage of the cycle&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;..postmeopausal&lt;a name=\&quot;postmeopausal\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Post-Menopause&lt;/td&gt;&lt;td&gt;An expected range in an individual post-menopause&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;p&gt;In addition, this value set includes codes defined in other code systems, using the following rules:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Import all the codes that are part of &lt;a href=\&quot;v3/Race/index.html\&quot;&gt;http://hl7.org/fhir/v3/vs/Race&lt;/a&gt;&lt;/li&gt;&lt;li&gt;Include these codes as defined in http://snomed.info/sct&lt;table&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Definition&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;248153007&lt;/td&gt;&lt;td&gt;Male&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;248152002&lt;/td&gt;&lt;td&gt;Female&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;77386006&lt;/td&gt;&lt;td&gt;Pregnant&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&quot;
+  },
+  &quot;identifier&quot;: &quot;http://hl7.org/fhir/vs/referencerange-meaning&quot;,
+  &quot;name&quot;: &quot;Observation Reference Range Meaning Codes&quot;,
+  &quot;publisher&quot;: &quot;FHIR Project team&quot;,
+  &quot;telecom&quot;: [
+    {
+      &quot;system&quot;: &quot;url&quot;,
+      &quot;value&quot;: &quot;http://hl7.org/fhir&quot;
+    }
+  ],
+  &quot;description&quot;: &quot;This value set defines a set of codes that can be used to indicate the meaning/use of a reference range&quot;,
+  &quot;status&quot;: &quot;draft&quot;,
+  &quot;define&quot;: {
+    &quot;system&quot;: &quot;http://hl7.org/fhir/referencerange-meaning&quot;,
+    &quot;caseSensitive&quot;: true,
+    &quot;concept&quot;: [
+      {
+        &quot;code&quot;: &quot;type&quot;,
+        &quot;abstract&quot;: true,
+        &quot;definition&quot;: &quot;General types of reference range&quot;,
+        &quot;concept&quot;: [
+          {
+            &quot;code&quot;: &quot;normal&quot;,
+            &quot;display&quot;: &quot;Normal Range&quot;,
+            &quot;definition&quot;: &quot;Based on 95th percentile for the relevant control population&quot;
+          },
+          {
+            &quot;code&quot;: &quot;recommended&quot;,
+            &quot;display&quot;: &quot;Recommended Range&quot;,
+            &quot;definition&quot;: &quot;The range that is recommended by a relevant professional body&quot;
+          },
+          {
+            &quot;code&quot;: &quot;treatment&quot;,
+            &quot;display&quot;: &quot;Treatment Range&quot;,
+            &quot;definition&quot;: &quot;The range at which treatment would/should be considered&quot;
+          },
+          {
+            &quot;code&quot;: &quot;therapeutic&quot;,
+            &quot;display&quot;: &quot;Therapeutic Desired Level&quot;,
+            &quot;definition&quot;: &quot;The optimal range for best therapeutic outcomes&quot;,
+            &quot;concept&quot;: [
+              {
+                &quot;code&quot;: &quot;pre&quot;,
+                &quot;display&quot;: &quot;Pre Therapeutic Desired Level&quot;,
+                &quot;definition&quot;: &quot;The optimal range for best therapeutic outcomes for a specimen taken immediately before administration&quot;
+              },
+              {
+                &quot;code&quot;: &quot;post&quot;,
+                &quot;display&quot;: &quot;Post Therapeutic Desired Level&quot;,
+                &quot;definition&quot;: &quot;The optimal range for best therapeutic outcomes for a specimen taken immediately after administration&quot;
+              }
+            ]
+          }
+        ]
+      },
+      {
+        &quot;code&quot;: &quot;endocrine&quot;,
+        &quot;abstract&quot;: true,
+        &quot;definition&quot;: &quot;Endocrine related states that change the expected value&quot;,
+        &quot;concept&quot;: [
+          {
+            &quot;code&quot;: &quot;pre-puberty&quot;,
+            &quot;display&quot;: &quot;Pre-Puberty&quot;,
+            &quot;definition&quot;: &quot;An expected range in an individual prior to puberty&quot;
+          },
+          {
+            &quot;code&quot;: &quot;follicular&quot;,
+            &quot;display&quot;: &quot;Follicular Stage&quot;,
+            &quot;definition&quot;: &quot;An expected range in an individual during the follicular stage of the cycle&quot;
+          },
+          {
+            &quot;code&quot;: &quot;midcycle&quot;,
+            &quot;display&quot;: &quot;MidCycle&quot;,
+            &quot;definition&quot;: &quot;An expected range in an individual during the follicular stage of the cycle&quot;
+          },
+          {
+            &quot;code&quot;: &quot;luteal&quot;,
+            &quot;display&quot;: &quot;Luteal&quot;,
+            &quot;definition&quot;: &quot;An expected range in an individual during the luteal stage of the cycle&quot;
+          },
+          {
+            &quot;code&quot;: &quot;postmeopausal&quot;,
+            &quot;display&quot;: &quot;Post-Menopause&quot;,
+            &quot;definition&quot;: &quot;An expected range in an individual post-menopause&quot;
+          }
+        ]
+      }
+    ]
+  },
+  &quot;compose&quot;: {
+    &quot;import&quot;: [
+      &quot;http://hl7.org/fhir/v3/vs/Race&quot;
+    ],
+    &quot;include&quot;: [
+      {
+        &quot;system&quot;: &quot;http://snomed.info/sct&quot;,
+        &quot;code&quot;: [
+          &quot;248153007&quot;,
+          &quot;248152002&quot;,
+          &quot;77386006&quot;
+        ]
+      }
+    ]
+  }
+}</pre>
+</div>
+</body>
+</html>

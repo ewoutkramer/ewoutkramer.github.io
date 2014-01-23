@@ -1,0 +1,116 @@
+﻿<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+ <title>Real-world encounter example</title>
+ <link rel="Stylesheet" href="fhir.css" type="text/css" media="screen"/>
+</head>
+<body>
+<p>&nbsp;</p>
+<div class="example">
+<p>Real-world encounter example</p>
+<p><a href="encounter-example-f001-heart.json">Raw JSON</a></p>
+<pre class="json">
+{
+  &quot;resourceType&quot;: &quot;Encounter&quot;,
+  &quot;identifier&quot;: [
+    {
+      &quot;use&quot;: &quot;official&quot;,
+      &quot;system&quot;: &quot;http://www.amc.nl/zorgportal/identifiers/visits&quot;,
+      &quot;value&quot;: &quot;v1451&quot;
+    }
+  ],
+  &quot;status&quot;: &quot;finished&quot;,
+  &quot;class&quot;: &quot;outpatient&quot;,
+  &quot;type&quot;: [
+    {
+      &quot;coding&quot;: [
+        {
+          &quot;system&quot;: &quot;http://snomed.info/sct&quot;,
+          &quot;code&quot;: &quot;270427003&quot;,
+          &quot;display&quot;: &quot;Patient-initiated encounter&quot;
+        }
+      ]
+    }
+  ],
+  &quot;subject&quot;: {
+    &quot;reference&quot;: &quot;Patient/f001&quot;,
+    &quot;display&quot;: &quot;P. van de Heuvel&quot;
+  },
+  &quot;participant&quot;: [
+    {
+      &quot;individual&quot;: {
+        &quot;reference&quot;: &quot;Practitioner/f002&quot;,
+        &quot;display&quot;: &quot;P. Voigt&quot;
+      }
+    }
+  ],
+  &quot;length&quot;: {
+    &quot;value&quot;: &quot;140&quot;,
+    &quot;units&quot;: &quot;min&quot;,
+    &quot;system&quot;: &quot;http://unitsofmeasure.org&quot;,
+    &quot;code&quot;: &quot;min&quot;
+  },
+  &quot;reason&quot;: {
+    &quot;coding&quot;: [
+      {
+        &quot;system&quot;: &quot;http://snomed.info/sct&quot;,
+        &quot;code&quot;: &quot;34068001&quot;,
+        &quot;display&quot;: &quot;Heart valve replacement&quot;
+      }
+    ]
+  },
+  &quot;priority&quot;: {
+    &quot;coding&quot;: [
+      {
+        &quot;system&quot;: &quot;http://snomed.info/sct&quot;,
+        &quot;code&quot;: &quot;310361003&quot;,
+        &quot;display&quot;: &quot;Non-urgent cardiological admission&quot;
+      }
+    ]
+  },
+  &quot;hospitalization&quot;: {
+    &quot;preAdmissionIdentifier&quot;: {
+      &quot;use&quot;: &quot;official&quot;,
+      &quot;system&quot;: &quot;http://www.amc.nl/zorgportal/identifiers/pre-admissions&quot;,
+      &quot;value&quot;: &quot;93042&quot;
+    },
+    &quot;admitSource&quot;: {
+      &quot;coding&quot;: [
+        {
+          &quot;system&quot;: &quot;http://snomed.info/sct&quot;,
+          &quot;code&quot;: &quot;305956004&quot;,
+          &quot;display&quot;: &quot;Referral by physician&quot;
+        }
+      ]
+    },
+    &quot;period&quot;: {
+      &quot;start&quot;: &quot;2011-06-26&quot;,
+      &quot;end&quot;: &quot;2011-06-30&quot;
+    },
+    &quot;accomodation&quot;: [
+      {
+        &quot;period&quot;: {
+          &quot;start&quot;: &quot;2011-06-26&quot;,
+          &quot;end&quot;: &quot;2011-07-01&quot;
+        }
+      }
+    ],
+    &quot;dischargeDisposition&quot;: {
+      &quot;coding&quot;: [
+        {
+          &quot;system&quot;: &quot;http://snomed.info/sct&quot;,
+          &quot;code&quot;: &quot;306689006&quot;,
+          &quot;display&quot;: &quot;Discharge to home&quot;
+        }
+      ]
+    },
+    &quot;reAdmission&quot;: false
+  },
+  &quot;serviceProvider&quot;: {
+    &quot;reference&quot;: &quot;Organization/f001&quot;,
+    &quot;display&quot;: &quot;Burgers University Medical Center&quot;
+  }
+}
+</pre>
+</div>
+</body>
+</html>

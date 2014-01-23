@@ -1,0 +1,75 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+ <title>Example Instance for v2 Telecommunication Use Code</title>
+ <link rel="Stylesheet" href="../../fhir.css" type="text/css" media="screen"/>
+</head>
+<body>
+<p>&nbsp;</p>
+<div class="example">
+<p>FHIR Value set/code system definition for HL7 v2 table 0201 ( Telecommunication Use Code)</p>
+<p><a href="v2-0201.json">Raw JSON</a></p>
+<pre class="json">
+{
+  &quot;resourceType&quot;: &quot;ValueSet&quot;,
+  &quot;text&quot;: {
+    &quot;status&quot;: &quot;additional&quot;,
+    &quot;div&quot;: &quot;&lt;div&gt;&lt;p&gt;Telecommunication Use Code&lt;/p&gt;\r\n&lt;table class=\&quot;grid\&quot;&gt;\r\n &lt;tr&gt;&lt;td&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Description&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Version&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;ASN&lt;a name=\&quot;ASN\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Answering Service Number&lt;/td&gt;&lt;td&gt;added v2.3&lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;BPN&lt;a name=\&quot;BPN\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Beeper Number&lt;/td&gt;&lt;td&gt;added v2.3.1&lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;EMR&lt;a name=\&quot;EMR\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Emergency Number&lt;/td&gt;&lt;td&gt;added v2.3&lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;NET&lt;a name=\&quot;NET\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Network (email) Address&lt;/td&gt;&lt;td&gt;added v2.3&lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;ORN&lt;a name=\&quot;ORN\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Other Residence Number&lt;/td&gt;&lt;td&gt;added v2.3&lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;PRN&lt;a name=\&quot;PRN\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Primary Residence Number&lt;/td&gt;&lt;td&gt;added v2.3&lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;PRS&lt;a name=\&quot;PRS\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Personal&lt;/td&gt;&lt;td&gt;added v2.6&lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;VHN&lt;a name=\&quot;VHN\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Vacation Home Number&lt;/td&gt;&lt;td&gt;added v2.3&lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;WPN&lt;a name=\&quot;WPN\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Work Number&lt;/td&gt;&lt;td&gt;added v2.3&lt;/td&gt;&lt;/tr&gt;\r\n&lt;/table&gt;\r\n&lt;/div&gt;&quot;
+  },
+  &quot;identifier&quot;: &quot;http://hl7.org/fhir/v2/vs/0201&quot;,
+  &quot;name&quot;: &quot;v2 Telecommunication Use Code&quot;,
+  &quot;publisher&quot;: &quot;HL7, Inc&quot;,
+  &quot;telecom&quot;: [
+    {
+      &quot;system&quot;: &quot;url&quot;,
+      &quot;value&quot;: &quot;http://hl7.org&quot;
+    }
+  ],
+  &quot;description&quot;: &quot;FHIR Value set/code system definition for HL7 v2 table 0201 ( Telecommunication Use Code)&quot;,
+  &quot;status&quot;: &quot;active&quot;,
+  &quot;date&quot;: &quot;2011-01-28&quot;,
+  &quot;define&quot;: {
+    &quot;system&quot;: &quot;http://hl7.org/fhir/v2/0201&quot;,
+    &quot;caseSensitive&quot;: true,
+    &quot;concept&quot;: [
+      {
+        &quot;code&quot;: &quot;ASN&quot;,
+        &quot;display&quot;: &quot;Answering Service Number&quot;
+      },
+      {
+        &quot;code&quot;: &quot;BPN&quot;,
+        &quot;display&quot;: &quot;Beeper Number&quot;
+      },
+      {
+        &quot;code&quot;: &quot;EMR&quot;,
+        &quot;display&quot;: &quot;Emergency Number&quot;
+      },
+      {
+        &quot;code&quot;: &quot;NET&quot;,
+        &quot;display&quot;: &quot;Network (email) Address&quot;
+      },
+      {
+        &quot;code&quot;: &quot;ORN&quot;,
+        &quot;display&quot;: &quot;Other Residence Number&quot;
+      },
+      {
+        &quot;code&quot;: &quot;PRN&quot;,
+        &quot;display&quot;: &quot;Primary Residence Number&quot;
+      },
+      {
+        &quot;code&quot;: &quot;PRS&quot;,
+        &quot;display&quot;: &quot;Personal&quot;
+      },
+      {
+        &quot;code&quot;: &quot;VHN&quot;,
+        &quot;display&quot;: &quot;Vacation Home Number&quot;
+      },
+      {
+        &quot;code&quot;: &quot;WPN&quot;,
+        &quot;display&quot;: &quot;Work Number&quot;
+      }
+    ]
+  }
+}</pre>
+</div>
+</body>
+</html>

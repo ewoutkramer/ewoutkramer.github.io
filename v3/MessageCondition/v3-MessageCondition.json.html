@@ -1,0 +1,105 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+ <title>Example Instance for v3 Code System MessageCondition</title>
+ <link rel="Stylesheet" href="../../fhir.css" type="text/css" media="screen"/>
+</head>
+<body>
+<p>&nbsp;</p>
+<div class="example">
+<p>  Deprecation Comment:
+Deprecated as per 11/2008 Harmonization cleanup; internal and obsolete HL7 usage, no longer used.This isn't referenced in the RIM and is a copy of old v2 codes.  It's superseded by AcknowledgementDetailCode</p>
+<p><a href="v3-MessageCondition.json">Raw JSON</a></p>
+<pre class="json">
+{
+  &quot;resourceType&quot;: &quot;ValueSet&quot;,
+  &quot;text&quot;: {
+    &quot;status&quot;: &quot;generated&quot;,
+    &quot;div&quot;: &quot;&lt;div&gt;&lt;p&gt;Release Date: 2013-12-07&lt;/p&gt;\r\n&lt;h2&gt;Description&lt;/h2&gt;\r\n&lt;p&gt;\n                  \n                     Deprecation Comment: Deprecated as per 11/2008 Harmonization cleanup; internal and obsolete HL7 usage, no longer used.This isn't referenced in the RIM and is a copy of old v2 codes.  It's superseded by AcknowledgementDetailCode &lt;br/&gt;\r\n\n               &lt;/p&gt;\r\n&lt;hr/&gt;\r\n&lt;table class=\&quot;grid\&quot;&gt;\r\n &lt;tr&gt;&lt;td&gt;&lt;b&gt;Level&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Definition&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;0&lt;a name=\&quot;0\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Message accepted&lt;/td&gt;&lt;td&gt;\n                        Success. Optional, as in version 2.x the AA conveys success.  Used for systems that must always return a status code.&lt;br/&gt;\r\n\n                     &lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;100&lt;a name=\&quot;100\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Sequence error&lt;/td&gt;&lt;td&gt;\n                        The message elements were not in the proper order, or required elements are missing.&lt;br/&gt;\r\n\n                     &lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;101&lt;a name=\&quot;101\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Missing required element.&lt;/td&gt;&lt;td&gt;\n                        A required message element is missing.&lt;br/&gt;\r\n\n                     &lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;102&lt;a name=\&quot;102\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Data type error&lt;/td&gt;&lt;td&gt;\n                        An element is represented by a data type that is not compatible with that which is allowable.&lt;br/&gt;\r\n\n                     &lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;103&lt;a name=\&quot;103\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Table value not found&lt;/td&gt;&lt;td&gt;\n                        The value received for a common HL7 or user defined table was not found to match allowable table values.&lt;br/&gt;\r\n\n                     &lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;200&lt;a name=\&quot;200\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Unsupported message type&lt;/td&gt;&lt;td&gt;\n                        The message type is not supported.&lt;br/&gt;\r\n\n                     &lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;201&lt;a name=\&quot;201\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Unsupported interaction&lt;/td&gt;&lt;td&gt;\n                        The identified interaction is not supported.&lt;br/&gt;\r\n\n                     &lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;202&lt;a name=\&quot;202\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Unsupported ProcessingID&lt;/td&gt;&lt;td&gt;\n                        The ProcessingID is not supported.&lt;br/&gt;\r\n\n                     &lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;203&lt;a name=\&quot;203\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Unsupported VersionID&lt;/td&gt;&lt;td&gt;\n                        The VersionID is not supported.&lt;br/&gt;\r\n\n                     &lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;204&lt;a name=\&quot;204\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Unknown key identifier&lt;/td&gt;&lt;td&gt;\n                        The identifier for a patient, order, etc. was not found.  Occurs for transactions other than additions.&lt;br/&gt;\r\n\n                     &lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;205&lt;a name=\&quot;205\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Duplicate key identifier&lt;/td&gt;&lt;td&gt;\n                        The identifier for a patient, order, etc. already exists.  Occurs in response to addition transactions (e.g. new Admit, new Order, etc.).&lt;br/&gt;\r\n\n                     &lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;206&lt;a name=\&quot;206\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Application record locked&lt;/td&gt;&lt;td&gt;\n                        The transaction could not be performed at the application storage level, e.g. database locked.&lt;br/&gt;\r\n\n                     &lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;207&lt;a name=\&quot;207\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Application internal error&lt;/td&gt;&lt;td&gt;\n                        A catchall for internal errors not explicitly covered by other error codes.&lt;br/&gt;\r\n\n                     &lt;/td&gt;&lt;/tr&gt;\r\n&lt;/table&gt;\r\n&lt;/div&gt;&quot;
+  },
+  &quot;identifier&quot;: &quot;http://hl7.org/fhir/v3/vs/MessageCondition&quot;,
+  &quot;name&quot;: &quot;v3 Code System MessageCondition&quot;,
+  &quot;publisher&quot;: &quot;HL7, Inc&quot;,
+  &quot;telecom&quot;: [
+    {
+      &quot;system&quot;: &quot;url&quot;,
+      &quot;value&quot;: &quot;http://hl7.org&quot;
+    }
+  ],
+  &quot;description&quot;: &quot;  Deprecation Comment:\r\nDeprecated as per 11/2008 Harmonization cleanup; internal and obsolete HL7 usage, no longer used.This isn't referenced in the RIM and is a copy of old v2 codes.  It's superseded by AcknowledgementDetailCode&quot;,
+  &quot;status&quot;: &quot;active&quot;,
+  &quot;date&quot;: &quot;2013-12-07T00:00:00-06:00&quot;,
+  &quot;define&quot;: {
+    &quot;system&quot;: &quot;http://hl7.org/fhir/v3/MessageCondition&quot;,
+    &quot;caseSensitive&quot;: true,
+    &quot;concept&quot;: [
+      {
+        &quot;code&quot;: &quot;0&quot;,
+        &quot;display&quot;: &quot;Message accepted&quot;,
+        &quot;definition&quot;: &quot;Success. Optional, as in version 2.x the AA conveys success.  Used for systems that must always return a status code.&quot;
+      },
+      {
+        &quot;code&quot;: &quot;100&quot;,
+        &quot;display&quot;: &quot;Sequence error&quot;,
+        &quot;definition&quot;: &quot;The message elements were not in the proper order, or required elements are missing.&quot;
+      },
+      {
+        &quot;code&quot;: &quot;101&quot;,
+        &quot;display&quot;: &quot;Missing required element.&quot;,
+        &quot;definition&quot;: &quot;A required message element is missing.&quot;
+      },
+      {
+        &quot;code&quot;: &quot;102&quot;,
+        &quot;display&quot;: &quot;Data type error&quot;,
+        &quot;definition&quot;: &quot;An element is represented by a data type that is not compatible with that which is allowable.&quot;
+      },
+      {
+        &quot;code&quot;: &quot;103&quot;,
+        &quot;display&quot;: &quot;Table value not found&quot;,
+        &quot;definition&quot;: &quot;The value received for a common HL7 or user defined table was not found to match allowable table values.&quot;
+      },
+      {
+        &quot;code&quot;: &quot;200&quot;,
+        &quot;display&quot;: &quot;Unsupported message type&quot;,
+        &quot;definition&quot;: &quot;The message type is not supported.&quot;
+      },
+      {
+        &quot;code&quot;: &quot;201&quot;,
+        &quot;display&quot;: &quot;Unsupported interaction&quot;,
+        &quot;definition&quot;: &quot;The identified interaction is not supported.&quot;
+      },
+      {
+        &quot;code&quot;: &quot;202&quot;,
+        &quot;display&quot;: &quot;Unsupported ProcessingID&quot;,
+        &quot;definition&quot;: &quot;The ProcessingID is not supported.&quot;
+      },
+      {
+        &quot;code&quot;: &quot;203&quot;,
+        &quot;display&quot;: &quot;Unsupported VersionID&quot;,
+        &quot;definition&quot;: &quot;The VersionID is not supported.&quot;
+      },
+      {
+        &quot;code&quot;: &quot;204&quot;,
+        &quot;display&quot;: &quot;Unknown key identifier&quot;,
+        &quot;definition&quot;: &quot;The identifier for a patient, order, etc. was not found.  Occurs for transactions other than additions.&quot;
+      },
+      {
+        &quot;code&quot;: &quot;205&quot;,
+        &quot;display&quot;: &quot;Duplicate key identifier&quot;,
+        &quot;definition&quot;: &quot;The identifier for a patient, order, etc. already exists.  Occurs in response to addition transactions (e.g. new Admit, new Order, etc.).&quot;
+      },
+      {
+        &quot;code&quot;: &quot;206&quot;,
+        &quot;display&quot;: &quot;Application record locked&quot;,
+        &quot;definition&quot;: &quot;The transaction could not be performed at the application storage level, e.g. database locked.&quot;
+      },
+      {
+        &quot;code&quot;: &quot;207&quot;,
+        &quot;display&quot;: &quot;Application internal error&quot;,
+        &quot;definition&quot;: &quot;A catchall for internal errors not explicitly covered by other error codes.&quot;
+      }
+    ]
+  }
+}</pre>
+</div>
+</body>
+</html>

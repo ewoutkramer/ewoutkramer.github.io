@@ -1,0 +1,47 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+ <title>Example Instance for InformationSensitivityPolicy</title>
+ <link rel="Stylesheet" href="../../fhir.css" type="text/css" media="screen"/>
+</head>
+<body>
+<p>&nbsp;</p>
+<div class="example">
+<p> Sensitivity codes are not useful for interoperability outside of a policy domain because sensitivity policies are typically localized and vary drastically across policy domains even for the same information category because of differing organizational business rules, security policies, and jurisdictional requirements.  For example, an &quot;employee&quot; sensitivity code would make little sense for use outside of a policy domain.   &quot;Taboo&quot; would rarely be useful outside of a policy domain unless there are jurisdictional requirements requiring that a provider disclose sensitive information to a patient directly. Sensitivity codes may be more appropriate in a legacy system's Master Files in order to notify those who access a patient's orders and observations about the sensitivity policies that apply.  Newer systems may have a security engine that uses a sensitivity policy's criteria directly. The specializable Sensitivity Act.code may be useful in some scenarious if used in combination with a sensitivity identifier and/or Act.title. (OID = 2.16.840.1.113883.1.11.20428)</p>
+<p><a href="v3-InformationSensitivityPolicy.json">Raw JSON</a></p>
+<pre class="json">
+{
+  &quot;resourceType&quot;: &quot;ValueSet&quot;,
+  &quot;text&quot;: {
+    &quot;status&quot;: &quot;generated&quot;,
+    &quot;div&quot;: &quot;&lt;div&gt;&lt;h2&gt;InformationSensitivityPolicy&lt;/h2&gt;&lt;p&gt; Sensitivity codes are not useful for interoperability outside of a policy domain because sensitivity policies are typically localized and vary drastically across policy domains even for the same information category because of differing organizational business rules, security policies, and jurisdictional requirements.  For example, an &amp;quot;employee&amp;quot; sensitivity code would make little sense for use outside of a policy domain.   &amp;quot;Taboo&amp;quot; would rarely be useful outside of a policy domain unless there are jurisdictional requirements requiring that a provider disclose sensitive information to a patient directly. Sensitivity codes may be more appropriate in a legacy system's Master Files in order to notify those who access a patient's orders and observations about the sensitivity policies that apply.  Newer systems may have a security engine that uses a sensitivity policy's criteria directly. The specializable Sensitivity Act.code may be useful in some scenarious if used in combination with a sensitivity identifier and/or Act.title. (OID = 2.16.840.1.113883.1.11.20428)&lt;/p&gt;&lt;p&gt;This value set includes codes defined in other code systems, using the following rules:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Include codes from &lt;a href=\&quot;../../../v3/ActCode/index.html\&quot;&gt;http://hl7.org/fhir/v3/ActCode&lt;/a&gt; where concept  is-a  &lt;a href=\&quot;../../../v3/ActCode/index.html#_InformationSensitivityPolicy\&quot;&gt;_InformationSensitivityPolicy&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&quot;
+  },
+  &quot;identifier&quot;: &quot;http://hl7.org/fhir/v3/vs/InformationSensitivityPolicy&quot;,
+  &quot;version&quot;: &quot;2013-12-07&quot;,
+  &quot;name&quot;: &quot;InformationSensitivityPolicy&quot;,
+  &quot;publisher&quot;: &quot;HL7 v3&quot;,
+  &quot;telecom&quot;: [
+    {
+      &quot;system&quot;: &quot;url&quot;,
+      &quot;value&quot;: &quot;http://www.hl7.org&quot;
+    }
+  ],
+  &quot;description&quot;: &quot; Sensitivity codes are not useful for interoperability outside of a policy domain because sensitivity policies are typically localized and vary drastically across policy domains even for the same information category because of differing organizational business rules, security policies, and jurisdictional requirements.  For example, an \&quot;employee\&quot; sensitivity code would make little sense for use outside of a policy domain.   \&quot;Taboo\&quot; would rarely be useful outside of a policy domain unless there are jurisdictional requirements requiring that a provider disclose sensitive information to a patient directly. Sensitivity codes may be more appropriate in a legacy system's Master Files in order to notify those who access a patient's orders and observations about the sensitivity policies that apply.  Newer systems may have a security engine that uses a sensitivity policy's criteria directly. The specializable Sensitivity Act.code may be useful in some scenarious if used in combination with a sensitivity identifier and/or Act.title. (OID = 2.16.840.1.113883.1.11.20428)&quot;,
+  &quot;status&quot;: &quot;active&quot;,
+  &quot;compose&quot;: {
+    &quot;include&quot;: [
+      {
+        &quot;system&quot;: &quot;http://hl7.org/fhir/v3/ActCode&quot;,
+        &quot;filter&quot;: [
+          {
+            &quot;property&quot;: &quot;concept&quot;,
+            &quot;op&quot;: &quot;is-a&quot;,
+            &quot;value&quot;: &quot;_InformationSensitivityPolicy&quot;
+          }
+        ]
+      }
+    ]
+  }
+}</pre>
+</div>
+</body>
+</html>

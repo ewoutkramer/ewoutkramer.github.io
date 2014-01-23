@@ -1,0 +1,80 @@
+﻿<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+ <title>Real-world procedure example</title>
+ <link rel="Stylesheet" href="fhir.css" type="text/css" media="screen"/>
+</head>
+<body>
+<p>&nbsp;</p>
+<div class="example">
+<p>Real-world procedure example</p>
+<p><a href="procedure-example-f001-heart.json">Raw JSON</a></p>
+<pre class="json">
+{
+  &quot;resourceType&quot;: &quot;Procedure&quot;,
+  &quot;subject&quot;: {
+    &quot;reference&quot;: &quot;Patient/f001&quot;,
+    &quot;display&quot;: &quot;P. van de Heuvel&quot;
+  },
+  &quot;type&quot;: {
+    &quot;coding&quot;: [
+      {
+        &quot;system&quot;: &quot;http://snomed.info/sct&quot;,
+        &quot;code&quot;: &quot;34068001&quot;,
+        &quot;display&quot;: &quot;Heart valve replacement&quot;
+      }
+    ]
+  },
+  &quot;bodySite&quot;: [
+    {
+      &quot;coding&quot;: [
+        {
+          &quot;system&quot;: &quot;http://snomed.info/sct&quot;,
+          &quot;code&quot;: &quot;17401000&quot;,
+          &quot;display&quot;: &quot;Heart valve structure&quot;
+        }
+      ]
+    }
+  ],
+  &quot;indication&quot;: [
+    {
+      &quot;text&quot;: &quot;Heart valve disorder&quot;
+    }
+  ],
+  &quot;performer&quot;: [
+    {
+      &quot;person&quot;: {
+        &quot;reference&quot;: &quot;Practitioner/f002&quot;,
+        &quot;display&quot;: &quot;P. Voigt&quot;
+      },
+      &quot;role&quot;: {
+        &quot;coding&quot;: [
+          {
+            &quot;system&quot;: &quot;urn:oid:2.16.840.1.113883.2.4.15.111&quot;,
+            &quot;code&quot;: &quot;01.000&quot;,
+            &quot;display&quot;: &quot;Arts&quot;
+          }
+        ],
+        &quot;text&quot;: &quot;Care role&quot;
+      }
+    }
+  ],
+  &quot;date&quot;: {
+    &quot;start&quot;: &quot;2011-06-26&quot;,
+    &quot;end&quot;: &quot;2011-06-27&quot;
+  },
+  &quot;encounter&quot;: {
+    &quot;reference&quot;: &quot;Encounter/f001&quot;
+  },
+  &quot;outcome&quot;: &quot;improved blood circulation&quot;,
+  &quot;report&quot;: [
+    {
+      &quot;reference&quot;: &quot;DiagnosticReport/f001&quot;,
+      &quot;display&quot;: &quot;Lab results blood test&quot;
+    }
+  ],
+  &quot;followUp&quot;: &quot;described in care plan&quot;
+}
+</pre>
+</div>
+</body>
+</html>
