@@ -1,0 +1,67 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+ <title>Example Instance for v3 Code System SubstitutionCondition</title>
+ <link rel="Stylesheet" href="../../fhir.css" type="text/css" media="screen"/>
+</head>
+<body>
+<p>&nbsp;</p>
+<div class="example">
+<p> Identifies what sort of change is permitted or has occurred between the item that was ordered/requested and the one that was/will be provided.</p>
+<p><a href="v3-SubstitutionCondition.json">Raw JSON</a></p>
+<pre class="json">
+{
+  &quot;resourceType&quot;: &quot;ValueSet&quot;,
+  &quot;text&quot;: {
+    &quot;status&quot;: &quot;generated&quot;,
+    &quot;div&quot;: &quot;&lt;div&gt;&lt;p&gt;Release Date: 2013-12-07&lt;/p&gt;\r\n&lt;h2&gt;Description&lt;/h2&gt;\r\n&lt;p&gt;\n                  Identifies what sort of change is permitted or has occurred between the item that was ordered/requested and the one that was/will be provided.&lt;br/&gt;\r\n\n               &lt;/p&gt;\r\n&lt;hr/&gt;\r\n&lt;table class=\&quot;grid\&quot;&gt;\r\n &lt;tr&gt;&lt;td&gt;&lt;b&gt;Level&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Definition&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;&lt;span style=\&quot;color: grey\&quot;&gt;&lt;i&gt;(_Conditional)&lt;/i&gt;&lt;/span&gt;&lt;/td&gt;&lt;td&gt;&lt;a name=\&quot;_Conditional\&quot;&gt;&amp;nbsp;&lt;/a&gt;&lt;/td&gt;&lt;td&gt;\n                        Some conditions may be attached to an allowable substitution.  An allowable substitution is based on a match to any other attributes that may be specified.&lt;br/&gt;\r\n\n                     &lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td&gt;&amp;nbsp;&amp;nbsp;CONFIRM&lt;a name=\&quot;CONFIRM\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Confirm first&lt;/td&gt;&lt;td&gt;\n                        Confirmation with Contact Person prior to making any substitutions has or will occur.&lt;br/&gt;\r\n\n                     &lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td&gt;&amp;nbsp;&amp;nbsp;NOTIFY&lt;a name=\&quot;NOTIFY\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Notify first&lt;/td&gt;&lt;td&gt;\n                        Notification to the Contact Person, prior to substitution and through normal institutional procedures, has or will be made.&lt;br/&gt;\r\n\n                     &lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;NOSUB&lt;a name=\&quot;NOSUB\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;No substitution&lt;/td&gt;&lt;td&gt;\n                        Substitution is not permitted.&lt;br/&gt;\r\n\n                     &lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;UNCOND&lt;a name=\&quot;UNCOND\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Unconditional&lt;/td&gt;&lt;td&gt;\n                        No conditions are required.&lt;br/&gt;\r\n\n                     &lt;/td&gt;&lt;/tr&gt;\r\n&lt;/table&gt;\r\n&lt;/div&gt;&quot;
+  },
+  &quot;identifier&quot;: &quot;http://hl7.org/fhir/v3/vs/SubstitutionCondition&quot;,
+  &quot;name&quot;: &quot;v3 Code System SubstitutionCondition&quot;,
+  &quot;publisher&quot;: &quot;HL7, Inc&quot;,
+  &quot;telecom&quot;: [
+    {
+      &quot;system&quot;: &quot;url&quot;,
+      &quot;value&quot;: &quot;http://hl7.org&quot;
+    }
+  ],
+  &quot;description&quot;: &quot; Identifies what sort of change is permitted or has occurred between the item that was ordered/requested and the one that was/will be provided.&quot;,
+  &quot;status&quot;: &quot;active&quot;,
+  &quot;date&quot;: &quot;2013-12-07T00:00:00-06:00&quot;,
+  &quot;define&quot;: {
+    &quot;system&quot;: &quot;http://hl7.org/fhir/v3/SubstitutionCondition&quot;,
+    &quot;caseSensitive&quot;: true,
+    &quot;concept&quot;: [
+      {
+        &quot;code&quot;: &quot;_Conditional&quot;,
+        &quot;abstract&quot;: true,
+        &quot;display&quot;: &quot;Conditional&quot;,
+        &quot;definition&quot;: &quot;Some conditions may be attached to an allowable substitution.  An allowable substitution is based on a match to any other attributes that may be specified.&quot;,
+        &quot;concept&quot;: [
+          {
+            &quot;code&quot;: &quot;CONFIRM&quot;,
+            &quot;display&quot;: &quot;Confirm first&quot;,
+            &quot;definition&quot;: &quot;Confirmation with Contact Person prior to making any substitutions has or will occur.&quot;
+          },
+          {
+            &quot;code&quot;: &quot;NOTIFY&quot;,
+            &quot;display&quot;: &quot;Notify first&quot;,
+            &quot;definition&quot;: &quot;Notification to the Contact Person, prior to substitution and through normal institutional procedures, has or will be made.&quot;
+          }
+        ]
+      },
+      {
+        &quot;code&quot;: &quot;NOSUB&quot;,
+        &quot;display&quot;: &quot;No substitution&quot;,
+        &quot;definition&quot;: &quot;Substitution is not permitted.&quot;
+      },
+      {
+        &quot;code&quot;: &quot;UNCOND&quot;,
+        &quot;display&quot;: &quot;Unconditional&quot;,
+        &quot;definition&quot;: &quot;No conditions are required.&quot;
+      }
+    ]
+  }
+}</pre>
+</div>
+</body>
+</html>

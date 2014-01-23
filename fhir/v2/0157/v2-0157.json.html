@@ -1,0 +1,99 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+ <title>Example Instance for v2 Which date/time status qualifier</title>
+ <link rel="Stylesheet" href="../../fhir.css" type="text/css" media="screen"/>
+</head>
+<body>
+<p>&nbsp;</p>
+<div class="example">
+<p>FHIR Value set/code system definition for HL7 v2 table 0157 ( Which date/time status qualifier)</p>
+<p><a href="v2-0157.json">Raw JSON</a></p>
+<pre class="json">
+{
+  &quot;resourceType&quot;: &quot;ValueSet&quot;,
+  &quot;text&quot;: {
+    &quot;status&quot;: &quot;additional&quot;,
+    &quot;div&quot;: &quot;&lt;div&gt;&lt;p&gt;Which date/time status qualifier&lt;/p&gt;\r\n&lt;table class=\&quot;grid\&quot;&gt;\r\n &lt;tr&gt;&lt;td&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Description&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Version&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;ANY&lt;a name=\&quot;ANY\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Any status&lt;/td&gt;&lt;td&gt;added v2.2, removed after v2.6&lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;CFN&lt;a name=\&quot;CFN\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Current final value, whether final or corrected&lt;/td&gt;&lt;td&gt;added v2.2, removed after v2.6&lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;COR&lt;a name=\&quot;COR\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Corrected only (no final with corrections)&lt;/td&gt;&lt;td&gt;added v2.2, removed after v2.6&lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;FIN&lt;a name=\&quot;FIN\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Final only (no corrections)&lt;/td&gt;&lt;td&gt;added v2.2, removed after v2.6&lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;PRE&lt;a name=\&quot;PRE\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Preliminary&lt;/td&gt;&lt;td&gt;added v2.2, removed after v2.6&lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;REP&lt;a name=\&quot;REP\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Report completion date/time&lt;/td&gt;&lt;td&gt;added v2.2, removed after v2.6&lt;/td&gt;&lt;/tr&gt;\r\n&lt;/table&gt;\r\n&lt;/div&gt;&quot;
+  },
+  &quot;identifier&quot;: &quot;http://hl7.org/fhir/v2/vs/0157&quot;,
+  &quot;name&quot;: &quot;v2 Which date/time status qualifier&quot;,
+  &quot;publisher&quot;: &quot;HL7, Inc&quot;,
+  &quot;telecom&quot;: [
+    {
+      &quot;system&quot;: &quot;url&quot;,
+      &quot;value&quot;: &quot;http://hl7.org&quot;
+    }
+  ],
+  &quot;description&quot;: &quot;FHIR Value set/code system definition for HL7 v2 table 0157 ( Which date/time status qualifier)&quot;,
+  &quot;status&quot;: &quot;active&quot;,
+  &quot;date&quot;: &quot;2011-01-28&quot;,
+  &quot;define&quot;: {
+    &quot;system&quot;: &quot;http://hl7.org/fhir/v2/0157&quot;,
+    &quot;caseSensitive&quot;: true,
+    &quot;concept&quot;: [
+      {
+        &quot;extension&quot;: [
+          {
+            &quot;url&quot;: &quot;http://hl7.org/fhir/Profile/tools-extensions#deprecated&quot;,
+            &quot;valueBoolean&quot;: true
+          }
+        ],
+        &quot;code&quot;: &quot;ANY&quot;,
+        &quot;display&quot;: &quot;Any status&quot;
+      },
+      {
+        &quot;extension&quot;: [
+          {
+            &quot;url&quot;: &quot;http://hl7.org/fhir/Profile/tools-extensions#deprecated&quot;,
+            &quot;valueBoolean&quot;: true
+          }
+        ],
+        &quot;code&quot;: &quot;CFN&quot;,
+        &quot;display&quot;: &quot;Current final value, whether final or corrected&quot;
+      },
+      {
+        &quot;extension&quot;: [
+          {
+            &quot;url&quot;: &quot;http://hl7.org/fhir/Profile/tools-extensions#deprecated&quot;,
+            &quot;valueBoolean&quot;: true
+          }
+        ],
+        &quot;code&quot;: &quot;COR&quot;,
+        &quot;display&quot;: &quot;Corrected only (no final with corrections)&quot;
+      },
+      {
+        &quot;extension&quot;: [
+          {
+            &quot;url&quot;: &quot;http://hl7.org/fhir/Profile/tools-extensions#deprecated&quot;,
+            &quot;valueBoolean&quot;: true
+          }
+        ],
+        &quot;code&quot;: &quot;FIN&quot;,
+        &quot;display&quot;: &quot;Final only (no corrections)&quot;
+      },
+      {
+        &quot;extension&quot;: [
+          {
+            &quot;url&quot;: &quot;http://hl7.org/fhir/Profile/tools-extensions#deprecated&quot;,
+            &quot;valueBoolean&quot;: true
+          }
+        ],
+        &quot;code&quot;: &quot;PRE&quot;,
+        &quot;display&quot;: &quot;Preliminary&quot;
+      },
+      {
+        &quot;extension&quot;: [
+          {
+            &quot;url&quot;: &quot;http://hl7.org/fhir/Profile/tools-extensions#deprecated&quot;,
+            &quot;valueBoolean&quot;: true
+          }
+        ],
+        &quot;code&quot;: &quot;REP&quot;,
+        &quot;display&quot;: &quot;Report completion date/time&quot;
+      }
+    ]
+  }
+}</pre>
+</div>
+</body>
+</html>

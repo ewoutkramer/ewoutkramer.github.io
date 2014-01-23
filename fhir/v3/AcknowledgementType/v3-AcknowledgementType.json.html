@@ -1,0 +1,70 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+ <title>Example Instance for v3 Code System AcknowledgementType</title>
+ <link rel="Stylesheet" href="../../fhir.css" type="text/css" media="screen"/>
+</head>
+<body>
+<p>&nbsp;</p>
+<div class="example">
+<p> This attribute contains an acknowledgement code as described in the HL7 message processing rules.  OpenIssue:
+Description was copied from attribute and needs to be improved to be appropriate for a code system.</p>
+<p><a href="v3-AcknowledgementType.json">Raw JSON</a></p>
+<pre class="json">
+{
+  &quot;resourceType&quot;: &quot;ValueSet&quot;,
+  &quot;text&quot;: {
+    &quot;status&quot;: &quot;generated&quot;,
+    &quot;div&quot;: &quot;&lt;div&gt;&lt;p&gt;Release Date: 2013-12-07&lt;/p&gt;\r\n&lt;h2&gt;Description&lt;/h2&gt;\r\n&lt;p&gt;\n                  This attribute contains an acknowledgement code as described in the HL7 message processing rules.&lt;br/&gt;\r\n\n                  \n                     OpenIssue: Description was copied from attribute and needs to be improved to be appropriate for a code system.&lt;br/&gt;\r\n\n               &lt;/p&gt;\r\n&lt;hr/&gt;\r\n&lt;table class=\&quot;grid\&quot;&gt;\r\n &lt;tr&gt;&lt;td&gt;&lt;b&gt;Level&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Definition&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;AA&lt;a name=\&quot;AA\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Application Acknowledgement Accept&lt;/td&gt;&lt;td&gt;\n                        Receiving application successfully processed message.&lt;br/&gt;\r\n\n                     &lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;AE&lt;a name=\&quot;AE\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Application Acknowledgement Error&lt;/td&gt;&lt;td&gt;\n                        Receiving application found error in processing message.  Sending error response with additional error detail information.&lt;br/&gt;\r\n\n                     &lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;AR&lt;a name=\&quot;AR\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Application Acknowledgement Reject&lt;/td&gt;&lt;td&gt;\n                        Receiving application failed to process message for reason unrelated to content or format.  Original message sender must decide on whether to automatically send message again.&lt;br/&gt;\r\n\n                     &lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;CA&lt;a name=\&quot;CA\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Accept Acknowledgement Commit Accept&lt;/td&gt;&lt;td&gt;\n                        Receiving message handling service accepts responsibility for passing message onto receiving application.&lt;br/&gt;\r\n\n                     &lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;CE&lt;a name=\&quot;CE\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Accept Acknowledgement Commit Error&lt;/td&gt;&lt;td&gt;\n                        Receiving message handling service cannot accept message for any other reason (e.g. message sequence number, etc.).&lt;br/&gt;\r\n\n                     &lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;CR&lt;a name=\&quot;CR\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Accept Acknowledgement Commit Reject&lt;/td&gt;&lt;td&gt;\n                        Receiving message handling service rejects message if interaction identifier, version or processing mode is incompatible with known receiving application role information.&lt;br/&gt;\r\n\n                     &lt;/td&gt;&lt;/tr&gt;\r\n&lt;/table&gt;\r\n&lt;/div&gt;&quot;
+  },
+  &quot;identifier&quot;: &quot;http://hl7.org/fhir/v3/vs/AcknowledgementType&quot;,
+  &quot;name&quot;: &quot;v3 Code System AcknowledgementType&quot;,
+  &quot;publisher&quot;: &quot;HL7, Inc&quot;,
+  &quot;telecom&quot;: [
+    {
+      &quot;system&quot;: &quot;url&quot;,
+      &quot;value&quot;: &quot;http://hl7.org&quot;
+    }
+  ],
+  &quot;description&quot;: &quot; This attribute contains an acknowledgement code as described in the HL7 message processing rules.  OpenIssue:\r\nDescription was copied from attribute and needs to be improved to be appropriate for a code system.&quot;,
+  &quot;status&quot;: &quot;active&quot;,
+  &quot;date&quot;: &quot;2013-12-07T00:00:00-06:00&quot;,
+  &quot;define&quot;: {
+    &quot;system&quot;: &quot;http://hl7.org/fhir/v3/AcknowledgementType&quot;,
+    &quot;caseSensitive&quot;: true,
+    &quot;concept&quot;: [
+      {
+        &quot;code&quot;: &quot;AA&quot;,
+        &quot;display&quot;: &quot;Application Acknowledgement Accept&quot;,
+        &quot;definition&quot;: &quot;Receiving application successfully processed message.&quot;
+      },
+      {
+        &quot;code&quot;: &quot;AE&quot;,
+        &quot;display&quot;: &quot;Application Acknowledgement Error&quot;,
+        &quot;definition&quot;: &quot;Receiving application found error in processing message.  Sending error response with additional error detail information.&quot;
+      },
+      {
+        &quot;code&quot;: &quot;AR&quot;,
+        &quot;display&quot;: &quot;Application Acknowledgement Reject&quot;,
+        &quot;definition&quot;: &quot;Receiving application failed to process message for reason unrelated to content or format.  Original message sender must decide on whether to automatically send message again.&quot;
+      },
+      {
+        &quot;code&quot;: &quot;CA&quot;,
+        &quot;display&quot;: &quot;Accept Acknowledgement Commit Accept&quot;,
+        &quot;definition&quot;: &quot;Receiving message handling service accepts responsibility for passing message onto receiving application.&quot;
+      },
+      {
+        &quot;code&quot;: &quot;CE&quot;,
+        &quot;display&quot;: &quot;Accept Acknowledgement Commit Error&quot;,
+        &quot;definition&quot;: &quot;Receiving message handling service cannot accept message for any other reason (e.g. message sequence number, etc.).&quot;
+      },
+      {
+        &quot;code&quot;: &quot;CR&quot;,
+        &quot;display&quot;: &quot;Accept Acknowledgement Commit Reject&quot;,
+        &quot;definition&quot;: &quot;Receiving message handling service rejects message if interaction identifier, version or processing mode is incompatible with known receiving application role information.&quot;
+      }
+    ]
+  }
+}</pre>
+</div>
+</body>
+</html>

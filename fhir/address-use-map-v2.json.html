@@ -1,0 +1,90 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+ <title>Example Instance for address-use-map-v2</title>
+ <link rel="Stylesheet" href="fhir.css" type="text/css" media="screen"/>
+</head>
+<body>
+<p>&nbsp;</p>
+<div class="example">
+<p>v2 map for AddressUse</p>
+<p><a href="address-use-map-v2.json">Raw JSON</a></p>
+<pre class="json">
+{
+  &quot;resourceType&quot;: &quot;ConceptMap&quot;,
+  &quot;text&quot;: {
+    &quot;status&quot;: &quot;generated&quot;,
+    &quot;div&quot;: &quot;&lt;div&gt;&lt;h2&gt;v2 map for AddressUse (http://hl7.org/fhir/cm/v2/address-use)&lt;/h2&gt;&lt;p&gt;Mapping from &lt;a href=\&quot;address-use.html\&quot;&gt;http://hl7.org/fhir/vs/address-use&lt;/a&gt; to &lt;a href=\&quot;v2/0190/index.html\&quot;&gt;http://hl7.org/fhir/v2/vs/0190&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Draft. Published on 22-Jan 2014 23:46 by HL7 (FHIR Project) (&lt;a href=\&quot;http://hl7.org/fhir\&quot;&gt;http://hl7.org/fhir&lt;/a&gt;, &lt;a href=\&quot;mailto:fhir@lists.hl7.org\&quot;&gt;fhir@lists.hl7.org&lt;/a&gt;). &lt;/p&gt;&lt;p&gt;v2 Map (0190)&lt;/p&gt;&lt;br/&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Source Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Equivalence&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Destination Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Comments&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;home&lt;/td&gt;&lt;td&gt;equivalent&lt;/td&gt;&lt;td&gt;H (Home)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;work&lt;/td&gt;&lt;td&gt;equivalent&lt;/td&gt;&lt;td&gt;O (Office/Business)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;temp&lt;/td&gt;&lt;td&gt;equivalent&lt;/td&gt;&lt;td&gt;C (Current Or Temporary)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;old&lt;/td&gt;&lt;td&gt;narrower&lt;/td&gt;&lt;td&gt;BA (Bad address)&lt;/td&gt;&lt;td&gt;unclear about old addresses&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&quot;
+  },
+  &quot;identifier&quot;: &quot;http://hl7.org/fhir/cm/v2/address-use&quot;,
+  &quot;name&quot;: &quot;v2 map for AddressUse&quot;,
+  &quot;publisher&quot;: &quot;HL7 (FHIR Project)&quot;,
+  &quot;telecom&quot;: [
+    {
+      &quot;system&quot;: &quot;url&quot;,
+      &quot;value&quot;: &quot;http://hl7.org/fhir&quot;
+    },
+    {
+      &quot;system&quot;: &quot;email&quot;,
+      &quot;value&quot;: &quot;fhir@lists.hl7.org&quot;
+    }
+  ],
+  &quot;description&quot;: &quot;v2 Map (0190)&quot;,
+  &quot;status&quot;: &quot;draft&quot;,
+  &quot;date&quot;: &quot;2014-01-22T23:46:15.434-06:00&quot;,
+  &quot;source&quot;: {
+    &quot;reference&quot;: &quot;http://hl7.org/fhir/vs/address-use&quot;
+  },
+  &quot;target&quot;: {
+    &quot;reference&quot;: &quot;http://hl7.org/fhir/v2/vs/0190&quot;
+  },
+  &quot;concept&quot;: [
+    {
+      &quot;system&quot;: &quot;http://hl7.org/fhir/address-use&quot;,
+      &quot;code&quot;: &quot;home&quot;,
+      &quot;map&quot;: [
+        {
+          &quot;system&quot;: &quot;http://hl7.org/fhir/v2/0190&quot;,
+          &quot;code&quot;: &quot;H&quot;,
+          &quot;equivalence&quot;: &quot;equivalent&quot;
+        }
+      ]
+    },
+    {
+      &quot;system&quot;: &quot;http://hl7.org/fhir/address-use&quot;,
+      &quot;code&quot;: &quot;work&quot;,
+      &quot;map&quot;: [
+        {
+          &quot;system&quot;: &quot;http://hl7.org/fhir/v2/0190&quot;,
+          &quot;code&quot;: &quot;O&quot;,
+          &quot;equivalence&quot;: &quot;equivalent&quot;
+        }
+      ]
+    },
+    {
+      &quot;system&quot;: &quot;http://hl7.org/fhir/address-use&quot;,
+      &quot;code&quot;: &quot;temp&quot;,
+      &quot;map&quot;: [
+        {
+          &quot;system&quot;: &quot;http://hl7.org/fhir/v2/0190&quot;,
+          &quot;code&quot;: &quot;C&quot;,
+          &quot;equivalence&quot;: &quot;equivalent&quot;
+        }
+      ]
+    },
+    {
+      &quot;system&quot;: &quot;http://hl7.org/fhir/address-use&quot;,
+      &quot;code&quot;: &quot;old&quot;,
+      &quot;map&quot;: [
+        {
+          &quot;system&quot;: &quot;http://hl7.org/fhir/v2/0190&quot;,
+          &quot;code&quot;: &quot;BA&quot;,
+          &quot;equivalence&quot;: &quot;narrower&quot;,
+          &quot;comments&quot;: &quot;unclear about old addresses&quot;
+        }
+      ]
+    }
+  ]
+}</pre>
+</div>
+</body>
+</html>

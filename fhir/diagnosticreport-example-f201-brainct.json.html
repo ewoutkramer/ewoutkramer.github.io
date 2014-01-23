@@ -1,0 +1,66 @@
+﻿<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+ <title>Real-world patient example</title>
+ <link rel="Stylesheet" href="fhir.css" type="text/css" media="screen"/>
+</head>
+<body>
+<p>&nbsp;</p>
+<div class="example">
+<p>Real-world patient example</p>
+<p><a href="diagnosticreport-example-f201-brainct.json">Raw JSON</a></p>
+<pre class="json">
+{
+  &quot;resourceType&quot;: &quot;DiagnosticReport&quot;,
+  &quot;status&quot;: &quot;final&quot;,
+  &quot;issued&quot;: &quot;2012-12-01T12:00:00+01:00&quot;,
+  &quot;subject&quot;: {
+    &quot;reference&quot;: &quot;Patient/f201&quot;,
+    &quot;display&quot;: &quot;Roel&quot;
+  },
+  &quot;performer&quot;: {
+    &quot;reference&quot;: &quot;Organization/f203&quot;,
+    &quot;display&quot;: &quot;Blijdorp MC&quot;
+  },
+  &quot;serviceCategory&quot;: {
+    &quot;coding&quot;: [
+      {
+        &quot;system&quot;: &quot;http://snomed.info/sct&quot;,
+        &quot;code&quot;: &quot;394914008&quot;,
+        &quot;display&quot;: &quot;Radiology&quot;
+      },
+      {
+        &quot;system&quot;: &quot;http://hl7.org/fhir/v2/0074&quot;,
+        &quot;code&quot;: &quot;RAD&quot;
+      }
+    ]
+  },
+  &quot;diagnosticDateTime&quot;: &quot;2012-12-01T12:00:00+01:00&quot;,
+  &quot;results&quot;: {
+    &quot;name&quot;: {
+      &quot;coding&quot;: [
+        {
+          &quot;system&quot;: &quot;http://snomed.info/sct&quot;,
+          &quot;code&quot;: &quot;429858000&quot;,
+          &quot;display&quot;: &quot;Computed tomography (CT) of head and neck&quot;
+        }
+      ],
+      &quot;text&quot;: &quot;CT of head-neck&quot;
+    }
+  },
+  &quot;conclusion&quot;: &quot;CT brains: large tumor sphenoid/clivus.&quot;,
+  &quot;codedDiagnosis&quot;: [
+    {
+      &quot;coding&quot;: [
+        {
+          &quot;system&quot;: &quot;http://snomed.info/sct&quot;,
+          &quot;code&quot;: &quot;188340000&quot;,
+          &quot;display&quot;: &quot;Malignant tumor of craniopharyngeal duct&quot;
+        }
+      ]
+    }
+  ]
+}
+</pre>
+</div>
+</body>
+</html>

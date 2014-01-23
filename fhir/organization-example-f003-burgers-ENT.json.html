@@ -1,0 +1,79 @@
+﻿<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+ <title>Real-world organization example (ENT)</title>
+ <link rel="Stylesheet" href="fhir.css" type="text/css" media="screen"/>
+</head>
+<body>
+<p>&nbsp;</p>
+<div class="example">
+<p>Real-world organization example (ENT)</p>
+<p><a href="organization-example-f003-burgers-ENT.json">Raw JSON</a></p>
+<pre class="json">
+{
+  &quot;resourceType&quot;: &quot;Organization&quot;,
+  &quot;name&quot;: &quot;Burgers UMC Ear,Nose,Throat unit&quot;,
+  &quot;type&quot;: {
+    &quot;coding&quot;: [
+      {
+        &quot;system&quot;: &quot;http://hl7.org/fhir/organization-type&quot;,
+        &quot;code&quot;: &quot;dept&quot;,
+        &quot;display&quot;: &quot;Hospital Department&quot;
+      }
+    ]
+  },
+  &quot;telecom&quot;: [
+    {
+      &quot;system&quot;: &quot;phone&quot;,
+      &quot;value&quot;: &quot;022-655 6780&quot;
+    }
+  ],
+  &quot;address&quot;: [
+    {
+      &quot;line&quot;: [
+        &quot;West Wing, floor 5&quot;
+      ]
+    }
+  ],
+  &quot;partOf&quot;: {
+    &quot;reference&quot;: &quot;Organization/f001&quot;
+  },
+  &quot;contact&quot;: [
+    {
+      &quot;purpose&quot;: {
+        &quot;coding&quot;: [
+          {
+            &quot;system&quot;: &quot;http://hl7.org/fhir/contactentity-type&quot;,
+            &quot;code&quot;: &quot;ADMIN&quot;
+          }
+        ]
+      },
+      &quot;name&quot;: {
+        &quot;text&quot;: &quot;mr. F. de Hond&quot;
+      },
+      &quot;telecom&quot;: [
+        {
+          &quot;system&quot;: &quot;phone&quot;,
+          &quot;value&quot;: &quot;022-655 7654&quot;
+        },
+        {
+          &quot;system&quot;: &quot;email&quot;,
+          &quot;value&quot;: &quot;KNO@burgersumc.nl&quot;
+        },
+        {
+          &quot;system&quot;: &quot;fax&quot;,
+          &quot;value&quot;: &quot;022-655 0998&quot;
+        }
+      ],
+      &quot;address&quot;: {
+        &quot;line&quot;: [
+          &quot;West Wing, floor 5&quot;
+        ]
+      }
+    }
+  ],
+  &quot;active&quot;: false
+}
+</pre>
+</div>
+</body>
+</html>

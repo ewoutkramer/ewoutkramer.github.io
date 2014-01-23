@@ -1,0 +1,73 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+ <title>Example Instance for v2 Preferred Method of Contact</title>
+ <link rel="Stylesheet" href="../../fhir.css" type="text/css" media="screen"/>
+</head>
+<body>
+<p>&nbsp;</p>
+<div class="example">
+<p>FHIR Value set/code system definition for HL7 v2 table 0185 ( Preferred Method of Contact)</p>
+<p><a href="v2-0185.json">Raw JSON</a></p>
+<pre class="json">
+{
+  &quot;resourceType&quot;: &quot;ValueSet&quot;,
+  &quot;text&quot;: {
+    &quot;status&quot;: &quot;additional&quot;,
+    &quot;div&quot;: &quot;&lt;div&gt;&lt;p&gt;Preferred Method of Contact&lt;/p&gt;\r\n&lt;table class=\&quot;grid\&quot;&gt;\r\n &lt;tr&gt;&lt;td&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Description&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Version&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;B&lt;a name=\&quot;B\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Beeper Number&lt;/td&gt;&lt;td&gt;added v2.2&lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;C&lt;a name=\&quot;C\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Cellular Phone Number&lt;/td&gt;&lt;td&gt;added v2.2&lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;E&lt;a name=\&quot;E\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;E-Mail Address (for backward compatibility)&lt;/td&gt;&lt;td&gt;added v2.2&lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;F&lt;a name=\&quot;F\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;FAX Number&lt;/td&gt;&lt;td&gt;added v2.2&lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;H&lt;a name=\&quot;H\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Home Phone Number&lt;/td&gt;&lt;td&gt;added v2.2&lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;M&lt;a name=\&quot;M\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Mail&lt;/td&gt;&lt;td&gt;added v2.3, removed after v2.3&lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;O&lt;a name=\&quot;O\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Office Phone Number&lt;/td&gt;&lt;td&gt;added v2.2&lt;/td&gt;&lt;/tr&gt;\r\n&lt;/table&gt;\r\n&lt;/div&gt;&quot;
+  },
+  &quot;identifier&quot;: &quot;http://hl7.org/fhir/v2/vs/0185&quot;,
+  &quot;name&quot;: &quot;v2 Preferred Method of Contact&quot;,
+  &quot;publisher&quot;: &quot;HL7, Inc&quot;,
+  &quot;telecom&quot;: [
+    {
+      &quot;system&quot;: &quot;url&quot;,
+      &quot;value&quot;: &quot;http://hl7.org&quot;
+    }
+  ],
+  &quot;description&quot;: &quot;FHIR Value set/code system definition for HL7 v2 table 0185 ( Preferred Method of Contact)&quot;,
+  &quot;status&quot;: &quot;active&quot;,
+  &quot;date&quot;: &quot;2011-01-28&quot;,
+  &quot;define&quot;: {
+    &quot;system&quot;: &quot;http://hl7.org/fhir/v2/0185&quot;,
+    &quot;caseSensitive&quot;: true,
+    &quot;concept&quot;: [
+      {
+        &quot;code&quot;: &quot;B&quot;,
+        &quot;display&quot;: &quot;Beeper Number&quot;
+      },
+      {
+        &quot;code&quot;: &quot;C&quot;,
+        &quot;display&quot;: &quot;Cellular Phone Number&quot;
+      },
+      {
+        &quot;code&quot;: &quot;E&quot;,
+        &quot;display&quot;: &quot;E-Mail Address (for backward compatibility)&quot;
+      },
+      {
+        &quot;code&quot;: &quot;F&quot;,
+        &quot;display&quot;: &quot;FAX Number&quot;
+      },
+      {
+        &quot;code&quot;: &quot;H&quot;,
+        &quot;display&quot;: &quot;Home Phone Number&quot;
+      },
+      {
+        &quot;extension&quot;: [
+          {
+            &quot;url&quot;: &quot;http://hl7.org/fhir/Profile/tools-extensions#deprecated&quot;,
+            &quot;valueBoolean&quot;: true
+          }
+        ],
+        &quot;code&quot;: &quot;M&quot;,
+        &quot;display&quot;: &quot;Mail&quot;
+      },
+      {
+        &quot;code&quot;: &quot;O&quot;,
+        &quot;display&quot;: &quot;Office Phone Number&quot;
+      }
+    ]
+  }
+}</pre>
+</div>
+</body>
+</html>

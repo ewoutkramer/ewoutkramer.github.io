@@ -1,0 +1,344 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+ <title>Example Instance for type-Address.profile</title>
+ <link rel="Stylesheet" href="fhir.css" type="text/css" media="screen"/>
+</head>
+<body>
+<p>&nbsp;</p>
+<div class="example">
+<p>Profile for Address</p>
+<p><a href="type-Address.profile.json">Raw JSON</a></p>
+<pre class="json">
+{
+  &quot;resourceType&quot;: &quot;Profile&quot;,
+  &quot;text&quot;: {
+    &quot;status&quot;: &quot;generated&quot;,
+    &quot;div&quot;: &quot;&lt;div&gt;&lt;div&gt;Type definition for Address from &lt;a href=\&quot;http://hl7.org/fhir/datatypes.html#Address\&quot;&gt;FHIR Specification&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&quot;
+  },
+  &quot;name&quot;: &quot;Basic Profile for Address&quot;,
+  &quot;publisher&quot;: &quot;FHIR Specification&quot;,
+  &quot;description&quot;: &quot;Basic Profile for Address for validation support&quot;,
+  &quot;status&quot;: &quot;draft&quot;,
+  &quot;date&quot;: &quot;2014-01-22&quot;,
+  &quot;mapping&quot;: [
+    {
+      &quot;identity&quot;: &quot;rim&quot;,
+      &quot;uri&quot;: &quot;http://hl7.org/v3&quot;,
+      &quot;name&quot;: &quot;RIM&quot;
+    },
+    {
+      &quot;identity&quot;: &quot;v2&quot;,
+      &quot;uri&quot;: &quot;http://hl7.org/v2&quot;,
+      &quot;name&quot;: &quot;HL7 v2&quot;
+    },
+    {
+      &quot;identity&quot;: &quot;servd&quot;,
+      &quot;uri&quot;: &quot;http://www.omg.org/spec/ServD/1.0/&quot;,
+      &quot;name&quot;: &quot;ServD&quot;
+    },
+    {
+      &quot;identity&quot;: &quot;vcard&quot;,
+      &quot;uri&quot;: &quot;http://w3.org/vcard&quot;,
+      &quot;name&quot;: &quot;vCard&quot;
+    }
+  ],
+  &quot;structure&quot;: [
+    {
+      &quot;type&quot;: &quot;Address&quot;,
+      &quot;element&quot;: [
+        {
+          &quot;path&quot;: &quot;Address&quot;,
+          &quot;definition&quot;: {
+            &quot;short&quot;: &quot;A postal address&quot;,
+            &quot;formal&quot;: &quot;There is a variety of postal address formats defined around the world. This format defines a superset that is the basis for all addresses around the world.&quot;,
+            &quot;comments&quot;: &quot;Note: address is for postal addresses, not physical locations.&quot;,
+            &quot;min&quot;: &quot;1&quot;,
+            &quot;max&quot;: &quot;1&quot;,
+            &quot;type&quot;: [
+              {
+                &quot;code&quot;: &quot;Structure&quot;
+              }
+            ],
+            &quot;isModifier&quot;: false,
+            &quot;mapping&quot;: [
+              {
+                &quot;identity&quot;: &quot;rim&quot;,
+                &quot;map&quot;: &quot;AD&quot;
+              },
+              {
+                &quot;identity&quot;: &quot;v2&quot;,
+                &quot;map&quot;: &quot;XAD&quot;
+              },
+              {
+                &quot;identity&quot;: &quot;servd&quot;,
+                &quot;map&quot;: &quot;Address&quot;
+              }
+            ]
+          }
+        },
+        {
+          &quot;path&quot;: &quot;Address.use&quot;,
+          &quot;definition&quot;: {
+            &quot;short&quot;: &quot;home | work | temp | old - purpose of this address&quot;,
+            &quot;formal&quot;: &quot;The purpose of this address.&quot;,
+            &quot;comments&quot;: &quot;This is labeled as \&quot;Is Modifier\&quot; because applications should not mistake a temporary or old address etc for a current/permanent one. Applications can assume that an address is current unless it explicitly says that it is temporary or old.&quot;,
+            &quot;min&quot;: &quot;0&quot;,
+            &quot;max&quot;: &quot;1&quot;,
+            &quot;type&quot;: [
+              {
+                &quot;code&quot;: &quot;code&quot;
+              }
+            ],
+            &quot;isModifier&quot;: true,
+            &quot;binding&quot;: {
+              &quot;name&quot;: &quot;AddressUse&quot;,
+              &quot;isExtensible&quot;: false,
+              &quot;conformance&quot;: &quot;required&quot;,
+              &quot;referenceResource&quot;: {
+                &quot;reference&quot;: &quot;http://hl7.org/fhir/vs/address-use&quot;
+              }
+            },
+            &quot;mapping&quot;: [
+              {
+                &quot;identity&quot;: &quot;rim&quot;,
+                &quot;map&quot;: &quot;unique(./use)&quot;
+              },
+              {
+                &quot;identity&quot;: &quot;v2&quot;,
+                &quot;map&quot;: &quot;XAD.7&quot;
+              },
+              {
+                &quot;identity&quot;: &quot;servd&quot;,
+                &quot;map&quot;: &quot;./AddressPurpose&quot;
+              }
+            ]
+          }
+        },
+        {
+          &quot;path&quot;: &quot;Address.text&quot;,
+          &quot;definition&quot;: {
+            &quot;short&quot;: &quot;Text representation of the address&quot;,
+            &quot;formal&quot;: &quot;A full text representation of the address.&quot;,
+            &quot;comments&quot;: &quot;Can provide both a text representation and parts.&quot;,
+            &quot;min&quot;: &quot;0&quot;,
+            &quot;max&quot;: &quot;1&quot;,
+            &quot;type&quot;: [
+              {
+                &quot;code&quot;: &quot;string&quot;
+              }
+            ],
+            &quot;isModifier&quot;: false,
+            &quot;mapping&quot;: [
+              {
+                &quot;identity&quot;: &quot;rim&quot;,
+                &quot;map&quot;: &quot;./formatted&quot;
+              },
+              {
+                &quot;identity&quot;: &quot;v2&quot;,
+                &quot;map&quot;: &quot;XAD.1 + XAD.2 + XAD.3 + XAD.4 + XAD.5 + XAD.6&quot;
+              }
+            ]
+          }
+        },
+        {
+          &quot;path&quot;: &quot;Address.line&quot;,
+          &quot;definition&quot;: {
+            &quot;short&quot;: &quot;Street name, number, direction &amp; P.O. Box etc&quot;,
+            &quot;formal&quot;: &quot;This component contains the house number, apartment number, street name, street direction, \nP.O. Box number, delivery hints, and similar address information.&quot;,
+            &quot;min&quot;: &quot;0&quot;,
+            &quot;max&quot;: &quot;*&quot;,
+            &quot;type&quot;: [
+              {
+                &quot;code&quot;: &quot;string&quot;
+              }
+            ],
+            &quot;isModifier&quot;: false,
+            &quot;mapping&quot;: [
+              {
+                &quot;identity&quot;: &quot;rim&quot;,
+                &quot;map&quot;: &quot;AD.part[parttype = AL]&quot;
+              },
+              {
+                &quot;identity&quot;: &quot;v2&quot;,
+                &quot;map&quot;: &quot;XAD.1 + XAD.2 (note: XAD.1 and XAD.2 have different meanings for a company address than for a person address)&quot;
+              },
+              {
+                &quot;identity&quot;: &quot;vcard&quot;,
+                &quot;map&quot;: &quot;street address&quot;
+              },
+              {
+                &quot;identity&quot;: &quot;servd&quot;,
+                &quot;map&quot;: &quot;./StreetAddress (newline delimitted)&quot;
+              }
+            ]
+          }
+        },
+        {
+          &quot;path&quot;: &quot;Address.city&quot;,
+          &quot;definition&quot;: {
+            &quot;short&quot;: &quot;Name of city, town etc.&quot;,
+            &quot;formal&quot;: &quot;The name of the city, town, village or other community or delivery center.&quot;,
+            &quot;min&quot;: &quot;0&quot;,
+            &quot;max&quot;: &quot;1&quot;,
+            &quot;type&quot;: [
+              {
+                &quot;code&quot;: &quot;string&quot;
+              }
+            ],
+            &quot;isModifier&quot;: false,
+            &quot;mapping&quot;: [
+              {
+                &quot;identity&quot;: &quot;rim&quot;,
+                &quot;map&quot;: &quot;AD.part[parttype = CTY]&quot;
+              },
+              {
+                &quot;identity&quot;: &quot;v2&quot;,
+                &quot;map&quot;: &quot;XAD.3&quot;
+              },
+              {
+                &quot;identity&quot;: &quot;vcard&quot;,
+                &quot;map&quot;: &quot;locality&quot;
+              },
+              {
+                &quot;identity&quot;: &quot;servd&quot;,
+                &quot;map&quot;: &quot;./Jurisdiction&quot;
+              }
+            ]
+          }
+        },
+        {
+          &quot;path&quot;: &quot;Address.state&quot;,
+          &quot;definition&quot;: {
+            &quot;short&quot;: &quot;Sub-unit of country (abreviations ok)&quot;,
+            &quot;formal&quot;: &quot;Sub-unit of a country with limited sovereignty in a federally organized country. A code may be used if codes are in common use (i.e. US 2 letter state codes).&quot;,
+            &quot;min&quot;: &quot;0&quot;,
+            &quot;max&quot;: &quot;1&quot;,
+            &quot;type&quot;: [
+              {
+                &quot;code&quot;: &quot;string&quot;
+              }
+            ],
+            &quot;isModifier&quot;: false,
+            &quot;mapping&quot;: [
+              {
+                &quot;identity&quot;: &quot;rim&quot;,
+                &quot;map&quot;: &quot;AD.part[parttype = STA]&quot;
+              },
+              {
+                &quot;identity&quot;: &quot;v2&quot;,
+                &quot;map&quot;: &quot;XAD.4&quot;
+              },
+              {
+                &quot;identity&quot;: &quot;vcard&quot;,
+                &quot;map&quot;: &quot;region&quot;
+              },
+              {
+                &quot;identity&quot;: &quot;servd&quot;,
+                &quot;map&quot;: &quot;./Region&quot;
+              }
+            ]
+          }
+        },
+        {
+          &quot;path&quot;: &quot;Address.zip&quot;,
+          &quot;definition&quot;: {
+            &quot;short&quot;: &quot;Postal code for area&quot;,
+            &quot;formal&quot;: &quot;A postal code designating a region defined by the postal service.&quot;,
+            &quot;min&quot;: &quot;0&quot;,
+            &quot;max&quot;: &quot;1&quot;,
+            &quot;type&quot;: [
+              {
+                &quot;code&quot;: &quot;string&quot;
+              }
+            ],
+            &quot;isModifier&quot;: false,
+            &quot;mapping&quot;: [
+              {
+                &quot;identity&quot;: &quot;rim&quot;,
+                &quot;map&quot;: &quot;AD.part[parttype = ZIP]&quot;
+              },
+              {
+                &quot;identity&quot;: &quot;v2&quot;,
+                &quot;map&quot;: &quot;XAD.5&quot;
+              },
+              {
+                &quot;identity&quot;: &quot;vcard&quot;,
+                &quot;map&quot;: &quot;postal code&quot;
+              },
+              {
+                &quot;identity&quot;: &quot;servd&quot;,
+                &quot;map&quot;: &quot;./PostalIdentificationCode&quot;
+              }
+            ]
+          }
+        },
+        {
+          &quot;path&quot;: &quot;Address.country&quot;,
+          &quot;definition&quot;: {
+            &quot;short&quot;: &quot;Country (can be ISO 3166 3 letter code)&quot;,
+            &quot;formal&quot;: &quot;Country - a nation as commonly understood or generally accepted.&quot;,
+            &quot;comments&quot;: &quot;ISO 3166 3 letter codes can be used in place of a full country name.&quot;,
+            &quot;min&quot;: &quot;0&quot;,
+            &quot;max&quot;: &quot;1&quot;,
+            &quot;type&quot;: [
+              {
+                &quot;code&quot;: &quot;string&quot;
+              }
+            ],
+            &quot;isModifier&quot;: false,
+            &quot;mapping&quot;: [
+              {
+                &quot;identity&quot;: &quot;rim&quot;,
+                &quot;map&quot;: &quot;AD.part[parttype = CNT]&quot;
+              },
+              {
+                &quot;identity&quot;: &quot;v2&quot;,
+                &quot;map&quot;: &quot;XAD.6&quot;
+              },
+              {
+                &quot;identity&quot;: &quot;vcard&quot;,
+                &quot;map&quot;: &quot;country name&quot;
+              },
+              {
+                &quot;identity&quot;: &quot;servd&quot;,
+                &quot;map&quot;: &quot;./Country&quot;
+              }
+            ]
+          }
+        },
+        {
+          &quot;path&quot;: &quot;Address.period&quot;,
+          &quot;definition&quot;: {
+            &quot;short&quot;: &quot;Time period when address was/is in use&quot;,
+            &quot;formal&quot;: &quot;Time period when address was/is in use.&quot;,
+            &quot;min&quot;: &quot;0&quot;,
+            &quot;max&quot;: &quot;1&quot;,
+            &quot;type&quot;: [
+              {
+                &quot;code&quot;: &quot;Period&quot;
+              }
+            ],
+            &quot;isModifier&quot;: false,
+            &quot;mapping&quot;: [
+              {
+                &quot;identity&quot;: &quot;rim&quot;,
+                &quot;map&quot;: &quot;./usablePeriod[type=\&quot;IVL&lt;TS&gt;\&quot;]&quot;
+              },
+              {
+                &quot;identity&quot;: &quot;v2&quot;,
+                &quot;map&quot;: &quot;XAD.12 / XAD.13 + XAD.14&quot;
+              },
+              {
+                &quot;identity&quot;: &quot;servd&quot;,
+                &quot;map&quot;: &quot;./StartDate and ./EndDate&quot;
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}</pre>
+</div>
+</body>
+</html>

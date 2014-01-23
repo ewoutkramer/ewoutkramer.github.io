@@ -1,0 +1,55 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+ <title>Example Instance for list-mode</title>
+ <link rel="Stylesheet" href="fhir.css" type="text/css" media="screen"/>
+</head>
+<body>
+<p>&nbsp;</p>
+<div class="example">
+<p>Definition for Value SetListMode</p>
+<p><a href="list-mode.json">Raw JSON</a></p>
+<pre class="json">
+{
+  &quot;resourceType&quot;: &quot;ValueSet&quot;,
+  &quot;text&quot;: {
+    &quot;status&quot;: &quot;generated&quot;,
+    &quot;div&quot;: &quot;&lt;div&gt;&lt;h2&gt;ListMode&lt;/h2&gt;&lt;p&gt;The processing mode that applies to this list&lt;/p&gt;&lt;p&gt;This value set defines its own terms in the system http://hl7.org/fhir/list-mode&lt;/p&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Definition&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;working&lt;a name=\&quot;working\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;td&gt;This list is the master list, maintained in an ongoing fashion with regular updates as the real world list it is tracking changes.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;snapshot&lt;a name=\&quot;snapshot\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;td&gt;This list was prepared as a snapshot. It should not be assumed to be current.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;changes&lt;a name=\&quot;changes\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;td&gt;The list is prepared as a statement of changes that have been made or recommended.&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&quot;
+  },
+  &quot;identifier&quot;: &quot;http://hl7.org/fhir/vs/list-mode&quot;,
+  &quot;name&quot;: &quot;ListMode&quot;,
+  &quot;publisher&quot;: &quot;HL7 (FHIR Project)&quot;,
+  &quot;telecom&quot;: [
+    {
+      &quot;system&quot;: &quot;url&quot;,
+      &quot;value&quot;: &quot;http://hl7.org/fhir&quot;
+    },
+    {
+      &quot;system&quot;: &quot;email&quot;,
+      &quot;value&quot;: &quot;fhir@lists.hl7.org&quot;
+    }
+  ],
+  &quot;description&quot;: &quot;The processing mode that applies to this list&quot;,
+  &quot;status&quot;: &quot;draft&quot;,
+  &quot;date&quot;: &quot;2014-01-22T23:46:10.705-06:00&quot;,
+  &quot;define&quot;: {
+    &quot;system&quot;: &quot;http://hl7.org/fhir/list-mode&quot;,
+    &quot;caseSensitive&quot;: true,
+    &quot;concept&quot;: [
+      {
+        &quot;code&quot;: &quot;working&quot;,
+        &quot;definition&quot;: &quot;This list is the master list, maintained in an ongoing fashion with regular updates as the real world list it is tracking changes.&quot;
+      },
+      {
+        &quot;code&quot;: &quot;snapshot&quot;,
+        &quot;definition&quot;: &quot;This list was prepared as a snapshot. It should not be assumed to be current.&quot;
+      },
+      {
+        &quot;code&quot;: &quot;changes&quot;,
+        &quot;definition&quot;: &quot;The list is prepared as a statement of changes that have been made or recommended.&quot;
+      }
+    ]
+  }
+}</pre>
+</div>
+</body>
+</html>

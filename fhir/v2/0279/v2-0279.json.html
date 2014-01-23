@@ -1,0 +1,95 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+ <title>Example Instance for v2 Allow Substitution Codes</title>
+ <link rel="Stylesheet" href="../../fhir.css" type="text/css" media="screen"/>
+</head>
+<body>
+<p>&nbsp;</p>
+<div class="example">
+<p>FHIR Value set/code system definition for HL7 v2 table 0279 ( Allow Substitution Codes)</p>
+<p><a href="v2-0279.json">Raw JSON</a></p>
+<pre class="json">
+{
+  &quot;resourceType&quot;: &quot;ValueSet&quot;,
+  &quot;text&quot;: {
+    &quot;status&quot;: &quot;additional&quot;,
+    &quot;div&quot;: &quot;&lt;div&gt;&lt;p&gt;Allow Substitution Codes&lt;/p&gt;\r\n&lt;table class=\&quot;grid\&quot;&gt;\r\n &lt;tr&gt;&lt;td&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Description&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Version&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;CONFIRM&lt;a name=\&quot;CONFIRM\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Contact the Placer Contact Person prior to making any substitutions of this resource&lt;/td&gt;&lt;td&gt;added v2.3, removed after v2.3&lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;Confirm&lt;a name=\&quot;Confirm\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Contact the Placer Contact Person prior to making any substitutions of this resource&lt;/td&gt;&lt;td&gt;added v2.3.1&lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;NO&lt;a name=\&quot;NO\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Substitution of this resource is not allowed&lt;/td&gt;&lt;td&gt;added v2.3, removed after v2.3&lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;NOTIFY&lt;a name=\&quot;NOTIFY\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Notify the Placer Contact Person, through normal institutional procedures, that a substitution of this resource has been made&lt;/td&gt;&lt;td&gt;added v2.3, removed after v2.3&lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;No&lt;a name=\&quot;No\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Substitution of this resource is not allowed&lt;/td&gt;&lt;td&gt;added v2.3.1&lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;Notify&lt;a name=\&quot;Notify\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Notify the Placer Contact Person, through normal institutional procedures, that a substitution of this resource has been made&lt;/td&gt;&lt;td&gt;added v2.3.1&lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;YES&lt;a name=\&quot;YES\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Substitution of this resource is allowed&lt;/td&gt;&lt;td&gt;added v2.3, removed after v2.3&lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;Yes&lt;a name=\&quot;Yes\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Substitution of this resource is allowed&lt;/td&gt;&lt;td&gt;added v2.3.1&lt;/td&gt;&lt;/tr&gt;\r\n&lt;/table&gt;\r\n&lt;/div&gt;&quot;
+  },
+  &quot;identifier&quot;: &quot;http://hl7.org/fhir/v2/vs/0279&quot;,
+  &quot;name&quot;: &quot;v2 Allow Substitution Codes&quot;,
+  &quot;publisher&quot;: &quot;HL7, Inc&quot;,
+  &quot;telecom&quot;: [
+    {
+      &quot;system&quot;: &quot;url&quot;,
+      &quot;value&quot;: &quot;http://hl7.org&quot;
+    }
+  ],
+  &quot;description&quot;: &quot;FHIR Value set/code system definition for HL7 v2 table 0279 ( Allow Substitution Codes)&quot;,
+  &quot;status&quot;: &quot;active&quot;,
+  &quot;date&quot;: &quot;2011-01-28&quot;,
+  &quot;define&quot;: {
+    &quot;system&quot;: &quot;http://hl7.org/fhir/v2/0279&quot;,
+    &quot;caseSensitive&quot;: true,
+    &quot;concept&quot;: [
+      {
+        &quot;extension&quot;: [
+          {
+            &quot;url&quot;: &quot;http://hl7.org/fhir/Profile/tools-extensions#deprecated&quot;,
+            &quot;valueBoolean&quot;: true
+          }
+        ],
+        &quot;code&quot;: &quot;CONFIRM&quot;,
+        &quot;display&quot;: &quot;Contact the Placer Contact Person prior to making any substitutions of this resource&quot;
+      },
+      {
+        &quot;code&quot;: &quot;Confirm&quot;,
+        &quot;display&quot;: &quot;Contact the Placer Contact Person prior to making any substitutions of this resource&quot;
+      },
+      {
+        &quot;extension&quot;: [
+          {
+            &quot;url&quot;: &quot;http://hl7.org/fhir/Profile/tools-extensions#deprecated&quot;,
+            &quot;valueBoolean&quot;: true
+          }
+        ],
+        &quot;code&quot;: &quot;NO&quot;,
+        &quot;display&quot;: &quot;Substitution of this resource is not allowed&quot;
+      },
+      {
+        &quot;extension&quot;: [
+          {
+            &quot;url&quot;: &quot;http://hl7.org/fhir/Profile/tools-extensions#deprecated&quot;,
+            &quot;valueBoolean&quot;: true
+          }
+        ],
+        &quot;code&quot;: &quot;NOTIFY&quot;,
+        &quot;display&quot;: &quot;Notify the Placer Contact Person, through normal institutional procedures, that a substitution of this resource has been made&quot;
+      },
+      {
+        &quot;code&quot;: &quot;No&quot;,
+        &quot;display&quot;: &quot;Substitution of this resource is not allowed&quot;
+      },
+      {
+        &quot;code&quot;: &quot;Notify&quot;,
+        &quot;display&quot;: &quot;Notify the Placer Contact Person, through normal institutional procedures, that a substitution of this resource has been made&quot;
+      },
+      {
+        &quot;extension&quot;: [
+          {
+            &quot;url&quot;: &quot;http://hl7.org/fhir/Profile/tools-extensions#deprecated&quot;,
+            &quot;valueBoolean&quot;: true
+          }
+        ],
+        &quot;code&quot;: &quot;YES&quot;,
+        &quot;display&quot;: &quot;Substitution of this resource is allowed&quot;
+      },
+      {
+        &quot;code&quot;: &quot;Yes&quot;,
+        &quot;display&quot;: &quot;Substitution of this resource is allowed&quot;
+      }
+    ]
+  }
+}</pre>
+</div>
+</body>
+</html>

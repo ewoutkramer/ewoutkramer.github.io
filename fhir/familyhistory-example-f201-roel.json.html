@@ -1,0 +1,84 @@
+﻿<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+ <title>Real-world patient example</title>
+ <link rel="Stylesheet" href="fhir.css" type="text/css" media="screen"/>
+</head>
+<body>
+<p>&nbsp;</p>
+<div class="example">
+<p>Real-world patient example</p>
+<p><a href="familyhistory-example-f201-roel.json">Raw JSON</a></p>
+<pre class="json">
+{
+  &quot;resourceType&quot;: &quot;FamilyHistory&quot;,
+  &quot;subject&quot;: {
+    &quot;reference&quot;: &quot;Patient/f201&quot;,
+    &quot;display&quot;: &quot;Roel&quot;
+  },
+  &quot;note&quot;: &quot;Both parents, both brothers and both children (twin) are still alive.&quot;,
+  &quot;relation&quot;: [
+    {
+      &quot;relationship&quot;: {
+        &quot;coding&quot;: [
+          {
+            &quot;system&quot;: &quot;http://snomed.info/sct&quot;,
+            &quot;code&quot;: &quot;72705000&quot;,
+            &quot;display&quot;: &quot;Mother&quot;
+          }
+        ]
+      },
+      &quot;deceasedBoolean&quot;: false,
+      &quot;condition&quot;: [
+        {
+          &quot;type&quot;: {
+            &quot;coding&quot;: [
+              {
+                &quot;system&quot;: &quot;http://snomed.info/sct&quot;,
+                &quot;code&quot;: &quot;39839004&quot;,
+                &quot;display&quot;: &quot;Diaphragmatic hernia&quot;
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      &quot;relationship&quot;: {
+        &quot;coding&quot;: [
+          {
+            &quot;system&quot;: &quot;http://snomed.info/sct&quot;,
+            &quot;code&quot;: &quot;38048003&quot;,
+            &quot;display&quot;: &quot;Uncle&quot;
+          }
+        ]
+      },
+      &quot;deceasedBoolean&quot;: true,
+      &quot;condition&quot;: [
+        {
+          &quot;type&quot;: {
+            &quot;coding&quot;: [
+              {
+                &quot;system&quot;: &quot;http://snomed.info/sct&quot;,
+                &quot;code&quot;: &quot;115665000&quot;,
+                &quot;display&quot;: &quot;Atopy&quot;
+              }
+            ]
+          },
+          &quot;outcome&quot;: {
+            &quot;coding&quot;: [
+              {
+                &quot;system&quot;: &quot;http://snomed.info/sct&quot;,
+                &quot;code&quot;: &quot;419099009&quot;,
+                &quot;display&quot;: &quot;Died&quot;
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
+</pre>
+</div>
+</body>
+</html>

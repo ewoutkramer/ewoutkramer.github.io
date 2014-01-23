@@ -1,0 +1,71 @@
+﻿<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+ <title>RESTful Operation</title>
+ <link rel="Stylesheet" href="fhir.css" type="text/css" media="screen"/>
+</head>
+<body>
+<p>&nbsp;</p>
+<div class="example">
+<p>RESTful Operation</p>
+<p><a href="security-event-example-vread.json">Raw JSON</a></p>
+<pre class="json">
+{
+  &quot;resourceType&quot;: &quot;SecurityEvent&quot;,
+  &quot;event&quot;: {
+    &quot;type&quot;: {
+      &quot;coding&quot;: [
+        {
+          &quot;system&quot;: &quot;http://hl7.org/fhir/security-event-type&quot;,
+          &quot;code&quot;: &quot;rest&quot;,
+          &quot;display&quot;: &quot;Restful Operation&quot;
+        }
+      ]
+    },
+    &quot;subtype&quot;: [
+      {
+        &quot;coding&quot;: [
+          {
+            &quot;system&quot;: &quot;http://hl7.org/fhir/restful-operation&quot;,
+            &quot;code&quot;: &quot;vread&quot;,
+            &quot;display&quot;: &quot;vread&quot;
+          }
+        ]
+      }
+    ],
+    &quot;action&quot;: &quot;R&quot;,
+    &quot;dateTime&quot;: &quot;2013-06-20T23:42:24Z&quot;,
+    &quot;outcome&quot;: &quot;0&quot;
+  },
+  &quot;participant&quot;: [
+    {
+      &quot;userId&quot;: &quot;95&quot;,
+      &quot;altId&quot;: &quot;601847123&quot;,
+      &quot;name&quot;: &quot;Grahame Grieve&quot;,
+      &quot;requestor&quot;: true
+    }
+  ],
+  &quot;source&quot;: {
+    &quot;site&quot;: &quot;Cloud&quot;,
+    &quot;identifier&quot;: &quot;hl7connect.healthintersections.com.au&quot;,
+    &quot;type&quot;: [
+      {
+        &quot;system&quot;: &quot;http://hl7.org/fhir/security-source-type&quot;,
+        &quot;code&quot;: &quot;3&quot;,
+        &quot;display&quot;: &quot;Web Server&quot;
+      }
+    ]
+  },
+  &quot;object&quot;: [
+    {
+      &quot;reference&quot;: {
+        &quot;reference&quot;: &quot;Patient/example/history/1&quot;
+      },
+      &quot;type&quot;: &quot;2&quot;,
+      &quot;lifecycle&quot;: &quot;6&quot;
+    }
+  ]
+}
+</pre>
+</div>
+</body>
+</html>

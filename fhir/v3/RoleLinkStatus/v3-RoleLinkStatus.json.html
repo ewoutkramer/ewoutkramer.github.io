@@ -1,0 +1,72 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+ <title>Example Instance for v3 Code System RoleLinkStatus</title>
+ <link rel="Stylesheet" href="../../fhir.css" type="text/css" media="screen"/>
+</head>
+<body>
+<p>&nbsp;</p>
+<div class="example">
+<p>  Description:
+Codes representing possible states of a RoleLink, as defined by the RoleLink class state machine.</p>
+<p><a href="v3-RoleLinkStatus.json">Raw JSON</a></p>
+<pre class="json">
+{
+  &quot;resourceType&quot;: &quot;ValueSet&quot;,
+  &quot;text&quot;: {
+    &quot;status&quot;: &quot;generated&quot;,
+    &quot;div&quot;: &quot;&lt;div&gt;&lt;p&gt;Release Date: 2013-12-07&lt;/p&gt;\r\n&lt;h2&gt;Description&lt;/h2&gt;\r\n&lt;p&gt;\n                  \n                     Description:Codes representing possible states of a RoleLink, as defined by the RoleLink class state machine.&lt;br/&gt;\r\n\n               &lt;/p&gt;\r\n&lt;hr/&gt;\r\n&lt;table class=\&quot;grid\&quot;&gt;\r\n &lt;tr&gt;&lt;td&gt;&lt;b&gt;Level&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Definition&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;NORMAL&lt;a name=\&quot;NORMAL\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;normal&lt;/td&gt;&lt;td&gt;\n                        \n                           Description: The 'typical' state. Excludes &amp;quot;nullified&amp;quot; which represents the termination state of a RoleLink instance that was created in error.&lt;br/&gt;\r\n\n                     &lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td&gt;&amp;nbsp;&amp;nbsp;ACTIVE&lt;a name=\&quot;ACTIVE\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;active&lt;/td&gt;&lt;td&gt;\n                        \n                           Description: The state indicates the RoleLink is in progress.&lt;br/&gt;\r\n\n                     &lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td&gt;&amp;nbsp;&amp;nbsp;CANCELLED&lt;a name=\&quot;CANCELLED\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;cancelled&lt;/td&gt;&lt;td&gt;\n                        \n                           Description: The terminal state resulting from abandoning the RoleLink prior to or after activation.&lt;br/&gt;\r\n\n                     &lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td&gt;&amp;nbsp;&amp;nbsp;COMPLETED&lt;a name=\&quot;COMPLETED\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;completed&lt;/td&gt;&lt;td&gt;\n                        \n                           Description: The terminal state representing the successful completion of the RoleLink.&lt;br/&gt;\r\n\n                     &lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td&gt;&amp;nbsp;&amp;nbsp;PENDING&lt;a name=\&quot;PENDING\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;pending&lt;/td&gt;&lt;td&gt;\n                        \n                           Description: The state indicates the RoleLink has not yet become active.&lt;br/&gt;\r\n\n                     &lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;NULLIFIED&lt;a name=\&quot;NULLIFIED\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;nullified&lt;/td&gt;&lt;td&gt;\n                        \n                           Description: The state representing the termination of a RoleLink instance that was created in error.&lt;br/&gt;\r\n\n                     &lt;/td&gt;&lt;/tr&gt;\r\n&lt;/table&gt;\r\n&lt;/div&gt;&quot;
+  },
+  &quot;identifier&quot;: &quot;http://hl7.org/fhir/v3/vs/RoleLinkStatus&quot;,
+  &quot;name&quot;: &quot;v3 Code System RoleLinkStatus&quot;,
+  &quot;publisher&quot;: &quot;HL7, Inc&quot;,
+  &quot;telecom&quot;: [
+    {
+      &quot;system&quot;: &quot;url&quot;,
+      &quot;value&quot;: &quot;http://hl7.org&quot;
+    }
+  ],
+  &quot;description&quot;: &quot;  Description:\r\nCodes representing possible states of a RoleLink, as defined by the RoleLink class state machine.&quot;,
+  &quot;status&quot;: &quot;active&quot;,
+  &quot;date&quot;: &quot;2013-12-07T00:00:00-06:00&quot;,
+  &quot;define&quot;: {
+    &quot;system&quot;: &quot;http://hl7.org/fhir/v3/RoleLinkStatus&quot;,
+    &quot;caseSensitive&quot;: true,
+    &quot;concept&quot;: [
+      {
+        &quot;code&quot;: &quot;NORMAL&quot;,
+        &quot;display&quot;: &quot;normal&quot;,
+        &quot;definition&quot;: &quot;Description: The 'typical' state. Excludes \&quot;nullified\&quot; which represents the termination state of a RoleLink instance that was created in error.&quot;,
+        &quot;concept&quot;: [
+          {
+            &quot;code&quot;: &quot;ACTIVE&quot;,
+            &quot;display&quot;: &quot;active&quot;,
+            &quot;definition&quot;: &quot;Description: The state indicates the RoleLink is in progress.&quot;
+          },
+          {
+            &quot;code&quot;: &quot;CANCELLED&quot;,
+            &quot;display&quot;: &quot;cancelled&quot;,
+            &quot;definition&quot;: &quot;Description: The terminal state resulting from abandoning the RoleLink prior to or after activation.&quot;
+          },
+          {
+            &quot;code&quot;: &quot;COMPLETED&quot;,
+            &quot;display&quot;: &quot;completed&quot;,
+            &quot;definition&quot;: &quot;Description: The terminal state representing the successful completion of the RoleLink.&quot;
+          },
+          {
+            &quot;code&quot;: &quot;PENDING&quot;,
+            &quot;display&quot;: &quot;pending&quot;,
+            &quot;definition&quot;: &quot;Description: The state indicates the RoleLink has not yet become active.&quot;
+          }
+        ]
+      },
+      {
+        &quot;code&quot;: &quot;NULLIFIED&quot;,
+        &quot;display&quot;: &quot;nullified&quot;,
+        &quot;definition&quot;: &quot;Description: The state representing the termination of a RoleLink instance that was created in error.&quot;
+      }
+    ]
+  }
+}</pre>
+</div>
+</body>
+</html>

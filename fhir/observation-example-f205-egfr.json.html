@@ -1,0 +1,81 @@
+﻿<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+ <title>Real-world patient - egfr</title>
+ <link rel="Stylesheet" href="fhir.css" type="text/css" media="screen"/>
+</head>
+<body>
+<p>&nbsp;</p>
+<div class="example">
+<p>Real-world patient - egfr</p>
+<p><a href="observation-example-f205-egfr.json">Raw JSON</a></p>
+<pre class="json">
+{
+  &quot;resourceType&quot;: &quot;Observation&quot;,
+  &quot;name&quot;: {
+    &quot;coding&quot;: [
+      {
+        &quot;system&quot;: &quot;http://snomed.info/sct&quot;,
+        &quot;code&quot;: &quot;409402009&quot;,
+        &quot;display&quot;: &quot;Epidermal Growth Factor Receptor&quot;
+      }
+    ]
+  },
+  &quot;valueQuantity&quot;: {
+    &quot;value&quot;: &quot;54&quot;,
+    &quot;units&quot;: &quot;mL/min&quot;,
+    &quot;system&quot;: &quot;http://snomed.info/sct&quot;,
+    &quot;code&quot;: &quot;258859000&quot;
+  },
+  &quot;interpretation&quot;: {
+    &quot;coding&quot;: [
+      {
+        &quot;system&quot;: &quot;http://snomed.info/sct&quot;,
+        &quot;code&quot;: &quot;427038005&quot;,
+        &quot;display&quot;: &quot;Negative for epidermal growth factor receptor expression (Non-small cell lung cancer)&quot;
+      },
+      {
+        &quot;system&quot;: &quot;http://hl7.org/fhir/v2/0078&quot;,
+        &quot;code&quot;: &quot;NEG&quot;
+      }
+    ]
+  },
+  &quot;issued&quot;: &quot;2013-04-04T14:34:00+01:00&quot;,
+  &quot;status&quot;: &quot;final&quot;,
+  &quot;reliability&quot;: &quot;ok&quot;,
+  &quot;method&quot;: {
+    &quot;coding&quot;: [
+      {
+        &quot;system&quot;: &quot;http://snomed.info/sct&quot;,
+        &quot;code&quot;: &quot;129266000&quot;,
+        &quot;display&quot;: &quot;Measurement&quot;
+      }
+    ]
+  },
+  &quot;identifier&quot;: {
+    &quot;label&quot;: &quot;eGFR value of Roel on April 2013 - 03720&quot;,
+    &quot;system&quot;: &quot;https://intranet.aumc.nl/labvalues&quot;,
+    &quot;value&quot;: &quot;1304-03720-eGFR&quot;
+  },
+  &quot;subject&quot;: {
+    &quot;reference&quot;: &quot;Patient/f201&quot;,
+    &quot;display&quot;: &quot;Roel&quot;
+  },
+  &quot;performer&quot;: [
+    {
+      &quot;reference&quot;: &quot;Practitioner/f202&quot;,
+      &quot;display&quot;: &quot;Luigi Maas&quot;
+    }
+  ],
+  &quot;referenceRange&quot;: [
+    {
+      &quot;high&quot;: {
+        &quot;value&quot;: &quot;60&quot;,
+        &quot;units&quot;: &quot;mL/min&quot;
+      }
+    }
+  ]
+}
+</pre>
+</div>
+</body>
+</html>

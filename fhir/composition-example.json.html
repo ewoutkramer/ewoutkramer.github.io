@@ -1,0 +1,82 @@
+﻿<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+ <title>Simple Example of a Composition</title>
+ <link rel="Stylesheet" href="fhir.css" type="text/css" media="screen"/>
+</head>
+<body>
+<p>&nbsp;</p>
+<div class="example">
+<p>Simple Example of a Composition</p>
+<p><a href="composition-example.json">Raw JSON</a></p>
+<pre class="json">
+{
+  &quot;resourceType&quot;: &quot;Composition&quot;,
+  &quot;text&quot;: {
+    &quot;status&quot;: &quot;generated&quot;,
+    &quot;div&quot;: &quot;&lt;div&gt;\n      &lt;p&gt;Consultation note for Henry Levin the 7th&lt;/p&gt;\n    &lt;/div&gt;&quot;
+  },
+  &quot;identifier&quot;: {
+    &quot;system&quot;: &quot;http://healthintersections.com.au/test&quot;,
+    &quot;value&quot;: &quot;1&quot;
+  },
+  &quot;instant&quot;: &quot;2012-01-04T09:10:14Z&quot;,
+  &quot;type&quot;: {
+    &quot;coding&quot;: [
+      {
+        &quot;system&quot;: &quot;http://loinc.org&quot;,
+        &quot;code&quot;: &quot;11488-4&quot;,
+        &quot;display&quot;: &quot;Consult note&quot;
+      }
+    ]
+  },
+  &quot;status&quot;: &quot;final&quot;,
+  &quot;confidentiality&quot;: {
+    &quot;system&quot;: &quot;http://ihe.net/xds/connectathon/confidentialityCodes&quot;,
+    &quot;code&quot;: &quot;1.3.6.1.4.1.21367.2006.7.101&quot;,
+    &quot;display&quot;: &quot;Clinical-Staff&quot;
+  },
+  &quot;subject&quot;: {
+    &quot;reference&quot;: &quot;Patient/xcda&quot;,
+    &quot;display&quot;: &quot;Henry Levin the 7th&quot;
+  },
+  &quot;author&quot;: [
+    {
+      &quot;reference&quot;: &quot;Practitioner/xcda-author&quot;,
+      &quot;display&quot;: &quot;Robert Dolin MD&quot;
+    }
+  ],
+  &quot;attester&quot;: [
+    {
+      &quot;mode&quot;: [
+        &quot;legal&quot;
+      ],
+      &quot;party&quot;: {
+        &quot;reference&quot;: &quot;Practitioner/xcda-author&quot;,
+        &quot;display&quot;: &quot;Robert Dolin MD&quot;
+      }
+    }
+  ],
+  &quot;custodian&quot;: {
+    &quot;reference&quot;: &quot;Organization/2.16.840.1.113883.19.5&quot;,
+    &quot;display&quot;: &quot;Good Health Clinic&quot;
+  },
+  &quot;section&quot;: [
+    {
+      &quot;code&quot;: {
+        &quot;coding&quot;: [
+          {
+            &quot;system&quot;: &quot;http://loinc.org&quot;,
+            &quot;code&quot;: &quot;10164-2&quot;
+          }
+        ]
+      },
+      &quot;content&quot;: {
+        &quot;reference&quot;: &quot;MedicationAdministration/example&quot;
+      }
+    }
+  ]
+}
+</pre>
+</div>
+</body>
+</html>

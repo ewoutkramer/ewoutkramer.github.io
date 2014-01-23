@@ -1,0 +1,79 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+ <title>Example Instance for v2 table 0123, Version 2.2-</title>
+ <link rel="Stylesheet" href="../../../fhir.css" type="text/css" media="screen"/>
+</head>
+<body>
+<p>&nbsp;</p>
+<div class="example">
+<p>FHIR Value set/code system definition for HL7 v2 table 0123 ver 2.2- ( RESULT STATUS - OBR)</p>
+<p><a href="v2-0123-2.2-.json">Raw JSON</a></p>
+<pre class="json">
+{
+  &quot;resourceType&quot;: &quot;ValueSet&quot;,
+  &quot;text&quot;: {
+    &quot;status&quot;: &quot;additional&quot;,
+    &quot;div&quot;: &quot;&lt;div&gt;&lt;p&gt;RESULT STATUS - OBR&lt;/p&gt;\r\n&lt;table class=\&quot;grid\&quot;&gt;\r\n &lt;tr&gt;&lt;td&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Description&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Version&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;C&lt;a name=\&quot;C\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Correction to results&lt;/td&gt;&lt;td&gt;from v2.1&lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;F&lt;a name=\&quot;F\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Final results - results stored &amp;amp; verified&lt;/td&gt;&lt;td&gt;from v2.1&lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;I&lt;a name=\&quot;I\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Specimen in lab, not yet processed.&lt;/td&gt;&lt;td&gt;from v2.1&lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;O&lt;a name=\&quot;O\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Order received; specimen not yet received&lt;/td&gt;&lt;td&gt;added v2.2&lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;P&lt;a name=\&quot;P\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Preliminary: A verified early result is available, final results not yet obtained&lt;/td&gt;&lt;td&gt;from v2.1&lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;R&lt;a name=\&quot;R\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Results stored; not yet verified&lt;/td&gt;&lt;td&gt;from v2.1&lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;S&lt;a name=\&quot;S\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;No results available; procedure scheduled, but not done&lt;/td&gt;&lt;td&gt;from v2.1&lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;X&lt;a name=\&quot;X\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;No results available; Order canceled.&lt;/td&gt;&lt;td&gt;added v2.2&lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;Y&lt;a name=\&quot;Y\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;No order on record for this test.  (Used only on queries)&lt;/td&gt;&lt;td&gt;from v2.1&lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;Z&lt;a name=\&quot;Z\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;No record of this patient. (Used only on queries)&lt;/td&gt;&lt;td&gt;from v2.1&lt;/td&gt;&lt;/tr&gt;\r\n&lt;/table&gt;\r\n&lt;/div&gt;&quot;
+  },
+  &quot;identifier&quot;: &quot;http://hl7.org/fhir/v2/vs/0123/2.2-&quot;,
+  &quot;name&quot;: &quot;v2 table 0123, Version 2.2-&quot;,
+  &quot;publisher&quot;: &quot;HL7, Inc&quot;,
+  &quot;telecom&quot;: [
+    {
+      &quot;system&quot;: &quot;url&quot;,
+      &quot;value&quot;: &quot;http://hl7.org&quot;
+    }
+  ],
+  &quot;description&quot;: &quot;FHIR Value set/code system definition for HL7 v2 table 0123 ver 2.2- ( RESULT STATUS - OBR)&quot;,
+  &quot;status&quot;: &quot;active&quot;,
+  &quot;date&quot;: &quot;2011-01-28&quot;,
+  &quot;define&quot;: {
+    &quot;system&quot;: &quot;http://hl7.org/fhir/v2/0123/2.2-&quot;,
+    &quot;caseSensitive&quot;: true,
+    &quot;concept&quot;: [
+      {
+        &quot;code&quot;: &quot;C&quot;,
+        &quot;display&quot;: &quot;Correction to results&quot;
+      },
+      {
+        &quot;code&quot;: &quot;F&quot;,
+        &quot;display&quot;: &quot;Final results - results stored &amp; verified&quot;
+      },
+      {
+        &quot;code&quot;: &quot;I&quot;,
+        &quot;display&quot;: &quot;Specimen in lab, not yet processed.&quot;
+      },
+      {
+        &quot;code&quot;: &quot;O&quot;,
+        &quot;display&quot;: &quot;Order received; specimen not yet received&quot;
+      },
+      {
+        &quot;code&quot;: &quot;P&quot;,
+        &quot;display&quot;: &quot;Preliminary: A verified early result is available, final results not yet obtained&quot;
+      },
+      {
+        &quot;code&quot;: &quot;R&quot;,
+        &quot;display&quot;: &quot;Results stored; not yet verified&quot;
+      },
+      {
+        &quot;code&quot;: &quot;S&quot;,
+        &quot;display&quot;: &quot;No results available; procedure scheduled, but not done&quot;
+      },
+      {
+        &quot;code&quot;: &quot;X&quot;,
+        &quot;display&quot;: &quot;No results available; Order canceled.&quot;
+      },
+      {
+        &quot;code&quot;: &quot;Y&quot;,
+        &quot;display&quot;: &quot;No order on record for this test.  (Used only on queries)&quot;
+      },
+      {
+        &quot;code&quot;: &quot;Z&quot;,
+        &quot;display&quot;: &quot;No record of this patient. (Used only on queries)&quot;
+      }
+    ]
+  }
+}</pre>
+</div>
+</body>
+</html>

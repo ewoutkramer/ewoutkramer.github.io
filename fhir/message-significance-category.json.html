@@ -1,0 +1,55 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+ <title>Example Instance for message-significance-category</title>
+ <link rel="Stylesheet" href="fhir.css" type="text/css" media="screen"/>
+</head>
+<body>
+<p>&nbsp;</p>
+<div class="example">
+<p>Definition for Value SetMessageSignificanceCategory</p>
+<p><a href="message-significance-category.json">Raw JSON</a></p>
+<pre class="json">
+{
+  &quot;resourceType&quot;: &quot;ValueSet&quot;,
+  &quot;text&quot;: {
+    &quot;status&quot;: &quot;generated&quot;,
+    &quot;div&quot;: &quot;&lt;div&gt;&lt;h2&gt;MessageSignificanceCategory&lt;/h2&gt;&lt;p&gt;The impact of the content of a message&lt;/p&gt;&lt;p&gt;This value set defines its own terms in the system http://hl7.org/fhir/message-significance-category&lt;/p&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Definition&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Consequence&lt;a name=\&quot;Consequence\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;td&gt;The message represents/requests a change that should not be processed more than once. E.g. Making a booking for an appointment.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Currency&lt;a name=\&quot;Currency\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;td&gt;The message represents a response to query for current information. Retrospective processing is wrong and/or wasteful.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Notification&lt;a name=\&quot;Notification\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;td&gt;The content is not necessarily intended to be current, and it can be reprocessed, though there may be version issues created by processing old notifications.&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&quot;
+  },
+  &quot;identifier&quot;: &quot;http://hl7.org/fhir/vs/message-significance-category&quot;,
+  &quot;name&quot;: &quot;MessageSignificanceCategory&quot;,
+  &quot;publisher&quot;: &quot;HL7 (FHIR Project)&quot;,
+  &quot;telecom&quot;: [
+    {
+      &quot;system&quot;: &quot;url&quot;,
+      &quot;value&quot;: &quot;http://hl7.org/fhir&quot;
+    },
+    {
+      &quot;system&quot;: &quot;email&quot;,
+      &quot;value&quot;: &quot;fhir@lists.hl7.org&quot;
+    }
+  ],
+  &quot;description&quot;: &quot;The impact of the content of a message&quot;,
+  &quot;status&quot;: &quot;draft&quot;,
+  &quot;date&quot;: &quot;2014-01-22T23:46:10.711-06:00&quot;,
+  &quot;define&quot;: {
+    &quot;system&quot;: &quot;http://hl7.org/fhir/message-significance-category&quot;,
+    &quot;caseSensitive&quot;: true,
+    &quot;concept&quot;: [
+      {
+        &quot;code&quot;: &quot;Consequence&quot;,
+        &quot;definition&quot;: &quot;The message represents/requests a change that should not be processed more than once. E.g. Making a booking for an appointment.&quot;
+      },
+      {
+        &quot;code&quot;: &quot;Currency&quot;,
+        &quot;definition&quot;: &quot;The message represents a response to query for current information. Retrospective processing is wrong and/or wasteful.&quot;
+      },
+      {
+        &quot;code&quot;: &quot;Notification&quot;,
+        &quot;definition&quot;: &quot;The content is not necessarily intended to be current, and it can be reprocessed, though there may be version issues created by processing old notifications.&quot;
+      }
+    ]
+  }
+}</pre>
+</div>
+</body>
+</html>

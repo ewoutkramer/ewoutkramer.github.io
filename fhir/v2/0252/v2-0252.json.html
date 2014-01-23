@@ -1,0 +1,83 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+ <title>Example Instance for v2 Causality Observations</title>
+ <link rel="Stylesheet" href="../../fhir.css" type="text/css" media="screen"/>
+</head>
+<body>
+<p>&nbsp;</p>
+<div class="example">
+<p>FHIR Value set/code system definition for HL7 v2 table 0252 ( Causality Observations)</p>
+<p><a href="v2-0252.json">Raw JSON</a></p>
+<pre class="json">
+{
+  &quot;resourceType&quot;: &quot;ValueSet&quot;,
+  &quot;text&quot;: {
+    &quot;status&quot;: &quot;additional&quot;,
+    &quot;div&quot;: &quot;&lt;div&gt;&lt;p&gt;Causality Observations&lt;/p&gt;\r\n&lt;table class=\&quot;grid\&quot;&gt;\r\n &lt;tr&gt;&lt;td&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Description&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Version&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;AW&lt;a name=\&quot;AW\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Abatement of event after product withdrawn&lt;/td&gt;&lt;td&gt;added v2.3&lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;BE&lt;a name=\&quot;BE\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Event recurred after product reintroduced&lt;/td&gt;&lt;td&gt;added v2.3&lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;DR&lt;a name=\&quot;DR\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Dose response observed&lt;/td&gt;&lt;td&gt;added v2.3&lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;EX&lt;a name=\&quot;EX\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Alternative explanations for the event available&lt;/td&gt;&lt;td&gt;added v2.3&lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;IN&lt;a name=\&quot;IN\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Event occurred after product introduced&lt;/td&gt;&lt;td&gt;added v2.3&lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;LI&lt;a name=\&quot;LI\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Literature reports association of product with event&lt;/td&gt;&lt;td&gt;added v2.3&lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;OE&lt;a name=\&quot;OE\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Occurrence of event was confirmed by objective evidence&lt;/td&gt;&lt;td&gt;added v2.3&lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;OT&lt;a name=\&quot;OT\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Other&lt;/td&gt;&lt;td&gt;added v2.3&lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;PL&lt;a name=\&quot;PL\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Effect observed when patient receives placebo&lt;/td&gt;&lt;td&gt;added v2.3&lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;SE&lt;a name=\&quot;SE\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Similar events in past for this patient&lt;/td&gt;&lt;td&gt;added v2.3&lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;TC&lt;a name=\&quot;TC\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Toxic levels of product documented in blood or body fluids&lt;/td&gt;&lt;td&gt;added v2.3&lt;/td&gt;&lt;/tr&gt;\r\n&lt;/table&gt;\r\n&lt;/div&gt;&quot;
+  },
+  &quot;identifier&quot;: &quot;http://hl7.org/fhir/v2/vs/0252&quot;,
+  &quot;name&quot;: &quot;v2 Causality Observations&quot;,
+  &quot;publisher&quot;: &quot;HL7, Inc&quot;,
+  &quot;telecom&quot;: [
+    {
+      &quot;system&quot;: &quot;url&quot;,
+      &quot;value&quot;: &quot;http://hl7.org&quot;
+    }
+  ],
+  &quot;description&quot;: &quot;FHIR Value set/code system definition for HL7 v2 table 0252 ( Causality Observations)&quot;,
+  &quot;status&quot;: &quot;active&quot;,
+  &quot;date&quot;: &quot;2011-01-28&quot;,
+  &quot;define&quot;: {
+    &quot;system&quot;: &quot;http://hl7.org/fhir/v2/0252&quot;,
+    &quot;caseSensitive&quot;: true,
+    &quot;concept&quot;: [
+      {
+        &quot;code&quot;: &quot;AW&quot;,
+        &quot;display&quot;: &quot;Abatement of event after product withdrawn&quot;
+      },
+      {
+        &quot;code&quot;: &quot;BE&quot;,
+        &quot;display&quot;: &quot;Event recurred after product reintroduced&quot;
+      },
+      {
+        &quot;code&quot;: &quot;DR&quot;,
+        &quot;display&quot;: &quot;Dose response observed&quot;
+      },
+      {
+        &quot;code&quot;: &quot;EX&quot;,
+        &quot;display&quot;: &quot;Alternative explanations for the event available&quot;
+      },
+      {
+        &quot;code&quot;: &quot;IN&quot;,
+        &quot;display&quot;: &quot;Event occurred after product introduced&quot;
+      },
+      {
+        &quot;code&quot;: &quot;LI&quot;,
+        &quot;display&quot;: &quot;Literature reports association of product with event&quot;
+      },
+      {
+        &quot;code&quot;: &quot;OE&quot;,
+        &quot;display&quot;: &quot;Occurrence of event was confirmed by objective evidence&quot;
+      },
+      {
+        &quot;code&quot;: &quot;OT&quot;,
+        &quot;display&quot;: &quot;Other&quot;
+      },
+      {
+        &quot;code&quot;: &quot;PL&quot;,
+        &quot;display&quot;: &quot;Effect observed when patient receives placebo&quot;
+      },
+      {
+        &quot;code&quot;: &quot;SE&quot;,
+        &quot;display&quot;: &quot;Similar events in past for this patient&quot;
+      },
+      {
+        &quot;code&quot;: &quot;TC&quot;,
+        &quot;display&quot;: &quot;Toxic levels of product documented in blood or body fluids&quot;
+      }
+    ]
+  }
+}</pre>
+</div>
+</body>
+</html>

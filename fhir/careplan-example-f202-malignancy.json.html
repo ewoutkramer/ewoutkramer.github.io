@@ -1,0 +1,146 @@
+﻿<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+ <title>Real-world patient example</title>
+ <link rel="Stylesheet" href="fhir.css" type="text/css" media="screen"/>
+</head>
+<body>
+<p>&nbsp;</p>
+<div class="example">
+<p>Real-world patient example</p>
+<p><a href="careplan-example-f202-malignancy.json">Raw JSON</a></p>
+<pre class="json">
+{
+  &quot;resourceType&quot;: &quot;CarePlan&quot;,
+  &quot;contained&quot;: [
+    {
+      &quot;resourceType&quot;: &quot;Medication&quot;,
+      &quot;_id&quot;: &quot;tpf&quot;,
+      &quot;contained&quot;: [
+        {
+          &quot;resourceType&quot;: &quot;Medication&quot;,
+          &quot;_id&quot;: &quot;doce&quot;,
+          &quot;name&quot;: &quot;Docetaxel&quot;,
+          &quot;code&quot;: {
+            &quot;coding&quot;: [
+              {
+                &quot;system&quot;: &quot;http://snomed.info/sct&quot;,
+                &quot;code&quot;: &quot;108806006&quot;
+              }
+            ]
+          }
+        },
+        {
+          &quot;resourceType&quot;: &quot;Medication&quot;,
+          &quot;_id&quot;: &quot;cisp&quot;,
+          &quot;name&quot;: &quot;Cisplatin&quot;,
+          &quot;code&quot;: {
+            &quot;coding&quot;: [
+              {
+                &quot;system&quot;: &quot;http://snomed.info/sct&quot;,
+                &quot;code&quot;: &quot;57066004&quot;
+              }
+            ]
+          }
+        },
+        {
+          &quot;resourceType&quot;: &quot;Medication&quot;,
+          &quot;_id&quot;: &quot;fluo&quot;,
+          &quot;name&quot;: &quot;5-Fluorouracil&quot;,
+          &quot;code&quot;: {
+            &quot;coding&quot;: [
+              {
+                &quot;system&quot;: &quot;http://snomed.info/sct&quot;,
+                &quot;code&quot;: &quot;3127006&quot;
+              }
+            ]
+          }
+        }
+      ],
+      &quot;name&quot;: &quot;TPF&quot;,
+      &quot;product&quot;: {
+        &quot;ingredient&quot;: [
+          {
+            &quot;item&quot;: {
+              &quot;reference&quot;: &quot;#doce&quot;
+            }
+          },
+          {
+            &quot;item&quot;: {
+              &quot;reference&quot;: &quot;#cisp&quot;
+            }
+          },
+          {
+            &quot;item&quot;: {
+              &quot;reference&quot;: &quot;#fluo&quot;
+            }
+          }
+        ]
+      }
+    }
+  ],
+  &quot;patient&quot;: {
+    &quot;reference&quot;: &quot;Patient/f201&quot;,
+    &quot;display&quot;: &quot;Roel&quot;
+  },
+  &quot;status&quot;: &quot;active&quot;,
+  &quot;concern&quot;: [
+    {
+      &quot;reference&quot;: &quot;Condition/f202&quot;,
+      &quot;display&quot;: &quot;Roel's head-neck tumor&quot;
+    }
+  ],
+  &quot;participant&quot;: [
+    {
+      &quot;role&quot;: {
+        &quot;coding&quot;: [
+          {
+            &quot;system&quot;: &quot;http://snomed.info/sct&quot;,
+            &quot;code&quot;: &quot;28995006&quot;,
+            &quot;display&quot;: &quot;Treated with&quot;
+          }
+        ]
+      },
+      &quot;member&quot;: {
+        &quot;reference&quot;: &quot;Practitioner/f201&quot;,
+        &quot;display&quot;: &quot;Dokter Bronsig&quot;
+      }
+    }
+  ],
+  &quot;goal&quot;: [
+    {
+      &quot;description&quot;: &quot;Elimination of the spenoid bone tumor&quot;,
+      &quot;status&quot;: &quot;in progress&quot;
+    }
+  ],
+  &quot;activity&quot;: [
+    {
+      &quot;status&quot;: &quot;in progress&quot;,
+      &quot;prohibited&quot;: false,
+      &quot;actionResulting&quot;: [
+        {
+          &quot;reference&quot;: &quot;Procedure/f201&quot;,
+          &quot;display&quot;: &quot;Roel's Chemotherapy&quot;
+        }
+      ],
+      &quot;simple&quot;: {
+        &quot;category&quot;: &quot;procedure&quot;,
+        &quot;code&quot;: {
+          &quot;coding&quot;: [
+            {
+              &quot;system&quot;: &quot;http://snomed.info/sct&quot;,
+              &quot;code&quot;: &quot;367336001&quot;,
+              &quot;display&quot;: &quot;Chemotherapy&quot;
+            }
+          ]
+        },
+        &quot;product&quot;: {
+          &quot;reference&quot;: &quot;#tpf&quot;
+        }
+      }
+    }
+  ]
+}
+</pre>
+</div>
+</body>
+</html>

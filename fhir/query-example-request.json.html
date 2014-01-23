@@ -1,0 +1,84 @@
+﻿<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+ <title>Request Message Example</title>
+ <link rel="Stylesheet" href="fhir.css" type="text/css" media="screen"/>
+</head>
+<body>
+<p>&nbsp;</p>
+<div class="example">
+<p>Request Message Example</p>
+<p><a href="query-example-request.json">Raw JSON</a></p>
+<pre class="json">
+{
+  &quot;feed&quot;: {
+    &quot;resourceType&quot;: &quot;Bundle&quot;,
+    &quot;title&quot;: &quot;Query Message&quot;,
+    &quot;id&quot;: &quot;urn:uuid:13daadee-26e1-4d6a-9e6a-7f4af9b58877&quot;,
+    &quot;updated&quot;: &quot;2013-05-18T08:14:00+10:00&quot;,
+    &quot;category&quot;: [
+      {
+        &quot;scheme&quot;: &quot;http://hl7.org/fhir/tag&quot;,
+        &quot;term&quot;: &quot;http://hl7.org/fhir/tag/message&quot;
+      }
+    ],
+    &quot;author&quot;: [
+      {
+        &quot;name&quot;: &quot;HL7 FHIR project&quot;
+      }
+    ],
+    &quot;entry&quot;: [
+      {
+        &quot;title&quot;: &quot;Message Header Resource&quot;,
+        &quot;id&quot;: &quot;urn:uuid:35b9cc1b-bf67-4cfd-9177-5b6422f7d84e&quot;,
+        &quot;updated&quot;: &quot;2013-05-18T08:14:00+10:00&quot;,
+        &quot;content&quot;: {
+          &quot;resourceType&quot;: &quot;MessageHeader&quot;,
+          &quot;identifier&quot;: &quot;bd5a062a-9d5c-4cb2-bcc8-1836618c5226&quot;,
+          &quot;timestamp&quot;: &quot;2013-05-18T08:14:00+10:00&quot;,
+          &quot;event&quot;: {
+            &quot;system&quot;: &quot;http://hl7.org/fhir/message-type&quot;,
+            &quot;code&quot;: &quot;query&quot;
+          },
+          &quot;source&quot;: {
+            &quot;software&quot;: &quot;notepad&quot;,
+            &quot;endpoint&quot;: &quot;http://localhost&quot;
+          },
+          &quot;destination&quot;: [
+            {
+              &quot;name&quot;: &quot;Health Intersections Server&quot;,
+              &quot;endpoint&quot;: &quot;http://hl7connect.healthintersections.com.au/svc/fhir/Mailbox&quot;
+            }
+          ],
+          &quot;data&quot;: [
+            {
+              &quot;reference&quot;: &quot;urn:uuid:7cb73a48-090d-469a-a2b2-04f1e6b11ea2&quot;
+            }
+          ]
+        }
+      },
+      {
+        &quot;title&quot;: &quot;Query Resource&quot;,
+        &quot;id&quot;: &quot;urn:uuid:7cb73a48-090d-469a-a2b2-04f1e6b11ea2&quot;,
+        &quot;updated&quot;: &quot;2013-05-18T08:14:00+10:00&quot;,
+        &quot;content&quot;: {
+          &quot;resourceType&quot;: &quot;Query&quot;,
+          &quot;identifier&quot;: &quot;urn:uuid:7cb73a48-090d-469a-a2b2-04f1e6b11ea2&quot;,
+          &quot;parameter&quot;: [
+            {
+              &quot;url&quot;: &quot;http://hl7.org/fhir/query#_type&quot;,
+              &quot;valueString&quot;: &quot;patient&quot;
+            },
+            {
+              &quot;url&quot;: &quot;http://hl7.org/fhir/query#gender&quot;,
+              &quot;valueString&quot;: &quot;m&quot;
+            }
+          ]
+        }
+      }
+    ]
+  }
+}
+</pre>
+</div>
+</body>
+</html>

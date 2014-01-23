@@ -1,0 +1,58 @@
+﻿<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+ <title>Example of medicationadministration</title>
+ <link rel="Stylesheet" href="fhir.css" type="text/css" media="screen"/>
+</head>
+<body>
+<p>&nbsp;</p>
+<div class="example">
+<p>Example of medicationadministration</p>
+<p><a href="medicationadministration-example.json">Raw JSON</a></p>
+<pre class="json">
+{
+  &quot;resourceType&quot;: &quot;MedicationAdministration&quot;,
+  &quot;text&quot;: {
+    &quot;status&quot;: &quot;generated&quot;,
+    &quot;div&quot;: &quot;&lt;div&gt;\n      &lt;p&gt;Penicillin VK 10ml suspension administered by oral route at 14:30 on 1 June 2012&lt;/p&gt;\n      &lt;p&gt;on the authority of prescription ref: example&lt;/p&gt;\n      &lt;p&gt;to patient ref: a23&lt;/p&gt;\n    &lt;/div&gt;&quot;
+  },
+  &quot;status&quot;: &quot;completed&quot;,
+  &quot;patient&quot;: {
+    &quot;reference&quot;: &quot;Patient/example&quot;
+  },
+  &quot;practitioner&quot;: {
+    &quot;reference&quot;: &quot;Practitioner/example&quot;
+  },
+  &quot;prescription&quot;: {
+    &quot;reference&quot;: &quot;MedicationPrescription/example&quot;
+  },
+  &quot;whenGiven&quot;: {
+    &quot;start&quot;: &quot;2012-06-01T14:30:00&quot;,
+    &quot;end&quot;: &quot;2012-06-01T14:30:00&quot;
+  },
+  &quot;medication&quot;: {
+    &quot;reference&quot;: &quot;Medication/example&quot;
+  },
+  &quot;dosage&quot;: [
+    {
+      &quot;route&quot;: {
+        &quot;coding&quot;: [
+          {
+            &quot;system&quot;: &quot;http://snomed.info/sct&quot;,
+            &quot;code&quot;: &quot;394899003&quot;,
+            &quot;display&quot;: &quot;oral administration of treatment&quot;
+          }
+        ]
+      },
+      &quot;quantity&quot;: {
+        &quot;value&quot;: &quot;10&quot;,
+        &quot;units&quot;: &quot;ml&quot;,
+        &quot;system&quot;: &quot;http://unitsofmeasure.org&quot;,
+        &quot;code&quot;: &quot;ml&quot;
+      }
+    }
+  ]
+}
+</pre>
+</div>
+</body>
+</html>

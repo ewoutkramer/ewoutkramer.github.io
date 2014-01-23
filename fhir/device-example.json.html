@@ -1,0 +1,51 @@
+﻿<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+ <title>General Device Example</title>
+ <link rel="Stylesheet" href="fhir.css" type="text/css" media="screen"/>
+</head>
+<body>
+<p>&nbsp;</p>
+<div class="example">
+<p>General Device Example</p>
+<p><a href="device-example.json">Raw JSON</a></p>
+<pre class="json">
+{
+  &quot;resourceType&quot;: &quot;Device&quot;,
+  &quot;text&quot;: {
+    &quot;status&quot;: &quot;generated&quot;,
+    &quot;div&quot;: &quot;&lt;div&gt;\n      &lt;p&gt;example&lt;/p&gt;\n    &lt;/div&gt;&quot;
+  },
+  &quot;identifier&quot;: [
+    {
+      &quot;system&quot;: &quot;http://goodcare.org/devices/id&quot;,
+      &quot;value&quot;: &quot;345675&quot;
+    },
+    {
+      &quot;label&quot;: &quot;Serial Number&quot;,
+      &quot;value&quot;: &quot;AMID-342135-8464&quot;
+    }
+  ],
+  &quot;type&quot;: {
+    &quot;coding&quot;: [
+      {
+        &quot;system&quot;: &quot;http://snomed.info/sct&quot;,
+        &quot;code&quot;: &quot;86184003&quot;,
+        &quot;display&quot;: &quot;Electrocardiographic monitor and recorder&quot;
+      }
+    ],
+    &quot;text&quot;: &quot;ECG&quot;
+  },
+  &quot;manufacturer&quot;: &quot;Acme Devices, Inc&quot;,
+  &quot;model&quot;: &quot;AB 45-J&quot;,
+  &quot;lotNumber&quot;: &quot;43453424&quot;,
+  &quot;contact&quot;: [
+    {
+      &quot;system&quot;: &quot;phone&quot;,
+      &quot;value&quot;: &quot;ext 4352&quot;
+    }
+  ]
+}
+</pre>
+</div>
+</body>
+</html>

@@ -1,0 +1,92 @@
+﻿<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+ <title>Real-world patient - CO2</title>
+ <link rel="Stylesheet" href="fhir.css" type="text/css" media="screen"/>
+</head>
+<body>
+<p>&nbsp;</p>
+<div class="example">
+<p>Real-world patient - CO2</p>
+<p><a href="observation-example-f203-bicarbonate.json">Raw JSON</a></p>
+<pre class="json">
+{
+  &quot;resourceType&quot;: &quot;Observation&quot;,
+  &quot;name&quot;: {
+    &quot;coding&quot;: [
+      {
+        &quot;system&quot;: &quot;http://snomed.info/sct&quot;,
+        &quot;code&quot;: &quot;365722008&quot;,
+        &quot;display&quot;: &quot;Bicarbonate level&quot;
+      }
+    ]
+  },
+  &quot;valueQuantity&quot;: {
+    &quot;value&quot;: &quot;28&quot;,
+    &quot;units&quot;: &quot;mmol/L&quot;,
+    &quot;system&quot;: &quot;http://snomed.info/sct&quot;,
+    &quot;code&quot;: &quot;258813002&quot;
+  },
+  &quot;interpretation&quot;: {
+    &quot;coding&quot;: [
+      {
+        &quot;system&quot;: &quot;http://snomed.info/sct&quot;,
+        &quot;code&quot;: &quot;166698001&quot;,
+        &quot;display&quot;: &quot;Serum bicarbonate level normal&quot;
+      },
+      {
+        &quot;system&quot;: &quot;http://hl7.org/fhir/v2/0078&quot;,
+        &quot;code&quot;: &quot;N&quot;
+      }
+    ]
+  },
+  &quot;issued&quot;: &quot;2013-04-04T14:34:00+01:00&quot;,
+  &quot;status&quot;: &quot;final&quot;,
+  &quot;reliability&quot;: &quot;ok&quot;,
+  &quot;method&quot;: {
+    &quot;coding&quot;: [
+      {
+        &quot;system&quot;: &quot;http://snomed.info/sct&quot;,
+        &quot;code&quot;: &quot;271239003&quot;,
+        &quot;display&quot;: &quot;Serum bicarbonate measurement&quot;
+      }
+    ]
+  },
+  &quot;identifier&quot;: {
+    &quot;label&quot;: &quot;Bicarbonaat value of Roel on April 2013 - 03720&quot;,
+    &quot;system&quot;: &quot;https://intranet.aumc.nl/labvalues&quot;,
+    &quot;value&quot;: &quot;1304-03720-Bicarbonate&quot;
+  },
+  &quot;subject&quot;: {
+    &quot;reference&quot;: &quot;Patient/f201&quot;,
+    &quot;display&quot;: &quot;Roel&quot;
+  },
+  &quot;performer&quot;: [
+    {
+      &quot;reference&quot;: &quot;Practitioner/f202&quot;,
+      &quot;display&quot;: &quot;Luigi Maas&quot;
+    }
+  ],
+  &quot;referenceRange&quot;: [
+    {
+      &quot;low&quot;: {
+        &quot;value&quot;: &quot;22&quot;
+      },
+      &quot;high&quot;: {
+        &quot;value&quot;: &quot;29&quot;
+      },
+      &quot;meaning&quot;: {
+        &quot;coding&quot;: [
+          {
+            &quot;system&quot;: &quot;http://hl7.org/fhir/referencerange-meaning&quot;,
+            &quot;code&quot;: &quot;normal&quot;,
+            &quot;display&quot;: &quot;Normal Range&quot;
+          }
+        ]
+      }
+    }
+  ]
+}
+</pre>
+</div>
+</body>
+</html>

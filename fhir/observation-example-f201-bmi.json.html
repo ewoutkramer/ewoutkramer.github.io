@@ -1,0 +1,160 @@
+﻿<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+ <title>Real-world patient - bmi</title>
+ <link rel="Stylesheet" href="fhir.css" type="text/css" media="screen"/>
+</head>
+<body>
+<p>&nbsp;</p>
+<div class="example">
+<p>Real-world patient - bmi</p>
+<p><a href="observation-example-f201-bmi.json">Raw JSON</a></p>
+<pre class="json">
+{
+  &quot;resourceType&quot;: &quot;Observation&quot;,
+  &quot;name&quot;: {
+    &quot;coding&quot;: [
+      {
+        &quot;system&quot;: &quot;http://snomed.info/sct&quot;,
+        &quot;code&quot;: &quot;60621009&quot;,
+        &quot;display&quot;: &quot;Body mass index&quot;
+      },
+      {
+        &quot;system&quot;: &quot;http://loinc.org&quot;,
+        &quot;code&quot;: &quot;39156-5&quot;,
+        &quot;display&quot;: &quot;Body mass index (BMI) [Ratio]&quot;
+      }
+    ],
+    &quot;text&quot;: &quot;BMI&quot;
+  },
+  &quot;valueQuantity&quot;: {
+    &quot;value&quot;: &quot;31.31&quot;
+  },
+  &quot;interpretation&quot;: {
+    &quot;coding&quot;: [
+      {
+        &quot;system&quot;: &quot;http://snomed.info/sct&quot;,
+        &quot;code&quot;: &quot;75540009&quot;,
+        &quot;display&quot;: &quot;High&quot;
+      },
+      {
+        &quot;system&quot;: &quot;http://hl7.org/fhir/v2/0078&quot;,
+        &quot;code&quot;: &quot;H&quot;
+      }
+    ]
+  },
+  &quot;issued&quot;: &quot;2013-04-04T13:27:00+01:00&quot;,
+  &quot;status&quot;: &quot;final&quot;,
+  &quot;reliability&quot;: &quot;ok&quot;,
+  &quot;bodySite&quot;: {
+    &quot;coding&quot;: [
+      {
+        &quot;system&quot;: &quot;http://snomed.info/sct&quot;,
+        &quot;code&quot;: &quot;38266002&quot;,
+        &quot;display&quot;: &quot;Entire body as a whole&quot;
+      }
+    ]
+  },
+  &quot;method&quot;: {
+    &quot;coding&quot;: [
+      {
+        &quot;system&quot;: &quot;http://snomed.info/sct&quot;,
+        &quot;code&quot;: &quot;122869004&quot;,
+        &quot;display&quot;: &quot;Measurement - action&quot;
+      }
+    ]
+  },
+  &quot;subject&quot;: {
+    &quot;reference&quot;: &quot;Patient/f201&quot;,
+    &quot;display&quot;: &quot;Roel&quot;
+  },
+  &quot;performer&quot;: [
+    {
+      &quot;reference&quot;: &quot;Practitioner/f201&quot;
+    }
+  ],
+  &quot;referenceRange&quot;: [
+    {
+      &quot;high&quot;: {
+        &quot;value&quot;: &quot;20&quot;
+      },
+      &quot;meaning&quot;: {
+        &quot;coding&quot;: [
+          {
+            &quot;system&quot;: &quot;http://snomed.info/sct&quot;,
+            &quot;code&quot;: &quot;310252000&quot;,
+            &quot;display&quot;: &quot;Low BMI&quot;
+          }
+        ]
+      }
+    },
+    {
+      &quot;low&quot;: {
+        &quot;value&quot;: &quot;20&quot;
+      },
+      &quot;high&quot;: {
+        &quot;value&quot;: &quot;25&quot;
+      },
+      &quot;meaning&quot;: {
+        &quot;coding&quot;: [
+          {
+            &quot;system&quot;: &quot;http://snomed.info/sct&quot;,
+            &quot;code&quot;: &quot;412768003&quot;,
+            &quot;display&quot;: &quot;Normal BMI&quot;
+          }
+        ]
+      }
+    },
+    {
+      &quot;low&quot;: {
+        &quot;value&quot;: &quot;25&quot;
+      },
+      &quot;high&quot;: {
+        &quot;value&quot;: &quot;30&quot;
+      },
+      &quot;meaning&quot;: {
+        &quot;coding&quot;: [
+          {
+            &quot;system&quot;: &quot;http://snomed.info/sct&quot;,
+            &quot;code&quot;: &quot;162863004&quot;,
+            &quot;display&quot;: &quot;Overweight&quot;
+          }
+        ]
+      }
+    },
+    {
+      &quot;low&quot;: {
+        &quot;value&quot;: &quot;30&quot;
+      },
+      &quot;high&quot;: {
+        &quot;value&quot;: &quot;40&quot;
+      },
+      &quot;meaning&quot;: {
+        &quot;coding&quot;: [
+          {
+            &quot;system&quot;: &quot;http://snomed.info/sct&quot;,
+            &quot;code&quot;: &quot;162864005&quot;,
+            &quot;display&quot;: &quot;Obesity&quot;
+          }
+        ]
+      }
+    },
+    {
+      &quot;low&quot;: {
+        &quot;value&quot;: &quot;40&quot;
+      },
+      &quot;meaning&quot;: {
+        &quot;coding&quot;: [
+          {
+            &quot;system&quot;: &quot;http://snomed.info/sct&quot;,
+            &quot;code&quot;: &quot;162864005&quot;,
+            &quot;display&quot;: &quot;Severe obesity&quot;
+          }
+        ]
+      }
+    }
+  ]
+}
+</pre>
+</div>
+</body>
+</html>

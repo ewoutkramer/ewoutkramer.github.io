@@ -1,0 +1,65 @@
+﻿<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+ <title>Example of a Biopsy</title>
+ <link rel="Stylesheet" href="fhir.css" type="text/css" media="screen"/>
+</head>
+<body>
+<p>&nbsp;</p>
+<div class="example">
+<p>Example of a Biopsy</p>
+<p><a href="procedure-example-biopsy.json">Raw JSON</a></p>
+<pre class="json">
+{
+  &quot;resourceType&quot;: &quot;Procedure&quot;,
+  &quot;text&quot;: {
+    &quot;status&quot;: &quot;generated&quot;,
+    &quot;div&quot;: &quot;&lt;div&gt;Biopsy of suspected melanoma L) arm&lt;/div&gt;&quot;
+  },
+  &quot;subject&quot;: {
+    &quot;reference&quot;: &quot;Patient/example&quot;
+  },
+  &quot;type&quot;: {
+    &quot;coding&quot;: [
+      {
+        &quot;system&quot;: &quot;http://snomed.info/sct&quot;,
+        &quot;code&quot;: &quot;90105005&quot;,
+        &quot;display&quot;: &quot;Biopsy of soft tissue of forearm (Procedure)&quot;
+      }
+    ],
+    &quot;text&quot;: &quot;Biopsy of suspected melanoma L) arm&quot;
+  },
+  &quot;bodySite&quot;: [
+    {
+      &quot;coding&quot;: [
+        {
+          &quot;system&quot;: &quot;http://snomed.info/sct&quot;,
+          &quot;code&quot;: &quot;368225008&quot;,
+          &quot;display&quot;: &quot;Entire Left Forearm&quot;
+        }
+      ],
+      &quot;text&quot;: &quot;Left forearm&quot;
+    }
+  ],
+  &quot;indication&quot;: [
+    {
+      &quot;text&quot;: &quot;Dark lesion l) forearm. getting darker last 3 months.&quot;
+    }
+  ],
+  &quot;performer&quot;: [
+    {
+      &quot;person&quot;: {
+        &quot;reference&quot;: &quot;Practitioner/example&quot;,
+        &quot;display&quot;: &quot;Dr Bert Biopser&quot;
+      }
+    }
+  ],
+  &quot;date&quot;: {
+    &quot;start&quot;: &quot;2014-02-03&quot;
+  },
+  &quot;followUp&quot;: &quot;Review in clinic&quot;,
+  &quot;notes&quot;: &quot;Standard Biopsy&quot;
+}
+</pre>
+</div>
+</body>
+</html>

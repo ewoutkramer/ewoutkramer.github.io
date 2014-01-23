@@ -1,0 +1,191 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+ <title>Example Instance for v2 Master File Identifier Code</title>
+ <link rel="Stylesheet" href="../../fhir.css" type="text/css" media="screen"/>
+</head>
+<body>
+<p>&nbsp;</p>
+<div class="example">
+<p>FHIR Value set/code system definition for HL7 v2 table 0175 ( Master File Identifier Code)</p>
+<p><a href="v2-0175.json">Raw JSON</a></p>
+<pre class="json">
+{
+  &quot;resourceType&quot;: &quot;ValueSet&quot;,
+  &quot;text&quot;: {
+    &quot;status&quot;: &quot;additional&quot;,
+    &quot;div&quot;: &quot;&lt;div&gt;&lt;p&gt;Master File Identifier Code&lt;/p&gt;\r\n&lt;table class=\&quot;grid\&quot;&gt;\r\n &lt;tr&gt;&lt;td&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Description&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Version&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;CDM&lt;a name=\&quot;CDM\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Charge description master file&lt;/td&gt;&lt;td&gt;added v2.2&lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;CLN&lt;a name=\&quot;CLN\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Clinic master file&lt;/td&gt;&lt;td&gt;added v2.4&lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;CM0&lt;a name=\&quot;CM0\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Clinical study master&lt;/td&gt;&lt;td&gt;added v2.3, removed after v2.3&lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;CM1&lt;a name=\&quot;CM1\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Clinical study phase master&lt;/td&gt;&lt;td&gt;added v2.3, removed after v2.3&lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;CM2&lt;a name=\&quot;CM2\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Clinical study Data Schedule Master&lt;/td&gt;&lt;td&gt;added v2.3, removed after v2.3&lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;CMA&lt;a name=\&quot;CMA\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Clinical study with phases and scheduled master file&lt;/td&gt;&lt;td&gt;added v2.3.1&lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;CMB&lt;a name=\&quot;CMB\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Clinical study without phases but with scheduled master file&lt;/td&gt;&lt;td&gt;added v2.3.1&lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;INV&lt;a name=\&quot;INV\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Inventory master file&lt;/td&gt;&lt;td&gt;added v2.5&lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;LOC&lt;a name=\&quot;LOC\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Location master file&lt;/td&gt;&lt;td&gt;added v2.3&lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;OM1&lt;a name=\&quot;OM1\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Observation text master file (i.e., Lab) (see Chapter 7, Appendix)&lt;/td&gt;&lt;td&gt;added v2.2, removed after v2.2&lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;OM1-OM6&lt;a name=\&quot;OM1-OM6\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Observation text master file segments (e.g., Lab) (see Chapter 87, Appendix B):&lt;/td&gt;&lt;td&gt;added v2.3, removed after v2.3&lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;OM2&lt;a name=\&quot;OM2\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Observation text master file (i.e., Lab) (see Chapter 7, Appendix)&lt;/td&gt;&lt;td&gt;added v2.2, removed after v2.2&lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;OM3&lt;a name=\&quot;OM3\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Observation text master file (i.e., Lab) (see Chapter 7, Appendix)&lt;/td&gt;&lt;td&gt;added v2.2, removed after v2.2&lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;OM4&lt;a name=\&quot;OM4\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Observation text master file (i.e., Lab) (see Chapter 7, Appendix)&lt;/td&gt;&lt;td&gt;added v2.2, removed after v2.2&lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;OM5&lt;a name=\&quot;OM5\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Observation text master file (i.e., Lab) (see Chapter 7, Appendix)&lt;/td&gt;&lt;td&gt;added v2.2, removed after v2.2&lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;OM6&lt;a name=\&quot;OM6\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Observation text master file (i.e., Lab) (see Chapter 7, Appendix)&lt;/td&gt;&lt;td&gt;added v2.2, removed after v2.2&lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;OMA&lt;a name=\&quot;OMA\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Numerical observation master file&lt;/td&gt;&lt;td&gt;added v2.3.1&lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;OMB&lt;a name=\&quot;OMB\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Categorical observation master file&lt;/td&gt;&lt;td&gt;added v2.3.1&lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;OMC&lt;a name=\&quot;OMC\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Observation batteries master file&lt;/td&gt;&lt;td&gt;added v2.3.1&lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;OMD&lt;a name=\&quot;OMD\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Calculated observations master file&lt;/td&gt;&lt;td&gt;added v2.3.1&lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;OME&lt;a name=\&quot;OME\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Other Observation/Service Item master file&lt;/td&gt;&lt;td&gt;added v2.4&lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;PRA&lt;a name=\&quot;PRA\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Practitioner master file&lt;/td&gt;&lt;td&gt;added v2.2&lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;STF&lt;a name=\&quot;STF\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Staff master file&lt;/td&gt;&lt;td&gt;added v2.2&lt;/td&gt;&lt;/tr&gt;\r\n&lt;/table&gt;\r\n&lt;/div&gt;&quot;
+  },
+  &quot;identifier&quot;: &quot;http://hl7.org/fhir/v2/vs/0175&quot;,
+  &quot;name&quot;: &quot;v2 Master File Identifier Code&quot;,
+  &quot;publisher&quot;: &quot;HL7, Inc&quot;,
+  &quot;telecom&quot;: [
+    {
+      &quot;system&quot;: &quot;url&quot;,
+      &quot;value&quot;: &quot;http://hl7.org&quot;
+    }
+  ],
+  &quot;description&quot;: &quot;FHIR Value set/code system definition for HL7 v2 table 0175 ( Master File Identifier Code)&quot;,
+  &quot;status&quot;: &quot;active&quot;,
+  &quot;date&quot;: &quot;2011-01-28&quot;,
+  &quot;define&quot;: {
+    &quot;system&quot;: &quot;http://hl7.org/fhir/v2/0175&quot;,
+    &quot;caseSensitive&quot;: true,
+    &quot;concept&quot;: [
+      {
+        &quot;code&quot;: &quot;CDM&quot;,
+        &quot;display&quot;: &quot;Charge description master file&quot;
+      },
+      {
+        &quot;code&quot;: &quot;CLN&quot;,
+        &quot;display&quot;: &quot;Clinic master file&quot;
+      },
+      {
+        &quot;extension&quot;: [
+          {
+            &quot;url&quot;: &quot;http://hl7.org/fhir/Profile/tools-extensions#deprecated&quot;,
+            &quot;valueBoolean&quot;: true
+          }
+        ],
+        &quot;code&quot;: &quot;CM0&quot;,
+        &quot;display&quot;: &quot;Clinical study master&quot;
+      },
+      {
+        &quot;extension&quot;: [
+          {
+            &quot;url&quot;: &quot;http://hl7.org/fhir/Profile/tools-extensions#deprecated&quot;,
+            &quot;valueBoolean&quot;: true
+          }
+        ],
+        &quot;code&quot;: &quot;CM1&quot;,
+        &quot;display&quot;: &quot;Clinical study phase master&quot;
+      },
+      {
+        &quot;extension&quot;: [
+          {
+            &quot;url&quot;: &quot;http://hl7.org/fhir/Profile/tools-extensions#deprecated&quot;,
+            &quot;valueBoolean&quot;: true
+          }
+        ],
+        &quot;code&quot;: &quot;CM2&quot;,
+        &quot;display&quot;: &quot;Clinical study Data Schedule Master&quot;
+      },
+      {
+        &quot;code&quot;: &quot;CMA&quot;,
+        &quot;display&quot;: &quot;Clinical study with phases and scheduled master file&quot;
+      },
+      {
+        &quot;code&quot;: &quot;CMB&quot;,
+        &quot;display&quot;: &quot;Clinical study without phases but with scheduled master file&quot;
+      },
+      {
+        &quot;code&quot;: &quot;INV&quot;,
+        &quot;display&quot;: &quot;Inventory master file&quot;
+      },
+      {
+        &quot;code&quot;: &quot;LOC&quot;,
+        &quot;display&quot;: &quot;Location master file&quot;
+      },
+      {
+        &quot;extension&quot;: [
+          {
+            &quot;url&quot;: &quot;http://hl7.org/fhir/Profile/tools-extensions#deprecated&quot;,
+            &quot;valueBoolean&quot;: true
+          }
+        ],
+        &quot;code&quot;: &quot;OM1&quot;,
+        &quot;display&quot;: &quot;Observation text master file (i.e., Lab) (see Chapter 7, Appendix)&quot;
+      },
+      {
+        &quot;extension&quot;: [
+          {
+            &quot;url&quot;: &quot;http://hl7.org/fhir/Profile/tools-extensions#deprecated&quot;,
+            &quot;valueBoolean&quot;: true
+          }
+        ],
+        &quot;code&quot;: &quot;OM1-OM6&quot;,
+        &quot;display&quot;: &quot;Observation text master file segments (e.g., Lab) (see Chapter 87, Appendix B):&quot;
+      },
+      {
+        &quot;extension&quot;: [
+          {
+            &quot;url&quot;: &quot;http://hl7.org/fhir/Profile/tools-extensions#deprecated&quot;,
+            &quot;valueBoolean&quot;: true
+          }
+        ],
+        &quot;code&quot;: &quot;OM2&quot;,
+        &quot;display&quot;: &quot;Observation text master file (i.e., Lab) (see Chapter 7, Appendix)&quot;
+      },
+      {
+        &quot;extension&quot;: [
+          {
+            &quot;url&quot;: &quot;http://hl7.org/fhir/Profile/tools-extensions#deprecated&quot;,
+            &quot;valueBoolean&quot;: true
+          }
+        ],
+        &quot;code&quot;: &quot;OM3&quot;,
+        &quot;display&quot;: &quot;Observation text master file (i.e., Lab) (see Chapter 7, Appendix)&quot;
+      },
+      {
+        &quot;extension&quot;: [
+          {
+            &quot;url&quot;: &quot;http://hl7.org/fhir/Profile/tools-extensions#deprecated&quot;,
+            &quot;valueBoolean&quot;: true
+          }
+        ],
+        &quot;code&quot;: &quot;OM4&quot;,
+        &quot;display&quot;: &quot;Observation text master file (i.e., Lab) (see Chapter 7, Appendix)&quot;
+      },
+      {
+        &quot;extension&quot;: [
+          {
+            &quot;url&quot;: &quot;http://hl7.org/fhir/Profile/tools-extensions#deprecated&quot;,
+            &quot;valueBoolean&quot;: true
+          }
+        ],
+        &quot;code&quot;: &quot;OM5&quot;,
+        &quot;display&quot;: &quot;Observation text master file (i.e., Lab) (see Chapter 7, Appendix)&quot;
+      },
+      {
+        &quot;extension&quot;: [
+          {
+            &quot;url&quot;: &quot;http://hl7.org/fhir/Profile/tools-extensions#deprecated&quot;,
+            &quot;valueBoolean&quot;: true
+          }
+        ],
+        &quot;code&quot;: &quot;OM6&quot;,
+        &quot;display&quot;: &quot;Observation text master file (i.e., Lab) (see Chapter 7, Appendix)&quot;
+      },
+      {
+        &quot;code&quot;: &quot;OMA&quot;,
+        &quot;display&quot;: &quot;Numerical observation master file&quot;
+      },
+      {
+        &quot;code&quot;: &quot;OMB&quot;,
+        &quot;display&quot;: &quot;Categorical observation master file&quot;
+      },
+      {
+        &quot;code&quot;: &quot;OMC&quot;,
+        &quot;display&quot;: &quot;Observation batteries master file&quot;
+      },
+      {
+        &quot;code&quot;: &quot;OMD&quot;,
+        &quot;display&quot;: &quot;Calculated observations master file&quot;
+      },
+      {
+        &quot;code&quot;: &quot;OME&quot;,
+        &quot;display&quot;: &quot;Other Observation/Service Item master file&quot;
+      },
+      {
+        &quot;code&quot;: &quot;PRA&quot;,
+        &quot;display&quot;: &quot;Practitioner master file&quot;
+      },
+      {
+        &quot;code&quot;: &quot;STF&quot;,
+        &quot;display&quot;: &quot;Staff master file&quot;
+      }
+    ]
+  }
+}</pre>
+</div>
+</body>
+</html>

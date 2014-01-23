@@ -1,0 +1,69 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+ <title>Example Instance for v2 Query/response format code</title>
+ <link rel="Stylesheet" href="../../fhir.css" type="text/css" media="screen"/>
+</head>
+<body>
+<p>&nbsp;</p>
+<div class="example">
+<p>FHIR Value set/code system definition for HL7 v2 table 0106 ( Query/response format code)</p>
+<p><a href="v2-0106.json">Raw JSON</a></p>
+<pre class="json">
+{
+  &quot;resourceType&quot;: &quot;ValueSet&quot;,
+  &quot;text&quot;: {
+    &quot;status&quot;: &quot;additional&quot;,
+    &quot;div&quot;: &quot;&lt;div&gt;&lt;p&gt;Query/response format code&lt;/p&gt;\r\n&lt;table class=\&quot;grid\&quot;&gt;\r\n &lt;tr&gt;&lt;td&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Description&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Version&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;D&lt;a name=\&quot;D\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Response is in display format&lt;/td&gt;&lt;td&gt;added v2.2, removed after v2.6&lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;R&lt;a name=\&quot;R\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Response is in record-oriented format&lt;/td&gt;&lt;td&gt;from v2.1, removed after v2.6&lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;T&lt;a name=\&quot;T\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Response is in tabular format&lt;/td&gt;&lt;td&gt;added v2.3, removed after v2.6&lt;/td&gt;&lt;/tr&gt;\r\n&lt;/table&gt;\r\n&lt;/div&gt;&quot;
+  },
+  &quot;identifier&quot;: &quot;http://hl7.org/fhir/v2/vs/0106&quot;,
+  &quot;name&quot;: &quot;v2 Query/response format code&quot;,
+  &quot;publisher&quot;: &quot;HL7, Inc&quot;,
+  &quot;telecom&quot;: [
+    {
+      &quot;system&quot;: &quot;url&quot;,
+      &quot;value&quot;: &quot;http://hl7.org&quot;
+    }
+  ],
+  &quot;description&quot;: &quot;FHIR Value set/code system definition for HL7 v2 table 0106 ( Query/response format code)&quot;,
+  &quot;status&quot;: &quot;active&quot;,
+  &quot;date&quot;: &quot;2011-01-28&quot;,
+  &quot;define&quot;: {
+    &quot;system&quot;: &quot;http://hl7.org/fhir/v2/0106&quot;,
+    &quot;caseSensitive&quot;: true,
+    &quot;concept&quot;: [
+      {
+        &quot;extension&quot;: [
+          {
+            &quot;url&quot;: &quot;http://hl7.org/fhir/Profile/tools-extensions#deprecated&quot;,
+            &quot;valueBoolean&quot;: true
+          }
+        ],
+        &quot;code&quot;: &quot;D&quot;,
+        &quot;display&quot;: &quot;Response is in display format&quot;
+      },
+      {
+        &quot;extension&quot;: [
+          {
+            &quot;url&quot;: &quot;http://hl7.org/fhir/Profile/tools-extensions#deprecated&quot;,
+            &quot;valueBoolean&quot;: true
+          }
+        ],
+        &quot;code&quot;: &quot;R&quot;,
+        &quot;display&quot;: &quot;Response is in record-oriented format&quot;
+      },
+      {
+        &quot;extension&quot;: [
+          {
+            &quot;url&quot;: &quot;http://hl7.org/fhir/Profile/tools-extensions#deprecated&quot;,
+            &quot;valueBoolean&quot;: true
+          }
+        ],
+        &quot;code&quot;: &quot;T&quot;,
+        &quot;display&quot;: &quot;Response is in tabular format&quot;
+      }
+    ]
+  }
+}</pre>
+</div>
+</body>
+</html>

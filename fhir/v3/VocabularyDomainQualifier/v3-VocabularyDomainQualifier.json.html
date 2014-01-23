@@ -1,0 +1,82 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+ <title>Example Instance for v3 Code System VocabularyDomainQualifier</title>
+ <link rel="Stylesheet" href="../../fhir.css" type="text/css" media="screen"/>
+</head>
+<body>
+<p>&nbsp;</p>
+<div class="example">
+<p> Vocabulary domain qualifiers are concepts that are used in domain constraints to specify behavior of the new domain. Code system retired.</p>
+<p><a href="v3-VocabularyDomainQualifier.json">Raw JSON</a></p>
+<pre class="json">
+{
+  &quot;resourceType&quot;: &quot;ValueSet&quot;,
+  &quot;text&quot;: {
+    &quot;status&quot;: &quot;generated&quot;,
+    &quot;div&quot;: &quot;&lt;div&gt;&lt;p&gt;Release Date: 2013-12-07&lt;/p&gt;\r\n&lt;h2&gt;Description&lt;/h2&gt;\r\n&lt;p&gt;\n                  Vocabulary domain qualifiers are concepts that are used in domain constraints to specify behavior of the new domain.&lt;br/&gt;\r\n\n                  Code system retired.&lt;br/&gt;\r\n\n               &lt;/p&gt;\r\n&lt;hr/&gt;\r\n&lt;table class=\&quot;grid\&quot;&gt;\r\n &lt;tr&gt;&lt;td&gt;&lt;b&gt;Level&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Definition&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;&lt;span style=\&quot;color: grey\&quot;&gt;&lt;i&gt;(_Extensibility)&lt;/i&gt;&lt;/span&gt;&lt;/td&gt;&lt;td&gt;&lt;a name=\&quot;_Extensibility\&quot;&gt;&amp;nbsp;&lt;/a&gt;&lt;/td&gt;&lt;td&gt;\n                        The extensibility of coding determines whether or not extensions are allowed in the domain of a coded attribute.&lt;br/&gt;\r\n\n                     &lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td&gt;&amp;nbsp;&amp;nbsp;CNE&lt;a name=\&quot;CNE\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Coded No Extensions&lt;/td&gt;&lt;td&gt;\n                        The coded attribute allows only concepts from the defined value set. No extensions are allowed.&lt;br/&gt;\r\n\n                     &lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td&gt;&amp;nbsp;&amp;nbsp;CWE&lt;a name=\&quot;CWE\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Coded With Extensions&lt;/td&gt;&lt;td&gt;\n                        The coded attribute allows local codes or user entered text to be sent when the concept that the user would like to express is not a member of the defined value set.  If the concept that the user wants to express is represented by a code in the standard value set, the standard code must be sent.  The local code can be sent in addition to the standard code if desired.  Only if the concept that the user wants to express is NOT represented by a standard code, can a solitary local code be sent.&lt;br/&gt;\r\n\n                     &lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;&lt;span style=\&quot;color: grey\&quot;&gt;&lt;i&gt;(_RealmOfUse)&lt;/i&gt;&lt;/span&gt;&lt;/td&gt;&lt;td&gt;&lt;a name=\&quot;_RealmOfUse\&quot;&gt;&amp;nbsp;&lt;/a&gt;&lt;/td&gt;&lt;td&gt;\n                        The jurisdiction or realm within which the domain will be used. A realm might be a country, a group of countries, a region of the world, or an organization.&lt;br/&gt;\r\n\n                     &lt;/td&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td&gt;&amp;nbsp;&amp;nbsp;Canada&lt;a name=\&quot;Canada\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Canada&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td&gt;&amp;nbsp;&amp;nbsp;NorthAmerica&lt;a name=\&quot;NorthAmerica\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;North America&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td&gt;&amp;nbsp;&amp;nbsp;USA&lt;a name=\&quot;USA\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;United States&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;\r\n &lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td&gt;&amp;nbsp;&amp;nbsp;UV&lt;a name=\&quot;UV\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Universal&lt;/td&gt;&lt;td&gt;\n                        The root or universal HL7 jurisdiction or realm from which all subsequent specializations are derived.&lt;br/&gt;\r\n\n                     &lt;/td&gt;&lt;/tr&gt;\r\n&lt;/table&gt;\r\n&lt;/div&gt;&quot;
+  },
+  &quot;identifier&quot;: &quot;http://hl7.org/fhir/v3/vs/VocabularyDomainQualifier&quot;,
+  &quot;name&quot;: &quot;v3 Code System VocabularyDomainQualifier&quot;,
+  &quot;publisher&quot;: &quot;HL7, Inc&quot;,
+  &quot;telecom&quot;: [
+    {
+      &quot;system&quot;: &quot;url&quot;,
+      &quot;value&quot;: &quot;http://hl7.org&quot;
+    }
+  ],
+  &quot;description&quot;: &quot; Vocabulary domain qualifiers are concepts that are used in domain constraints to specify behavior of the new domain. Code system retired.&quot;,
+  &quot;status&quot;: &quot;active&quot;,
+  &quot;date&quot;: &quot;2013-12-07T00:00:00-06:00&quot;,
+  &quot;define&quot;: {
+    &quot;system&quot;: &quot;http://hl7.org/fhir/v3/VocabularyDomainQualifier&quot;,
+    &quot;caseSensitive&quot;: true,
+    &quot;concept&quot;: [
+      {
+        &quot;code&quot;: &quot;_Extensibility&quot;,
+        &quot;abstract&quot;: true,
+        &quot;display&quot;: &quot;Extensibility&quot;,
+        &quot;definition&quot;: &quot;The extensibility of coding determines whether or not extensions are allowed in the domain of a coded attribute.&quot;,
+        &quot;concept&quot;: [
+          {
+            &quot;code&quot;: &quot;CNE&quot;,
+            &quot;display&quot;: &quot;Coded No Extensions&quot;,
+            &quot;definition&quot;: &quot;The coded attribute allows only concepts from the defined value set. No extensions are allowed.&quot;
+          },
+          {
+            &quot;code&quot;: &quot;CWE&quot;,
+            &quot;display&quot;: &quot;Coded With Extensions&quot;,
+            &quot;definition&quot;: &quot;The coded attribute allows local codes or user entered text to be sent when the concept that the user would like to express is not a member of the defined value set.  If the concept that the user wants to express is represented by a code in the standard value set, the standard code must be sent.  The local code can be sent in addition to the standard code if desired.  Only if the concept that the user wants to express is NOT represented by a standard code, can a solitary local code be sent.&quot;
+          }
+        ]
+      },
+      {
+        &quot;code&quot;: &quot;_RealmOfUse&quot;,
+        &quot;abstract&quot;: true,
+        &quot;display&quot;: &quot;RealmOfUse&quot;,
+        &quot;definition&quot;: &quot;The jurisdiction or realm within which the domain will be used. A realm might be a country, a group of countries, a region of the world, or an organization.&quot;,
+        &quot;concept&quot;: [
+          {
+            &quot;code&quot;: &quot;Canada&quot;,
+            &quot;display&quot;: &quot;Canada&quot;
+          },
+          {
+            &quot;code&quot;: &quot;NorthAmerica&quot;,
+            &quot;display&quot;: &quot;North America&quot;
+          },
+          {
+            &quot;code&quot;: &quot;USA&quot;,
+            &quot;display&quot;: &quot;United States&quot;
+          },
+          {
+            &quot;code&quot;: &quot;UV&quot;,
+            &quot;display&quot;: &quot;Universal&quot;,
+            &quot;definition&quot;: &quot;The root or universal HL7 jurisdiction or realm from which all subsequent specializations are derived.&quot;
+          }
+        ]
+      }
+    ]
+  }
+}</pre>
+</div>
+</body>
+</html>

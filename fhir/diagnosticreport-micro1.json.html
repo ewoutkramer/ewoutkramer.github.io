@@ -1,0 +1,740 @@
+﻿<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+ <title>An example of a complex Micro Isolate and Sensitivities</title>
+ <link rel="Stylesheet" href="fhir.css" type="text/css" media="screen"/>
+</head>
+<body>
+<p>&nbsp;</p>
+<div class="example">
+<p>An example of a complex Micro Isolate and Sensitivities</p>
+<p><a href="diagnosticreport-micro1.json">Raw JSON</a></p>
+<pre class="json">
+{
+  &quot;resourceType&quot;: &quot;DiagnosticReport&quot;,
+  &quot;contained&quot;: [
+    {
+      &quot;resourceType&quot;: &quot;Observation&quot;,
+      &quot;_id&quot;: &quot;obx1-4&quot;,
+      &quot;name&quot;: {
+        &quot;coding&quot;: [
+          {
+            &quot;system&quot;: &quot;http://acme.org/lab/codes/tests&quot;,
+            &quot;code&quot;: &quot;ORGANISM&quot;
+          }
+        ]
+      },
+      &quot;valueCodeableConcept&quot;: {
+        &quot;coding&quot;: [
+          {
+            &quot;system&quot;: &quot;http://acme.org/lab/codes/organisms&quot;,
+            &quot;code&quot;: &quot;Staaur&quot;
+          }
+        ],
+        &quot;text&quot;: &quot;Staphylococcus aureus&quot;
+      },
+      &quot;status&quot;: &quot;final&quot;,
+      &quot;reliability&quot;: &quot;ok&quot;
+    },
+    {
+      &quot;resourceType&quot;: &quot;Observation&quot;,
+      &quot;_id&quot;: &quot;obx1-5&quot;,
+      &quot;name&quot;: {
+        &quot;coding&quot;: [
+          {
+            &quot;system&quot;: &quot;http://acme.org/lab/codes/tests&quot;,
+            &quot;code&quot;: &quot;CULTPOSNEG&quot;
+          }
+        ]
+      },
+      &quot;valueCodeableConcept&quot;: {
+        &quot;coding&quot;: [
+          {
+            &quot;system&quot;: &quot;http://acme.org/lab/codes/flags&quot;,
+            &quot;code&quot;: &quot;POS&quot;
+          }
+        ]
+      },
+      &quot;status&quot;: &quot;final&quot;,
+      &quot;reliability&quot;: &quot;ok&quot;
+    },
+    {
+      &quot;resourceType&quot;: &quot;Observation&quot;,
+      &quot;_id&quot;: &quot;obx2-1&quot;,
+      &quot;name&quot;: {
+        &quot;coding&quot;: [
+          {
+            &quot;system&quot;: &quot;http://acme.org/lab/codes/tests&quot;,
+            &quot;code&quot;: &quot;60504&quot;,
+            &quot;display&quot;: &quot;Ampicillin&quot;
+          }
+        ]
+      },
+      &quot;interpretation&quot;: {
+        &quot;coding&quot;: [
+          {
+            &quot;system&quot;: &quot;http://hl7.org/fhir/v2/0078&quot;,
+            &quot;code&quot;: &quot;R&quot;
+          }
+        ]
+      },
+      &quot;status&quot;: &quot;final&quot;,
+      &quot;reliability&quot;: &quot;ok&quot;
+    },
+    {
+      &quot;resourceType&quot;: &quot;Observation&quot;,
+      &quot;_id&quot;: &quot;obx2-2&quot;,
+      &quot;name&quot;: {
+        &quot;coding&quot;: [
+          {
+            &quot;system&quot;: &quot;http://acme.org/lab/codes/tests&quot;,
+            &quot;code&quot;: &quot;60512&quot;,
+            &quot;display&quot;: &quot;Cefazolin&quot;
+          }
+        ]
+      },
+      &quot;valueQuantity&quot;: {
+        &quot;value&quot;: &quot;2&quot;,
+        &quot;comparator&quot;: &quot;&lt;=&quot;
+      },
+      &quot;interpretation&quot;: {
+        &quot;coding&quot;: [
+          {
+            &quot;system&quot;: &quot;http://hl7.org/fhir/v2/0078&quot;,
+            &quot;code&quot;: &quot;S&quot;
+          }
+        ]
+      },
+      &quot;status&quot;: &quot;final&quot;,
+      &quot;reliability&quot;: &quot;ok&quot;
+    },
+    {
+      &quot;resourceType&quot;: &quot;Observation&quot;,
+      &quot;_id&quot;: &quot;obx2-4&quot;,
+      &quot;name&quot;: {
+        &quot;coding&quot;: [
+          {
+            &quot;system&quot;: &quot;http://acme.org/lab/codes/tests&quot;,
+            &quot;code&quot;: &quot;60516&quot;,
+            &quot;display&quot;: &quot;Cefoxitin&quot;
+          }
+        ]
+      },
+      &quot;valueQuantity&quot;: {
+        &quot;value&quot;: &quot;4&quot;,
+        &quot;comparator&quot;: &quot;&lt;=&quot;
+      },
+      &quot;interpretation&quot;: {
+        &quot;coding&quot;: [
+          {
+            &quot;system&quot;: &quot;http://hl7.org/fhir/v2/0078&quot;,
+            &quot;code&quot;: &quot;S&quot;
+          }
+        ]
+      },
+      &quot;status&quot;: &quot;final&quot;,
+      &quot;reliability&quot;: &quot;ok&quot;
+    },
+    {
+      &quot;resourceType&quot;: &quot;Observation&quot;,
+      &quot;_id&quot;: &quot;obx2-6&quot;,
+      &quot;name&quot;: {
+        &quot;coding&quot;: [
+          {
+            &quot;system&quot;: &quot;http://acme.org/lab/codes/tests&quot;,
+            &quot;code&quot;: &quot;60527&quot;,
+            &quot;display&quot;: &quot;Clindamycin&quot;
+          }
+        ]
+      },
+      &quot;valueQuantity&quot;: {
+        &quot;value&quot;: &quot;0.5&quot;,
+        &quot;comparator&quot;: &quot;&gt;=&quot;
+      },
+      &quot;interpretation&quot;: {
+        &quot;coding&quot;: [
+          {
+            &quot;system&quot;: &quot;http://hl7.org/fhir/v2/0078&quot;,
+            &quot;code&quot;: &quot;S&quot;
+          }
+        ]
+      },
+      &quot;status&quot;: &quot;final&quot;,
+      &quot;reliability&quot;: &quot;ok&quot;
+    },
+    {
+      &quot;resourceType&quot;: &quot;Observation&quot;,
+      &quot;_id&quot;: &quot;obx2-8&quot;,
+      &quot;name&quot;: {
+        &quot;coding&quot;: [
+          {
+            &quot;system&quot;: &quot;http://acme.org/lab/codes/tests&quot;,
+            &quot;code&quot;: &quot;61203&quot;,
+            &quot;display&quot;: &quot;Daptomycin&quot;
+          }
+        ]
+      },
+      &quot;valueQuantity&quot;: {
+        &quot;value&quot;: &quot;1&quot;,
+        &quot;comparator&quot;: &quot;&gt;=&quot;
+      },
+      &quot;interpretation&quot;: {
+        &quot;coding&quot;: [
+          {
+            &quot;system&quot;: &quot;http://hl7.org/fhir/v2/0078&quot;,
+            &quot;code&quot;: &quot;S&quot;
+          }
+        ]
+      },
+      &quot;status&quot;: &quot;final&quot;,
+      &quot;reliability&quot;: &quot;ok&quot;
+    },
+    {
+      &quot;resourceType&quot;: &quot;Observation&quot;,
+      &quot;_id&quot;: &quot;obx2-10&quot;,
+      &quot;name&quot;: {
+        &quot;coding&quot;: [
+          {
+            &quot;system&quot;: &quot;http://acme.org/lab/codes/tests&quot;,
+            &quot;code&quot;: &quot; 60532&quot;,
+            &quot;display&quot;: &quot;Doxycycline&quot;
+          }
+        ]
+      },
+      &quot;valueQuantity&quot;: {
+        &quot;value&quot;: &quot;0.5&quot;,
+        &quot;comparator&quot;: &quot;&lt;=&quot;
+      },
+      &quot;interpretation&quot;: {
+        &quot;coding&quot;: [
+          {
+            &quot;system&quot;: &quot;http://hl7.org/fhir/v2/0078&quot;,
+            &quot;code&quot;: &quot;S&quot;
+          }
+        ]
+      },
+      &quot;status&quot;: &quot;final&quot;,
+      &quot;reliability&quot;: &quot;ok&quot;
+    },
+    {
+      &quot;resourceType&quot;: &quot;Observation&quot;,
+      &quot;_id&quot;: &quot;obx2-12&quot;,
+      &quot;name&quot;: {
+        &quot;coding&quot;: [
+          {
+            &quot;system&quot;: &quot;http://acme.org/lab/codes/tests&quot;,
+            &quot;code&quot;: &quot; 60533&quot;,
+            &quot;display&quot;: &quot;Erythromycin&quot;
+          }
+        ]
+      },
+      &quot;valueQuantity&quot;: {
+        &quot;value&quot;: &quot;8&quot;,
+        &quot;comparator&quot;: &quot;&gt;=&quot;
+      },
+      &quot;interpretation&quot;: {
+        &quot;coding&quot;: [
+          {
+            &quot;system&quot;: &quot;http://hl7.org/fhir/v2/0078&quot;,
+            &quot;code&quot;: &quot;R&quot;
+          }
+        ]
+      },
+      &quot;status&quot;: &quot;final&quot;,
+      &quot;reliability&quot;: &quot;ok&quot;
+    },
+    {
+      &quot;resourceType&quot;: &quot;Observation&quot;,
+      &quot;_id&quot;: &quot;obx2-14&quot;,
+      &quot;name&quot;: {
+        &quot;coding&quot;: [
+          {
+            &quot;system&quot;: &quot;http://acme.org/lab/codes/tests&quot;,
+            &quot;code&quot;: &quot; 60536&quot;,
+            &quot;display&quot;: &quot;Gentamicin&quot;
+          }
+        ]
+      },
+      &quot;valueQuantity&quot;: {
+        &quot;value&quot;: &quot;2&quot;,
+        &quot;comparator&quot;: &quot;&lt;=&quot;
+      },
+      &quot;interpretation&quot;: {
+        &quot;coding&quot;: [
+          {
+            &quot;system&quot;: &quot;http://hl7.org/fhir/v2/0078&quot;,
+            &quot;code&quot;: &quot;S&quot;
+          }
+        ]
+      },
+      &quot;status&quot;: &quot;final&quot;,
+      &quot;reliability&quot;: &quot;ok&quot;
+    },
+    {
+      &quot;resourceType&quot;: &quot;Observation&quot;,
+      &quot;_id&quot;: &quot;obx2-16&quot;,
+      &quot;name&quot;: {
+        &quot;coding&quot;: [
+          {
+            &quot;system&quot;: &quot;http://acme.org/lab/codes/tests&quot;,
+            &quot;code&quot;: &quot; 61007&quot;,
+            &quot;display&quot;: &quot;Levofloxacin&quot;
+          }
+        ]
+      },
+      &quot;valueQuantity&quot;: {
+        &quot;value&quot;: &quot;0.5&quot;,
+        &quot;comparator&quot;: &quot;&lt;=&quot;
+      },
+      &quot;interpretation&quot;: {
+        &quot;coding&quot;: [
+          {
+            &quot;system&quot;: &quot;http://hl7.org/fhir/v2/0078&quot;,
+            &quot;code&quot;: &quot;S&quot;
+          }
+        ]
+      },
+      &quot;status&quot;: &quot;final&quot;,
+      &quot;reliability&quot;: &quot;ok&quot;
+    },
+    {
+      &quot;resourceType&quot;: &quot;Observation&quot;,
+      &quot;_id&quot;: &quot;obx2-18&quot;,
+      &quot;name&quot;: {
+        &quot;coding&quot;: [
+          {
+            &quot;system&quot;: &quot;http://acme.org/lab/codes/tests&quot;,
+            &quot;code&quot;: &quot; 60699&quot;,
+            &quot;display&quot;: &quot;Linezolid&quot;
+          }
+        ]
+      },
+      &quot;valueQuantity&quot;: {
+        &quot;value&quot;: &quot;4&quot;
+      },
+      &quot;interpretation&quot;: {
+        &quot;coding&quot;: [
+          {
+            &quot;system&quot;: &quot;http://hl7.org/fhir/v2/0078&quot;,
+            &quot;code&quot;: &quot;S&quot;
+          }
+        ]
+      },
+      &quot;status&quot;: &quot;final&quot;,
+      &quot;reliability&quot;: &quot;ok&quot;
+    },
+    {
+      &quot;resourceType&quot;: &quot;Observation&quot;,
+      &quot;_id&quot;: &quot;obx2-20&quot;,
+      &quot;name&quot;: {
+        &quot;coding&quot;: [
+          {
+            &quot;system&quot;: &quot;http://acme.org/lab/codes/tests&quot;,
+            &quot;code&quot;: &quot; 61204&quot;,
+            &quot;display&quot;: &quot;Moxifloxacin&quot;
+          }
+        ]
+      },
+      &quot;valueQuantity&quot;: {
+        &quot;value&quot;: &quot;0.5&quot;,
+        &quot;comparator&quot;: &quot;&lt;=&quot;
+      },
+      &quot;interpretation&quot;: {
+        &quot;coding&quot;: [
+          {
+            &quot;system&quot;: &quot;http://hl7.org/fhir/v2/0078&quot;,
+            &quot;code&quot;: &quot;S&quot;
+          }
+        ]
+      },
+      &quot;status&quot;: &quot;final&quot;,
+      &quot;reliability&quot;: &quot;ok&quot;
+    },
+    {
+      &quot;resourceType&quot;: &quot;Observation&quot;,
+      &quot;_id&quot;: &quot;obx2-22&quot;,
+      &quot;name&quot;: {
+        &quot;coding&quot;: [
+          {
+            &quot;system&quot;: &quot;http://acme.org/lab/codes/tests&quot;,
+            &quot;code&quot;: &quot; 60551&quot;,
+            &quot;display&quot;: &quot;Oxacillin&quot;
+          }
+        ]
+      },
+      &quot;valueQuantity&quot;: {
+        &quot;value&quot;: &quot;0.5&quot;
+      },
+      &quot;interpretation&quot;: {
+        &quot;coding&quot;: [
+          {
+            &quot;system&quot;: &quot;http://hl7.org/fhir/v2/0078&quot;,
+            &quot;code&quot;: &quot;S&quot;
+          }
+        ]
+      },
+      &quot;status&quot;: &quot;final&quot;,
+      &quot;reliability&quot;: &quot;ok&quot;
+    },
+    {
+      &quot;resourceType&quot;: &quot;Observation&quot;,
+      &quot;_id&quot;: &quot;obx2-24&quot;,
+      &quot;name&quot;: {
+        &quot;coding&quot;: [
+          {
+            &quot;system&quot;: &quot;http://acme.org/lab/codes/tests&quot;,
+            &quot;code&quot;: &quot; 60552&quot;,
+            &quot;display&quot;: &quot;Penicillin&quot;
+          }
+        ]
+      },
+      &quot;valueQuantity&quot;: {
+        &quot;value&quot;: &quot;2&quot;,
+        &quot;comparator&quot;: &quot;&gt;=&quot;
+      },
+      &quot;interpretation&quot;: {
+        &quot;coding&quot;: [
+          {
+            &quot;system&quot;: &quot;http://hl7.org/fhir/v2/0078&quot;,
+            &quot;code&quot;: &quot;R&quot;
+          }
+        ]
+      },
+      &quot;status&quot;: &quot;final&quot;,
+      &quot;reliability&quot;: &quot;ok&quot;
+    },
+    {
+      &quot;resourceType&quot;: &quot;Observation&quot;,
+      &quot;_id&quot;: &quot;obx2-26&quot;,
+      &quot;name&quot;: {
+        &quot;coding&quot;: [
+          {
+            &quot;system&quot;: &quot;http://acme.org/lab/codes/tests&quot;,
+            &quot;code&quot;: &quot; 60697&quot;,
+            &quot;display&quot;: &quot;Quinupristin/Dalfopristin&quot;
+          }
+        ]
+      },
+      &quot;valueQuantity&quot;: {
+        &quot;value&quot;: &quot;0.5&quot;
+      },
+      &quot;interpretation&quot;: {
+        &quot;coding&quot;: [
+          {
+            &quot;system&quot;: &quot;http://hl7.org/fhir/v2/0078&quot;,
+            &quot;code&quot;: &quot;S&quot;
+          }
+        ]
+      },
+      &quot;status&quot;: &quot;final&quot;,
+      &quot;reliability&quot;: &quot;ok&quot;
+    },
+    {
+      &quot;resourceType&quot;: &quot;Observation&quot;,
+      &quot;_id&quot;: &quot;obx2-28&quot;,
+      &quot;name&quot;: {
+        &quot;coding&quot;: [
+          {
+            &quot;system&quot;: &quot;http://acme.org/lab/codes/tests&quot;,
+            &quot;code&quot;: &quot; 60555&quot;,
+            &quot;display&quot;: &quot;Rifampin&quot;
+          }
+        ]
+      },
+      &quot;valueQuantity&quot;: {
+        &quot;value&quot;: &quot;0.5&quot;,
+        &quot;comparator&quot;: &quot;&lt;=&quot;
+      },
+      &quot;interpretation&quot;: {
+        &quot;coding&quot;: [
+          {
+            &quot;system&quot;: &quot;http://hl7.org/fhir/v2/0078&quot;,
+            &quot;code&quot;: &quot;S&quot;
+          }
+        ]
+      },
+      &quot;status&quot;: &quot;final&quot;,
+      &quot;reliability&quot;: &quot;ok&quot;
+    },
+    {
+      &quot;resourceType&quot;: &quot;Observation&quot;,
+      &quot;_id&quot;: &quot;obx2-30&quot;,
+      &quot;name&quot;: {
+        &quot;coding&quot;: [
+          {
+            &quot;system&quot;: &quot;http://acme.org/lab/codes/tests&quot;,
+            &quot;code&quot;: &quot; 60558&quot;,
+            &quot;display&quot;: &quot;Tetracycline&quot;
+          }
+        ]
+      },
+      &quot;valueQuantity&quot;: {
+        &quot;value&quot;: &quot;0.5&quot;,
+        &quot;comparator&quot;: &quot;&lt;=&quot;
+      },
+      &quot;interpretation&quot;: {
+        &quot;coding&quot;: [
+          {
+            &quot;system&quot;: &quot;http://hl7.org/fhir/v2/0078&quot;,
+            &quot;code&quot;: &quot;S&quot;
+          }
+        ]
+      },
+      &quot;status&quot;: &quot;final&quot;,
+      &quot;reliability&quot;: &quot;ok&quot;
+    },
+    {
+      &quot;resourceType&quot;: &quot;Observation&quot;,
+      &quot;_id&quot;: &quot;obx2-32&quot;,
+      &quot;name&quot;: {
+        &quot;coding&quot;: [
+          {
+            &quot;system&quot;: &quot;http://acme.org/lab/codes/tests&quot;,
+            &quot;code&quot;: &quot; 60561&quot;,
+            &quot;display&quot;: &quot;Trimethoprim/Sulfamethoxazole&quot;
+          }
+        ]
+      },
+      &quot;valueQuantity&quot;: {
+        &quot;value&quot;: &quot;0.0526&quot;,
+        &quot;comparator&quot;: &quot;&lt;=&quot;
+      },
+      &quot;interpretation&quot;: {
+        &quot;coding&quot;: [
+          {
+            &quot;system&quot;: &quot;http://hl7.org/fhir/v2/0078&quot;,
+            &quot;code&quot;: &quot;S&quot;
+          }
+        ]
+      },
+      &quot;status&quot;: &quot;final&quot;,
+      &quot;reliability&quot;: &quot;ok&quot;
+    },
+    {
+      &quot;resourceType&quot;: &quot;Observation&quot;,
+      &quot;_id&quot;: &quot;obx2-34&quot;,
+      &quot;name&quot;: {
+        &quot;coding&quot;: [
+          {
+            &quot;system&quot;: &quot;http://acme.org/lab/codes/tests&quot;,
+            &quot;code&quot;: &quot; 60563&quot;,
+            &quot;display&quot;: &quot;Vancomycin&quot;
+          }
+        ]
+      },
+      &quot;valueQuantity&quot;: {
+        &quot;value&quot;: &quot;1&quot;
+      },
+      &quot;interpretation&quot;: {
+        &quot;coding&quot;: [
+          {
+            &quot;system&quot;: &quot;http://hl7.org/fhir/v2/0078&quot;,
+            &quot;code&quot;: &quot;S&quot;
+          }
+        ]
+      },
+      &quot;status&quot;: &quot;final&quot;,
+      &quot;reliability&quot;: &quot;ok&quot;
+    },
+    {
+      &quot;resourceType&quot;: &quot;Observation&quot;,
+      &quot;_id&quot;: &quot;nte-1&quot;,
+      &quot;name&quot;: {
+        &quot;coding&quot;: [
+          {
+            &quot;system&quot;: &quot;http://acme.org/lab/codes/tests&quot;,
+            &quot;code&quot;: &quot;2099930&quot;,
+            &quot;display&quot;: &quot;D-Test&quot;
+          }
+        ]
+      },
+      &quot;valueString&quot;: &quot;D-Test:  Negative - This isolate does not demonstrate inducible clindamycin resistance in vitro.&quot;,
+      &quot;status&quot;: &quot;final&quot;,
+      &quot;reliability&quot;: &quot;ok&quot;
+    },
+    {
+      &quot;resourceType&quot;: &quot;Observation&quot;,
+      &quot;_id&quot;: &quot;obx3-1&quot;,
+      &quot;name&quot;: {
+        &quot;coding&quot;: [
+          {
+            &quot;system&quot;: &quot;http://acme.org/lab/codes/tests&quot;,
+            &quot;code&quot;: &quot;60036&quot;,
+            &quot;display&quot;: &quot;Oxacillin&quot;
+          }
+        ]
+      },
+      &quot;interpretation&quot;: {
+        &quot;coding&quot;: [
+          {
+            &quot;system&quot;: &quot;http://hl7.org/fhir/v2/0078&quot;,
+            &quot;code&quot;: &quot;S&quot;
+          }
+        ]
+      },
+      &quot;status&quot;: &quot;final&quot;,
+      &quot;reliability&quot;: &quot;ok&quot;
+    },
+    {
+      &quot;resourceType&quot;: &quot;DiagnosticOrder&quot;,
+      &quot;_id&quot;: &quot;req&quot;,
+      &quot;subject&quot;: {
+        &quot;reference&quot;: &quot;Patient/101&quot;
+      },
+      &quot;identifier&quot;: [
+        {
+          &quot;value&quot;: &quot;255337816&quot;
+        }
+      ]
+    }
+  ],
+  &quot;status&quot;: &quot;final&quot;,
+  &quot;issued&quot;: &quot;2009-08-10T08:25:44&quot;,
+  &quot;subject&quot;: {
+    &quot;reference&quot;: &quot;Patient/101&quot;
+  },
+  &quot;performer&quot;: {
+    &quot;display&quot;: &quot;Todd Ashby&quot;
+  },
+  &quot;identifier&quot;: {
+    &quot;system&quot;: &quot;http://hnam.org/identifiers/orders&quot;,
+    &quot;value&quot;: &quot;290741144&quot;
+  },
+  &quot;requestDetail&quot;: [
+    {
+      &quot;reference&quot;: &quot;#req&quot;
+    }
+  ],
+  &quot;serviceCategory&quot;: {
+    &quot;coding&quot;: [
+      {
+        &quot;system&quot;: &quot;http://hl7.org/fhir/v2/0074&quot;,
+        &quot;code&quot;: &quot;MB&quot;
+      }
+    ]
+  },
+  &quot;diagnosticDateTime&quot;: &quot;2009-08-07T19:00:00&quot;,
+  &quot;results&quot;: {
+    &quot;name&quot;: {
+      &quot;coding&quot;: [
+        {
+          &quot;system&quot;: &quot;http://loinc.org&quot;,
+          &quot;code&quot;: &quot;632-0&quot;
+        }
+      ],
+      &quot;text&quot;: &quot;Culture, MRSA&quot;
+    },
+    &quot;group&quot;: [
+      {
+        &quot;name&quot;: {
+          &quot;coding&quot;: [
+            {
+              &quot;system&quot;: &quot;http://acme.org/lab/codes/organisms&quot;,
+              &quot;code&quot;: &quot;Staaur&quot;
+            }
+          ],
+          &quot;text&quot;: &quot;Staphylococcus aureus&quot;
+        },
+        &quot;group&quot;: [
+          {
+            &quot;name&quot;: {
+              &quot;coding&quot;: [
+                {
+                  &quot;system&quot;: &quot;http://acme.org/lab/codes/panels&quot;,
+                  &quot;code&quot;: &quot;60790&quot;,
+                  &quot;display&quot;: &quot;Susceptibility - Automated broth dilution (Billed)&quot;
+                }
+              ]
+            },
+            &quot;result&quot;: [
+              {
+                &quot;reference&quot;: &quot;#obx2-1&quot;
+              },
+              {
+                &quot;reference&quot;: &quot;#obx2-2&quot;
+              },
+              {
+                &quot;reference&quot;: &quot;#obx2-4&quot;
+              },
+              {
+                &quot;reference&quot;: &quot;#obx2-6&quot;
+              },
+              {
+                &quot;reference&quot;: &quot;#obx2-8&quot;
+              },
+              {
+                &quot;reference&quot;: &quot;#obx2-10&quot;
+              },
+              {
+                &quot;reference&quot;: &quot;#obx2-12&quot;
+              },
+              {
+                &quot;reference&quot;: &quot;#obx2-14&quot;
+              },
+              {
+                &quot;reference&quot;: &quot;#obx2-16&quot;
+              },
+              {
+                &quot;reference&quot;: &quot;#obx2-18&quot;
+              },
+              {
+                &quot;reference&quot;: &quot;#obx2-20&quot;
+              },
+              {
+                &quot;reference&quot;: &quot;#obx2-22&quot;
+              },
+              {
+                &quot;reference&quot;: &quot;#obx2-24&quot;
+              },
+              {
+                &quot;reference&quot;: &quot;#obx2-26&quot;
+              },
+              {
+                &quot;reference&quot;: &quot;#obx2-28&quot;
+              },
+              {
+                &quot;reference&quot;: &quot;#obx2-30&quot;
+              },
+              {
+                &quot;reference&quot;: &quot;#obx2-32&quot;
+              },
+              {
+                &quot;reference&quot;: &quot;#obx2-34&quot;
+              },
+              {
+                &quot;reference&quot;: &quot;#nte-1&quot;
+              }
+            ]
+          },
+          {
+            &quot;name&quot;: {
+              &quot;coding&quot;: [
+                {
+                  &quot;system&quot;: &quot;http://acme.org/lab/codes/panels&quot;,
+                  &quot;code&quot;: &quot;60418&quot;,
+                  &quot;display&quot;: &quot;Susceptibility - Disk diffusion (Billed)&quot;
+                }
+              ]
+            },
+            &quot;result&quot;: [
+              {
+                &quot;reference&quot;: &quot;#obx3-1&quot;
+              }
+            ]
+          }
+        ],
+        &quot;result&quot;: [
+          {
+            &quot;reference&quot;: &quot;#obx1-4&quot;
+          },
+          {
+            &quot;reference&quot;: &quot;#obx1-5&quot;
+          }
+        ]
+      }
+    ]
+  }
+}
+</pre>
+</div>
+</body>
+</html>
