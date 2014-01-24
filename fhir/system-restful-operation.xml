@@ -54,7 +54,7 @@
   </telecom>
   <description value="Operations supported by REST at the system level"/>
   <status value="draft"/>
-  <date value="2014-01-22T23:46:10.705-06:00"/>
+  <date value="2014-01-23T01:20:03.265-06:00"/>
   <compose>
     <include>
       <system value="http://hl7.org/fhir/restful-operation"/>

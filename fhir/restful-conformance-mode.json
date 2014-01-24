@@ -19,7 +19,7 @@
   ],
   "description": "The mode of a RESTful conformance statement",
   "status": "draft",
-  "date": "2014-01-22T23:46:10.705-06:00",
+  "date": "2014-01-23T01:20:03.265-06:00",
   "define": {
     "system": "http://hl7.org/fhir/restful-conformance-mode",
     "caseSensitive": true,

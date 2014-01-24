@@ -19,7 +19,7 @@
   ],
   "description": "SHALL applications comply with this constraint?",
   "status": "draft",
-  "date": "2014-01-22T23:46:10.715-06:00",
+  "date": "2014-01-23T01:20:03.276-06:00",
   "define": {
     "system": "http://hl7.org/fhir/constraint-severity",
     "caseSensitive": true,

@@ -9,7 +9,7 @@
         "href": "http://hl7.org/implement/standards/fhir/profiles-types.xml"
       }
     ],
-    "updated": "2014-01-22T23:45:49.257-06:00",
+    "updated": "2014-01-23T01:19:38.502-06:00",
     "entry": [
       {
         "title": "\"period\" as a profile (to help derivation)",
@@ -20,8 +20,8 @@
             "href": "http://hl7.org/implement/standards/fhir/period.profile.xml"
           }
         ],
-        "updated": "2014-01-22T23:44:26.932-06:00",
-        "published": "2014-01-22T23:44:26.932-06:00",
+        "updated": "2014-01-23T01:17:45.621-06:00",
+        "published": "2014-01-23T01:17:45.621-06:00",
         "author": [
           {
             "name": "HL7, Inc (FHIR Project)",
@@ -38,7 +38,7 @@
           "publisher": "FHIR Specification",
           "description": "Basic Profile for Period for validation support",
           "status": "draft",
-          "date": "2014-01-22",
+          "date": "2014-01-23",
           "mapping": [
             {
               "identity": "rim",
@@ -157,8 +157,8 @@
             "href": "http://hl7.org/implement/standards/fhir/coding.profile.xml"
           }
         ],
-        "updated": "2014-01-22T23:44:26.932-06:00",
-        "published": "2014-01-22T23:44:26.932-06:00",
+        "updated": "2014-01-23T01:17:45.621-06:00",
+        "published": "2014-01-23T01:17:45.621-06:00",
         "author": [
           {
             "name": "HL7, Inc (FHIR Project)",
@@ -175,7 +175,7 @@
           "publisher": "FHIR Specification",
           "description": "Basic Profile for Coding for validation support",
           "status": "draft",
-          "date": "2014-01-22",
+          "date": "2014-01-23",
           "mapping": [
             {
               "identity": "rim",
@@ -394,8 +394,8 @@
             "href": "http://hl7.org/implement/standards/fhir/range.profile.xml"
           }
         ],
-        "updated": "2014-01-22T23:44:26.932-06:00",
-        "published": "2014-01-22T23:44:26.932-06:00",
+        "updated": "2014-01-23T01:17:45.621-06:00",
+        "published": "2014-01-23T01:17:45.621-06:00",
         "author": [
           {
             "name": "HL7, Inc (FHIR Project)",
@@ -412,7 +412,7 @@
           "publisher": "FHIR Specification",
           "description": "Basic Profile for Range for validation support",
           "status": "draft",
-          "date": "2014-01-22",
+          "date": "2014-01-23",
           "mapping": [
             {
               "identity": "rim",
@@ -538,8 +538,8 @@
             "href": "http://hl7.org/implement/standards/fhir/quantity.profile.xml"
           }
         ],
-        "updated": "2014-01-22T23:44:26.932-06:00",
-        "published": "2014-01-22T23:44:26.932-06:00",
+        "updated": "2014-01-23T01:17:45.621-06:00",
+        "published": "2014-01-23T01:17:45.621-06:00",
         "author": [
           {
             "name": "HL7, Inc (FHIR Project)",
@@ -556,7 +556,7 @@
           "publisher": "FHIR Specification",
           "description": "Basic Profile for Quantity for validation support",
           "status": "draft",
-          "date": "2014-01-22",
+          "date": "2014-01-23",
           "mapping": [
             {
               "identity": "rim",
@@ -759,8 +759,8 @@
             "href": "http://hl7.org/implement/standards/fhir/attachment.profile.xml"
           }
         ],
-        "updated": "2014-01-22T23:44:26.932-06:00",
-        "published": "2014-01-22T23:44:26.932-06:00",
+        "updated": "2014-01-23T01:17:45.621-06:00",
+        "published": "2014-01-23T01:17:45.621-06:00",
         "author": [
           {
             "name": "HL7, Inc (FHIR Project)",
@@ -777,7 +777,7 @@
           "publisher": "FHIR Specification",
           "description": "Basic Profile for Attachment for validation support",
           "status": "draft",
-          "date": "2014-01-22",
+          "date": "2014-01-23",
           "mapping": [
             {
               "identity": "rim",
@@ -1008,8 +1008,8 @@
             "href": "http://hl7.org/implement/standards/fhir/ratio.profile.xml"
           }
         ],
-        "updated": "2014-01-22T23:44:26.932-06:00",
-        "published": "2014-01-22T23:44:26.932-06:00",
+        "updated": "2014-01-23T01:17:45.621-06:00",
+        "published": "2014-01-23T01:17:45.621-06:00",
         "author": [
           {
             "name": "HL7, Inc (FHIR Project)",
@@ -1026,7 +1026,7 @@
           "publisher": "FHIR Specification",
           "description": "Basic Profile for Ratio for validation support",
           "status": "draft",
-          "date": "2014-01-22",
+          "date": "2014-01-23",
           "mapping": [
             {
               "identity": "rim",
@@ -1134,8 +1134,8 @@
             "href": "http://hl7.org/implement/standards/fhir/sampleddata.profile.xml"
           }
         ],
-        "updated": "2014-01-22T23:44:26.932-06:00",
-        "published": "2014-01-22T23:44:26.932-06:00",
+        "updated": "2014-01-23T01:17:45.621-06:00",
+        "published": "2014-01-23T01:17:45.621-06:00",
         "author": [
           {
             "name": "HL7, Inc (FHIR Project)",
@@ -1152,7 +1152,7 @@
           "publisher": "FHIR Specification",
           "description": "Basic Profile for SampledData for validation support",
           "status": "draft",
-          "date": "2014-01-22",
+          "date": "2014-01-23",
           "mapping": [
             {
               "identity": "rim",
@@ -1359,8 +1359,8 @@
             "href": "http://hl7.org/implement/standards/fhir/resourcereference.profile.xml"
           }
         ],
-        "updated": "2014-01-22T23:44:26.932-06:00",
-        "published": "2014-01-22T23:44:26.932-06:00",
+        "updated": "2014-01-23T01:17:45.621-06:00",
+        "published": "2014-01-23T01:17:45.621-06:00",
         "author": [
           {
             "name": "HL7, Inc (FHIR Project)",
@@ -1377,7 +1377,7 @@
           "publisher": "FHIR Specification",
           "description": "Basic Profile for ResourceReference for validation support",
           "status": "draft",
-          "date": "2014-01-22",
+          "date": "2014-01-23",
           "mapping": [
             {
               "identity": "rim",
@@ -1478,8 +1478,8 @@
             "href": "http://hl7.org/implement/standards/fhir/codeableconcept.profile.xml"
           }
         ],
-        "updated": "2014-01-22T23:44:26.932-06:00",
-        "published": "2014-01-22T23:44:26.932-06:00",
+        "updated": "2014-01-23T01:17:45.621-06:00",
+        "published": "2014-01-23T01:17:45.621-06:00",
         "author": [
           {
             "name": "HL7, Inc (FHIR Project)",
@@ -1496,7 +1496,7 @@
           "publisher": "FHIR Specification",
           "description": "Basic Profile for CodeableConcept for validation support",
           "status": "draft",
-          "date": "2014-01-22",
+          "date": "2014-01-23",
           "mapping": [
             {
               "identity": "rim",
@@ -1615,8 +1615,8 @@
             "href": "http://hl7.org/implement/standards/fhir/identifier.profile.xml"
           }
         ],
-        "updated": "2014-01-22T23:44:26.932-06:00",
-        "published": "2014-01-22T23:44:26.932-06:00",
+        "updated": "2014-01-23T01:17:45.621-06:00",
+        "published": "2014-01-23T01:17:45.621-06:00",
         "author": [
           {
             "name": "HL7, Inc (FHIR Project)",
@@ -1633,7 +1633,7 @@
           "publisher": "FHIR Specification",
           "description": "Basic Profile for Identifier for validation support",
           "status": "draft",
-          "date": "2014-01-22",
+          "date": "2014-01-23",
           "mapping": [
             {
               "identity": "rim",
@@ -1876,8 +1876,8 @@
             "href": "http://hl7.org/implement/standards/fhir/extension.profile.xml"
           }
         ],
-        "updated": "2014-01-22T23:44:26.932-06:00",
-        "published": "2014-01-22T23:44:26.932-06:00",
+        "updated": "2014-01-23T01:17:45.621-06:00",
+        "published": "2014-01-23T01:17:45.621-06:00",
         "author": [
           {
             "name": "HL7, Inc (FHIR Project)",
@@ -1894,7 +1894,7 @@
           "publisher": "FHIR Specification",
           "description": "Basic Profile for Extension for validation support",
           "status": "draft",
-          "date": "2014-01-22",
+          "date": "2014-01-23",
           "mapping": [
             {
               "identity": "rim",
@@ -1988,8 +1988,8 @@
             "href": "http://hl7.org/implement/standards/fhir/narrative.profile.xml"
           }
         ],
-        "updated": "2014-01-22T23:44:26.932-06:00",
-        "published": "2014-01-22T23:44:26.932-06:00",
+        "updated": "2014-01-23T01:17:45.621-06:00",
+        "published": "2014-01-23T01:17:45.621-06:00",
         "author": [
           {
             "name": "HL7, Inc (FHIR Project)",
@@ -2006,7 +2006,7 @@
           "publisher": "FHIR Specification",
           "description": "Basic Profile for Narrative for validation support",
           "status": "draft",
-          "date": "2014-01-22",
+          "date": "2014-01-23",
           "mapping": [
             {
               "identity": "rim",
@@ -2124,8 +2124,8 @@
             "href": "http://hl7.org/implement/standards/fhir/schedule.profile.xml"
           }
         ],
-        "updated": "2014-01-22T23:44:26.932-06:00",
-        "published": "2014-01-22T23:44:26.932-06:00",
+        "updated": "2014-01-23T01:17:45.621-06:00",
+        "published": "2014-01-23T01:17:45.621-06:00",
         "author": [
           {
             "name": "HL7, Inc (FHIR Project)",
@@ -2142,7 +2142,7 @@
           "publisher": "FHIR Specification",
           "description": "Basic Profile for Schedule for validation support",
           "status": "draft",
-          "date": "2014-01-22",
+          "date": "2014-01-23",
           "mapping": [
             {
               "identity": "rim",
@@ -2416,8 +2416,8 @@
             "href": "http://hl7.org/implement/standards/fhir/contact.profile.xml"
           }
         ],
-        "updated": "2014-01-22T23:44:26.932-06:00",
-        "published": "2014-01-22T23:44:26.932-06:00",
+        "updated": "2014-01-23T01:17:45.621-06:00",
+        "published": "2014-01-23T01:17:45.621-06:00",
         "author": [
           {
             "name": "HL7, Inc (FHIR Project)",
@@ -2434,7 +2434,7 @@
           "publisher": "FHIR Specification",
           "description": "Basic Profile for Contact for validation support",
           "status": "draft",
-          "date": "2014-01-22",
+          "date": "2014-01-23",
           "mapping": [
             {
               "identity": "rim",
@@ -2643,8 +2643,8 @@
             "href": "http://hl7.org/implement/standards/fhir/address.profile.xml"
           }
         ],
-        "updated": "2014-01-22T23:44:26.932-06:00",
-        "published": "2014-01-22T23:44:26.932-06:00",
+        "updated": "2014-01-23T01:17:45.621-06:00",
+        "published": "2014-01-23T01:17:45.621-06:00",
         "author": [
           {
             "name": "HL7, Inc (FHIR Project)",
@@ -2661,7 +2661,7 @@
           "publisher": "FHIR Specification",
           "description": "Basic Profile for Address for validation support",
           "status": "draft",
-          "date": "2014-01-22",
+          "date": "2014-01-23",
           "mapping": [
             {
               "identity": "rim",
@@ -2992,8 +2992,8 @@
             "href": "http://hl7.org/implement/standards/fhir/humanname.profile.xml"
           }
         ],
-        "updated": "2014-01-22T23:44:26.932-06:00",
-        "published": "2014-01-22T23:44:26.932-06:00",
+        "updated": "2014-01-23T01:17:45.621-06:00",
+        "published": "2014-01-23T01:17:45.621-06:00",
         "author": [
           {
             "name": "HL7, Inc (FHIR Project)",
@@ -3010,7 +3010,7 @@
           "publisher": "FHIR Specification",
           "description": "Basic Profile for HumanName for validation support",
           "status": "draft",
-          "date": "2014-01-22",
+          "date": "2014-01-23",
           "mapping": [
             {
               "identity": "rim",
@@ -3284,8 +3284,8 @@
             "href": "http://hl7.org/implement/standards/fhir/age.profile.xml"
           }
         ],
-        "updated": "2014-01-22T23:44:26.932-06:00",
-        "published": "2014-01-22T23:44:26.932-06:00",
+        "updated": "2014-01-23T01:17:45.621-06:00",
+        "published": "2014-01-23T01:17:45.621-06:00",
         "author": [
           {
             "name": "HL7, Inc (FHIR Project)",
@@ -3302,7 +3302,7 @@
           "publisher": "FHIR Specification",
           "description": "Basic Profile for Age on Quantity for validation support",
           "status": "draft",
-          "date": "2014-01-22",
+          "date": "2014-01-23",
           "mapping": [
             {
               "identity": "rim",
@@ -3506,8 +3506,8 @@
             "href": "http://hl7.org/implement/standards/fhir/count.profile.xml"
           }
         ],
-        "updated": "2014-01-22T23:44:26.932-06:00",
-        "published": "2014-01-22T23:44:26.932-06:00",
+        "updated": "2014-01-23T01:17:45.621-06:00",
+        "published": "2014-01-23T01:17:45.621-06:00",
         "author": [
           {
             "name": "HL7, Inc (FHIR Project)",
@@ -3524,7 +3524,7 @@
           "publisher": "FHIR Specification",
           "description": "Basic Profile for Count on Quantity for validation support",
           "status": "draft",
-          "date": "2014-01-22",
+          "date": "2014-01-23",
           "mapping": [
             {
               "identity": "rim",
@@ -3728,8 +3728,8 @@
             "href": "http://hl7.org/implement/standards/fhir/money.profile.xml"
           }
         ],
-        "updated": "2014-01-22T23:44:26.932-06:00",
-        "published": "2014-01-22T23:44:26.932-06:00",
+        "updated": "2014-01-23T01:17:45.621-06:00",
+        "published": "2014-01-23T01:17:45.621-06:00",
         "author": [
           {
             "name": "HL7, Inc (FHIR Project)",
@@ -3746,7 +3746,7 @@
           "publisher": "FHIR Specification",
           "description": "Basic Profile for Money on Quantity for validation support",
           "status": "draft",
-          "date": "2014-01-22",
+          "date": "2014-01-23",
           "mapping": [
             {
               "identity": "rim",
@@ -3950,8 +3950,8 @@
             "href": "http://hl7.org/implement/standards/fhir/distance.profile.xml"
           }
         ],
-        "updated": "2014-01-22T23:44:26.932-06:00",
-        "published": "2014-01-22T23:44:26.932-06:00",
+        "updated": "2014-01-23T01:17:45.621-06:00",
+        "published": "2014-01-23T01:17:45.621-06:00",
         "author": [
           {
             "name": "HL7, Inc (FHIR Project)",
@@ -3968,7 +3968,7 @@
           "publisher": "FHIR Specification",
           "description": "Basic Profile for Distance on Quantity for validation support",
           "status": "draft",
-          "date": "2014-01-22",
+          "date": "2014-01-23",
           "mapping": [
             {
               "identity": "rim",
@@ -4172,8 +4172,8 @@
             "href": "http://hl7.org/implement/standards/fhir/duration.profile.xml"
           }
         ],
-        "updated": "2014-01-22T23:44:26.932-06:00",
-        "published": "2014-01-22T23:44:26.932-06:00",
+        "updated": "2014-01-23T01:17:45.621-06:00",
+        "published": "2014-01-23T01:17:45.621-06:00",
         "author": [
           {
             "name": "HL7, Inc (FHIR Project)",
@@ -4190,7 +4190,7 @@
           "publisher": "FHIR Specification",
           "description": "Basic Profile for Duration on Quantity for validation support",
           "status": "draft",
-          "date": "2014-01-22",
+          "date": "2014-01-23",
           "mapping": [
             {
               "identity": "rim",

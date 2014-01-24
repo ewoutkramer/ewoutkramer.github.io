@@ -19,7 +19,7 @@
   ],
   "description": "How slices are interpreted when evaluating an instance",
   "status": "draft",
-  "date": "2014-01-22T23:46:10.712-06:00",
+  "date": "2014-01-23T01:20:03.273-06:00",
   "define": {
     "system": "http://hl7.org/fhir/resource-slicing-rules",
     "caseSensitive": true,

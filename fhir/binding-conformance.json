@@ -19,7 +19,7 @@
   ],
   "description": "Binding conformance for applications",
   "status": "draft",
-  "date": "2014-01-22T23:46:10.708-06:00",
+  "date": "2014-01-23T01:20:03.268-06:00",
   "define": {
     "system": "http://hl7.org/fhir/binding-conformance",
     "caseSensitive": true,

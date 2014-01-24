@@ -4,17 +4,17 @@
   <title>Resources as Profiles</title>
   <id>http://hl7.org/fhir/profile/types</id>
   <link href="http://hl7.org/implement/standards/fhir/profiles-types.xml" rel="self"/>
-  <updated>2014-01-22T23:45:49.257-06:00</updated>
+  <updated>2014-01-23T01:19:38.502-06:00</updated>
   <entry>
     <title>&quot;period&quot; as a profile (to help derivation)</title>
     <id>http://hl7.org/fhir/profile/period</id>
     <link href="http://hl7.org/implement/standards/fhir/period.profile.xml" rel="self"/>
-    <updated>2014-01-22T23:44:26.932-06:00</updated>
+    <updated>2014-01-23T01:17:45.621-06:00</updated>
     <author>
       <name>HL7, Inc (FHIR Project)</name>
       <uri>http://hl7.org/fhir</uri>
     </author>
-    <published>2014-01-22T23:44:26.932-06:00</published>
+    <published>2014-01-23T01:17:45.621-06:00</published>
     <content type="text/xml">
       <Profile xmlns="http://hl7.org/fhir">
         <text>
@@ -24,7 +24,7 @@
         <publisher value="FHIR Specification"/>
         <description value="Basic Profile for Period for validation support"/>
         <status value="draft"/>
-        <date value="2014-01-22"/>
+        <date value="2014-01-23"/>
         <mapping>
           <identity value="rim"/>
           <uri value="http://hl7.org/v3"/>
@@ -120,12 +120,12 @@
     <title>&quot;coding&quot; as a profile (to help derivation)</title>
     <id>http://hl7.org/fhir/profile/coding</id>
     <link href="http://hl7.org/implement/standards/fhir/coding.profile.xml" rel="self"/>
-    <updated>2014-01-22T23:44:26.932-06:00</updated>
+    <updated>2014-01-23T01:17:45.621-06:00</updated>
     <author>
       <name>HL7, Inc (FHIR Project)</name>
       <uri>http://hl7.org/fhir</uri>
     </author>
-    <published>2014-01-22T23:44:26.932-06:00</published>
+    <published>2014-01-23T01:17:45.621-06:00</published>
     <content type="text/xml">
       <Profile xmlns="http://hl7.org/fhir">
         <text>
@@ -135,7 +135,7 @@
         <publisher value="FHIR Specification"/>
         <description value="Basic Profile for Coding for validation support"/>
         <status value="draft"/>
-        <date value="2014-01-22"/>
+        <date value="2014-01-23"/>
         <mapping>
           <identity value="rim"/>
           <uri value="http://hl7.org/v3"/>
@@ -315,12 +315,12 @@
     <title>&quot;range&quot; as a profile (to help derivation)</title>
     <id>http://hl7.org/fhir/profile/range</id>
     <link href="http://hl7.org/implement/standards/fhir/range.profile.xml" rel="self"/>
-    <updated>2014-01-22T23:44:26.932-06:00</updated>
+    <updated>2014-01-23T01:17:45.621-06:00</updated>
     <author>
       <name>HL7, Inc (FHIR Project)</name>
       <uri>http://hl7.org/fhir</uri>
     </author>
-    <published>2014-01-22T23:44:26.932-06:00</published>
+    <published>2014-01-23T01:17:45.621-06:00</published>
     <content type="text/xml">
       <Profile xmlns="http://hl7.org/fhir">
         <text>
@@ -330,7 +330,7 @@
         <publisher value="FHIR Specification"/>
         <description value="Basic Profile for Range for validation support"/>
         <status value="draft"/>
-        <date value="2014-01-22"/>
+        <date value="2014-01-23"/>
         <mapping>
           <identity value="rim"/>
           <uri value="http://hl7.org/v3"/>
@@ -433,12 +433,12 @@
     <title>&quot;quantity&quot; as a profile (to help derivation)</title>
     <id>http://hl7.org/fhir/profile/quantity</id>
     <link href="http://hl7.org/implement/standards/fhir/quantity.profile.xml" rel="self"/>
-    <updated>2014-01-22T23:44:26.932-06:00</updated>
+    <updated>2014-01-23T01:17:45.621-06:00</updated>
     <author>
       <name>HL7, Inc (FHIR Project)</name>
       <uri>http://hl7.org/fhir</uri>
     </author>
-    <published>2014-01-22T23:44:26.932-06:00</published>
+    <published>2014-01-23T01:17:45.621-06:00</published>
     <content type="text/xml">
       <Profile xmlns="http://hl7.org/fhir">
         <text>
@@ -448,7 +448,7 @@
         <publisher value="FHIR Specification"/>
         <description value="Basic Profile for Quantity for validation support"/>
         <status value="draft"/>
-        <date value="2014-01-22"/>
+        <date value="2014-01-23"/>
         <mapping>
           <identity value="rim"/>
           <uri value="http://hl7.org/v3"/>
@@ -618,12 +618,12 @@ The context of use may additionally require a code from a particular system (Unl
     <title>&quot;attachment&quot; as a profile (to help derivation)</title>
     <id>http://hl7.org/fhir/profile/attachment</id>
     <link href="http://hl7.org/implement/standards/fhir/attachment.profile.xml" rel="self"/>
-    <updated>2014-01-22T23:44:26.932-06:00</updated>
+    <updated>2014-01-23T01:17:45.621-06:00</updated>
     <author>
       <name>HL7, Inc (FHIR Project)</name>
       <uri>http://hl7.org/fhir</uri>
     </author>
-    <published>2014-01-22T23:44:26.932-06:00</published>
+    <published>2014-01-23T01:17:45.621-06:00</published>
     <content type="text/xml">
       <Profile xmlns="http://hl7.org/fhir">
         <text>
@@ -633,7 +633,7 @@ The context of use may additionally require a code from a particular system (Unl
         <publisher value="FHIR Specification"/>
         <description value="Basic Profile for Attachment for validation support"/>
         <status value="draft"/>
-        <date value="2014-01-22"/>
+        <date value="2014-01-23"/>
         <mapping>
           <identity value="rim"/>
           <uri value="http://hl7.org/v3"/>
@@ -823,12 +823,12 @@ The context of use may additionally require a code from a particular system (Unl
     <title>&quot;ratio&quot; as a profile (to help derivation)</title>
     <id>http://hl7.org/fhir/profile/ratio</id>
     <link href="http://hl7.org/implement/standards/fhir/ratio.profile.xml" rel="self"/>
-    <updated>2014-01-22T23:44:26.932-06:00</updated>
+    <updated>2014-01-23T01:17:45.621-06:00</updated>
     <author>
       <name>HL7, Inc (FHIR Project)</name>
       <uri>http://hl7.org/fhir</uri>
     </author>
-    <published>2014-01-22T23:44:26.932-06:00</published>
+    <published>2014-01-23T01:17:45.621-06:00</published>
     <content type="text/xml">
       <Profile xmlns="http://hl7.org/fhir">
         <text>
@@ -838,7 +838,7 @@ The context of use may additionally require a code from a particular system (Unl
         <publisher value="FHIR Specification"/>
         <description value="Basic Profile for Ratio for validation support"/>
         <status value="draft"/>
-        <date value="2014-01-22"/>
+        <date value="2014-01-23"/>
         <mapping>
           <identity value="rim"/>
           <uri value="http://hl7.org/v3"/>
@@ -923,12 +923,12 @@ The context of use may additionally require a code from a particular system (Unl
     <title>&quot;sampleddata&quot; as a profile (to help derivation)</title>
     <id>http://hl7.org/fhir/profile/sampleddata</id>
     <link href="http://hl7.org/implement/standards/fhir/sampleddata.profile.xml" rel="self"/>
-    <updated>2014-01-22T23:44:26.932-06:00</updated>
+    <updated>2014-01-23T01:17:45.621-06:00</updated>
     <author>
       <name>HL7, Inc (FHIR Project)</name>
       <uri>http://hl7.org/fhir</uri>
     </author>
-    <published>2014-01-22T23:44:26.932-06:00</published>
+    <published>2014-01-23T01:17:45.621-06:00</published>
     <content type="text/xml">
       <Profile xmlns="http://hl7.org/fhir">
         <text>
@@ -938,7 +938,7 @@ The context of use may additionally require a code from a particular system (Unl
         <publisher value="FHIR Specification"/>
         <description value="Basic Profile for SampledData for validation support"/>
         <status value="draft"/>
-        <date value="2014-01-22"/>
+        <date value="2014-01-23"/>
         <mapping>
           <identity value="rim"/>
           <uri value="http://hl7.org/v3"/>
@@ -1104,12 +1104,12 @@ The context of use may additionally require a code from a particular system (Unl
     <title>&quot;resourcereference&quot; as a profile (to help derivation)</title>
     <id>http://hl7.org/fhir/profile/resourcereference</id>
     <link href="http://hl7.org/implement/standards/fhir/resourcereference.profile.xml" rel="self"/>
-    <updated>2014-01-22T23:44:26.932-06:00</updated>
+    <updated>2014-01-23T01:17:45.621-06:00</updated>
     <author>
       <name>HL7, Inc (FHIR Project)</name>
       <uri>http://hl7.org/fhir</uri>
     </author>
-    <published>2014-01-22T23:44:26.932-06:00</published>
+    <published>2014-01-23T01:17:45.621-06:00</published>
     <content type="text/xml">
       <Profile xmlns="http://hl7.org/fhir">
         <text>
@@ -1119,7 +1119,7 @@ The context of use may additionally require a code from a particular system (Unl
         <publisher value="FHIR Specification"/>
         <description value="Basic Profile for ResourceReference for validation support"/>
         <status value="draft"/>
-        <date value="2014-01-22"/>
+        <date value="2014-01-23"/>
         <mapping>
           <identity value="rim"/>
           <uri value="http://hl7.org/v3"/>
@@ -1199,12 +1199,12 @@ Absolute URLs do not need to point to a FHIR RESTful server, though this is the 
     <title>&quot;codeableconcept&quot; as a profile (to help derivation)</title>
     <id>http://hl7.org/fhir/profile/codeableconcept</id>
     <link href="http://hl7.org/implement/standards/fhir/codeableconcept.profile.xml" rel="self"/>
-    <updated>2014-01-22T23:44:26.932-06:00</updated>
+    <updated>2014-01-23T01:17:45.621-06:00</updated>
     <author>
       <name>HL7, Inc (FHIR Project)</name>
       <uri>http://hl7.org/fhir</uri>
     </author>
-    <published>2014-01-22T23:44:26.932-06:00</published>
+    <published>2014-01-23T01:17:45.621-06:00</published>
     <content type="text/xml">
       <Profile xmlns="http://hl7.org/fhir">
         <text>
@@ -1214,7 +1214,7 @@ Absolute URLs do not need to point to a FHIR RESTful server, though this is the 
         <publisher value="FHIR Specification"/>
         <description value="Basic Profile for CodeableConcept for validation support"/>
         <status value="draft"/>
-        <date value="2014-01-22"/>
+        <date value="2014-01-23"/>
         <mapping>
           <identity value="rim"/>
           <uri value="http://hl7.org/v3"/>
@@ -1310,12 +1310,12 @@ Absolute URLs do not need to point to a FHIR RESTful server, though this is the 
     <title>&quot;identifier&quot; as a profile (to help derivation)</title>
     <id>http://hl7.org/fhir/profile/identifier</id>
     <link href="http://hl7.org/implement/standards/fhir/identifier.profile.xml" rel="self"/>
-    <updated>2014-01-22T23:44:26.932-06:00</updated>
+    <updated>2014-01-23T01:17:45.621-06:00</updated>
     <author>
       <name>HL7, Inc (FHIR Project)</name>
       <uri>http://hl7.org/fhir</uri>
     </author>
-    <published>2014-01-22T23:44:26.932-06:00</published>
+    <published>2014-01-23T01:17:45.621-06:00</published>
     <content type="text/xml">
       <Profile xmlns="http://hl7.org/fhir">
         <text>
@@ -1325,7 +1325,7 @@ Absolute URLs do not need to point to a FHIR RESTful server, though this is the 
         <publisher value="FHIR Specification"/>
         <description value="Basic Profile for Identifier for validation support"/>
         <status value="draft"/>
-        <date value="2014-01-22"/>
+        <date value="2014-01-23"/>
         <mapping>
           <identity value="rim"/>
           <uri value="http://hl7.org/v3"/>
@@ -1531,12 +1531,12 @@ Absolute URLs do not need to point to a FHIR RESTful server, though this is the 
     <title>&quot;extension&quot; as a profile (to help derivation)</title>
     <id>http://hl7.org/fhir/profile/extension</id>
     <link href="http://hl7.org/implement/standards/fhir/extension.profile.xml" rel="self"/>
-    <updated>2014-01-22T23:44:26.932-06:00</updated>
+    <updated>2014-01-23T01:17:45.621-06:00</updated>
     <author>
       <name>HL7, Inc (FHIR Project)</name>
       <uri>http://hl7.org/fhir</uri>
     </author>
-    <published>2014-01-22T23:44:26.932-06:00</published>
+    <published>2014-01-23T01:17:45.621-06:00</published>
     <content type="text/xml">
       <Profile xmlns="http://hl7.org/fhir">
         <text>
@@ -1546,7 +1546,7 @@ Absolute URLs do not need to point to a FHIR RESTful server, though this is the 
         <publisher value="FHIR Specification"/>
         <description value="Basic Profile for Extension for validation support"/>
         <status value="draft"/>
-        <date value="2014-01-22"/>
+        <date value="2014-01-23"/>
         <mapping>
           <identity value="rim"/>
           <uri value="http://hl7.org/v3"/>
@@ -1617,12 +1617,12 @@ Absolute URLs do not need to point to a FHIR RESTful server, though this is the 
     <title>&quot;narrative&quot; as a profile (to help derivation)</title>
     <id>http://hl7.org/fhir/profile/narrative</id>
     <link href="http://hl7.org/implement/standards/fhir/narrative.profile.xml" rel="self"/>
-    <updated>2014-01-22T23:44:26.932-06:00</updated>
+    <updated>2014-01-23T01:17:45.621-06:00</updated>
     <author>
       <name>HL7, Inc (FHIR Project)</name>
       <uri>http://hl7.org/fhir</uri>
     </author>
-    <published>2014-01-22T23:44:26.932-06:00</published>
+    <published>2014-01-23T01:17:45.621-06:00</published>
     <content type="text/xml">
       <Profile xmlns="http://hl7.org/fhir">
         <text>
@@ -1632,7 +1632,7 @@ Absolute URLs do not need to point to a FHIR RESTful server, though this is the 
         <publisher value="FHIR Specification"/>
         <description value="Basic Profile for Narrative for validation support"/>
         <status value="draft"/>
-        <date value="2014-01-22"/>
+        <date value="2014-01-23"/>
         <mapping>
           <identity value="rim"/>
           <uri value="http://hl7.org/v3"/>
@@ -1727,12 +1727,12 @@ Absolute URLs do not need to point to a FHIR RESTful server, though this is the 
     <title>&quot;schedule&quot; as a profile (to help derivation)</title>
     <id>http://hl7.org/fhir/profile/schedule</id>
     <link href="http://hl7.org/implement/standards/fhir/schedule.profile.xml" rel="self"/>
-    <updated>2014-01-22T23:44:26.932-06:00</updated>
+    <updated>2014-01-23T01:17:45.621-06:00</updated>
     <author>
       <name>HL7, Inc (FHIR Project)</name>
       <uri>http://hl7.org/fhir</uri>
     </author>
-    <published>2014-01-22T23:44:26.932-06:00</published>
+    <published>2014-01-23T01:17:45.621-06:00</published>
     <content type="text/xml">
       <Profile xmlns="http://hl7.org/fhir">
         <text>
@@ -1742,7 +1742,7 @@ Absolute URLs do not need to point to a FHIR RESTful server, though this is the 
         <publisher value="FHIR Specification"/>
         <description value="Basic Profile for Schedule for validation support"/>
         <status value="draft"/>
-        <date value="2014-01-22"/>
+        <date value="2014-01-23"/>
         <mapping>
           <identity value="rim"/>
           <uri value="http://hl7.org/v3"/>
@@ -1967,12 +1967,12 @@ Absolute URLs do not need to point to a FHIR RESTful server, though this is the 
     <title>&quot;contact&quot; as a profile (to help derivation)</title>
     <id>http://hl7.org/fhir/profile/contact</id>
     <link href="http://hl7.org/implement/standards/fhir/contact.profile.xml" rel="self"/>
-    <updated>2014-01-22T23:44:26.932-06:00</updated>
+    <updated>2014-01-23T01:17:45.621-06:00</updated>
     <author>
       <name>HL7, Inc (FHIR Project)</name>
       <uri>http://hl7.org/fhir</uri>
     </author>
-    <published>2014-01-22T23:44:26.932-06:00</published>
+    <published>2014-01-23T01:17:45.621-06:00</published>
     <content type="text/xml">
       <Profile xmlns="http://hl7.org/fhir">
         <text>
@@ -1982,7 +1982,7 @@ Absolute URLs do not need to point to a FHIR RESTful server, though this is the 
         <publisher value="FHIR Specification"/>
         <description value="Basic Profile for Contact for validation support"/>
         <status value="draft"/>
-        <date value="2014-01-22"/>
+        <date value="2014-01-23"/>
         <mapping>
           <identity value="rim"/>
           <uri value="http://hl7.org/v3"/>
@@ -2160,12 +2160,12 @@ Absolute URLs do not need to point to a FHIR RESTful server, though this is the 
     <title>&quot;address&quot; as a profile (to help derivation)</title>
     <id>http://hl7.org/fhir/profile/address</id>
     <link href="http://hl7.org/implement/standards/fhir/address.profile.xml" rel="self"/>
-    <updated>2014-01-22T23:44:26.932-06:00</updated>
+    <updated>2014-01-23T01:17:45.621-06:00</updated>
     <author>
       <name>HL7, Inc (FHIR Project)</name>
       <uri>http://hl7.org/fhir</uri>
     </author>
-    <published>2014-01-22T23:44:26.932-06:00</published>
+    <published>2014-01-23T01:17:45.621-06:00</published>
     <content type="text/xml">
       <Profile xmlns="http://hl7.org/fhir">
         <text>
@@ -2175,7 +2175,7 @@ Absolute URLs do not need to point to a FHIR RESTful server, though this is the 
         <publisher value="FHIR Specification"/>
         <description value="Basic Profile for Address for validation support"/>
         <status value="draft"/>
-        <date value="2014-01-22"/>
+        <date value="2014-01-23"/>
         <mapping>
           <identity value="rim"/>
           <uri value="http://hl7.org/v3"/>
@@ -2462,12 +2462,12 @@ P.O. Box number, delivery hints, and similar address information."/>
     <title>&quot;humanname&quot; as a profile (to help derivation)</title>
     <id>http://hl7.org/fhir/profile/humanname</id>
     <link href="http://hl7.org/implement/standards/fhir/humanname.profile.xml" rel="self"/>
-    <updated>2014-01-22T23:44:26.932-06:00</updated>
+    <updated>2014-01-23T01:17:45.621-06:00</updated>
     <author>
       <name>HL7, Inc (FHIR Project)</name>
       <uri>http://hl7.org/fhir</uri>
     </author>
-    <published>2014-01-22T23:44:26.932-06:00</published>
+    <published>2014-01-23T01:17:45.621-06:00</published>
     <content type="text/xml">
       <Profile xmlns="http://hl7.org/fhir">
         <text>
@@ -2477,7 +2477,7 @@ P.O. Box number, delivery hints, and similar address information."/>
         <publisher value="FHIR Specification"/>
         <description value="Basic Profile for HumanName for validation support"/>
         <status value="draft"/>
-        <date value="2014-01-22"/>
+        <date value="2014-01-23"/>
         <mapping>
           <identity value="rim"/>
           <uri value="http://hl7.org/v3"/>
@@ -2710,12 +2710,12 @@ P.O. Box number, delivery hints, and similar address information."/>
     <title>&quot;age&quot; as a profile (to help derivation)</title>
     <id>http://hl7.org/fhir/profile/age</id>
     <link href="http://hl7.org/implement/standards/fhir/age.profile.xml" rel="self"/>
-    <updated>2014-01-22T23:44:26.932-06:00</updated>
+    <updated>2014-01-23T01:17:45.621-06:00</updated>
     <author>
       <name>HL7, Inc (FHIR Project)</name>
       <uri>http://hl7.org/fhir</uri>
     </author>
-    <published>2014-01-22T23:44:26.932-06:00</published>
+    <published>2014-01-23T01:17:45.621-06:00</published>
     <content type="text/xml">
       <Profile xmlns="http://hl7.org/fhir">
         <text>
@@ -2725,7 +2725,7 @@ P.O. Box number, delivery hints, and similar address information."/>
         <publisher value="FHIR Specification"/>
         <description value="Basic Profile for Age on Quantity for validation support"/>
         <status value="draft"/>
-        <date value="2014-01-22"/>
+        <date value="2014-01-23"/>
         <mapping>
           <identity value="rim"/>
           <uri value="http://hl7.org/v3"/>
@@ -2896,12 +2896,12 @@ The context of use may additionally require a code from a particular system (Unl
     <title>&quot;count&quot; as a profile (to help derivation)</title>
     <id>http://hl7.org/fhir/profile/count</id>
     <link href="http://hl7.org/implement/standards/fhir/count.profile.xml" rel="self"/>
-    <updated>2014-01-22T23:44:26.932-06:00</updated>
+    <updated>2014-01-23T01:17:45.621-06:00</updated>
     <author>
       <name>HL7, Inc (FHIR Project)</name>
       <uri>http://hl7.org/fhir</uri>
     </author>
-    <published>2014-01-22T23:44:26.932-06:00</published>
+    <published>2014-01-23T01:17:45.621-06:00</published>
     <content type="text/xml">
       <Profile xmlns="http://hl7.org/fhir">
         <text>
@@ -2911,7 +2911,7 @@ The context of use may additionally require a code from a particular system (Unl
         <publisher value="FHIR Specification"/>
         <description value="Basic Profile for Count on Quantity for validation support"/>
         <status value="draft"/>
-        <date value="2014-01-22"/>
+        <date value="2014-01-23"/>
         <mapping>
           <identity value="rim"/>
           <uri value="http://hl7.org/v3"/>
@@ -3082,12 +3082,12 @@ The context of use may additionally require a code from a particular system (Unl
     <title>&quot;money&quot; as a profile (to help derivation)</title>
     <id>http://hl7.org/fhir/profile/money</id>
     <link href="http://hl7.org/implement/standards/fhir/money.profile.xml" rel="self"/>
-    <updated>2014-01-22T23:44:26.932-06:00</updated>
+    <updated>2014-01-23T01:17:45.621-06:00</updated>
     <author>
       <name>HL7, Inc (FHIR Project)</name>
       <uri>http://hl7.org/fhir</uri>
     </author>
-    <published>2014-01-22T23:44:26.932-06:00</published>
+    <published>2014-01-23T01:17:45.621-06:00</published>
     <content type="text/xml">
       <Profile xmlns="http://hl7.org/fhir">
         <text>
@@ -3097,7 +3097,7 @@ The context of use may additionally require a code from a particular system (Unl
         <publisher value="FHIR Specification"/>
         <description value="Basic Profile for Money on Quantity for validation support"/>
         <status value="draft"/>
-        <date value="2014-01-22"/>
+        <date value="2014-01-23"/>
         <mapping>
           <identity value="rim"/>
           <uri value="http://hl7.org/v3"/>
@@ -3268,12 +3268,12 @@ The context of use may additionally require a code from a particular system (Unl
     <title>&quot;distance&quot; as a profile (to help derivation)</title>
     <id>http://hl7.org/fhir/profile/distance</id>
     <link href="http://hl7.org/implement/standards/fhir/distance.profile.xml" rel="self"/>
-    <updated>2014-01-22T23:44:26.932-06:00</updated>
+    <updated>2014-01-23T01:17:45.621-06:00</updated>
     <author>
       <name>HL7, Inc (FHIR Project)</name>
       <uri>http://hl7.org/fhir</uri>
     </author>
-    <published>2014-01-22T23:44:26.932-06:00</published>
+    <published>2014-01-23T01:17:45.621-06:00</published>
     <content type="text/xml">
       <Profile xmlns="http://hl7.org/fhir">
         <text>
@@ -3283,7 +3283,7 @@ The context of use may additionally require a code from a particular system (Unl
         <publisher value="FHIR Specification"/>
         <description value="Basic Profile for Distance on Quantity for validation support"/>
         <status value="draft"/>
-        <date value="2014-01-22"/>
+        <date value="2014-01-23"/>
         <mapping>
           <identity value="rim"/>
           <uri value="http://hl7.org/v3"/>
@@ -3454,12 +3454,12 @@ The context of use may additionally require a code from a particular system (Unl
     <title>&quot;duration&quot; as a profile (to help derivation)</title>
     <id>http://hl7.org/fhir/profile/duration</id>
     <link href="http://hl7.org/implement/standards/fhir/duration.profile.xml" rel="self"/>
-    <updated>2014-01-22T23:44:26.932-06:00</updated>
+    <updated>2014-01-23T01:17:45.621-06:00</updated>
     <author>
       <name>HL7, Inc (FHIR Project)</name>
       <uri>http://hl7.org/fhir</uri>
     </author>
-    <published>2014-01-22T23:44:26.932-06:00</published>
+    <published>2014-01-23T01:17:45.621-06:00</published>
     <content type="text/xml">
       <Profile xmlns="http://hl7.org/fhir">
         <text>
@@ -3469,7 +3469,7 @@ The context of use may additionally require a code from a particular system (Unl
         <publisher value="FHIR Specification"/>
         <description value="Basic Profile for Duration on Quantity for validation support"/>
         <status value="draft"/>
-        <date value="2014-01-22"/>
+        <date value="2014-01-23"/>
         <mapping>
           <identity value="rim"/>
           <uri value="http://hl7.org/v3"/>

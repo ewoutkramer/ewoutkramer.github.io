@@ -34,7 +34,7 @@
   <publisher value="FHIR Project"/>
   <description value="Basic Profile. Simple assertions and measurements made about a patient, device or other subject."/>
   <status value="draft"/>
-  <date value="2014-01-22"/>
+  <date value="2014-01-23"/>
   <requirements value="Scope and Usage Observations are a central element in healthcare, used to support diagnosis, monitor progress, determine baselines and patterns and even capture demographic characteristics. Fundamentally, observations are simple name/value pair assertions with little structure, though there are several resources such as DiagnosticReport to manage and represent rich aggregation patterns for observations. Expected uses for this resource include: 
 
 * Vital signs: temperature, blood pressure, respiration rate

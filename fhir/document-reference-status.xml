@@ -73,7 +73,7 @@
   </telecom>
   <description value="The status of the document reference"/>
   <status value="draft"/>
-  <date value="2014-01-22T23:46:10.705-06:00"/>
+  <date value="2014-01-23T01:20:03.265-06:00"/>
   <define>
     <system value="http://hl7.org/fhir/document-reference-status"/>
     <caseSensitive value="true"/>

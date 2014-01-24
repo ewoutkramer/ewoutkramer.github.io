@@ -74,7 +74,7 @@
   </telecom>
   <description value="A unit of time (units from UCUM)"/>
   <status value="draft"/>
-  <date value="2014-01-22T23:46:10.710-06:00"/>
+  <date value="2014-01-23T01:20:03.271-06:00"/>
   <compose>
     <include>
       <system value="http://unitsofmeasure.org"/>

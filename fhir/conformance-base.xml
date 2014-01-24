@@ -816,7 +816,7 @@
   </telecom>
   <description value="This is the base conformance statement for FHIR. It represents a server that provides the full set of functionality defined by FHIR. It is provided to use as a template for system designers to build their own conformance statements from"/>
   <status value="draft"/>
-  <date value="2014-01-22T23:44:26.932-06:00"/>
+  <date value="2014-01-23T01:17:45.621-06:00"/>
   <fhirVersion value="0.12"/>
   <acceptUnknown value="false"/>
   <format value="xml"/>

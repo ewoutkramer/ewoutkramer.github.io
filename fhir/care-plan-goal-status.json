@@ -19,7 +19,7 @@
   ],
   "description": "Indicates whether the goal has been met and is still being targeted",
   "status": "draft",
-  "date": "2014-01-22T23:46:10.711-06:00",
+  "date": "2014-01-23T01:20:03.272-06:00",
   "define": {
     "system": "http://hl7.org/fhir/care-plan-goal-status",
     "caseSensitive": true,

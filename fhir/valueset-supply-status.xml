@@ -70,7 +70,7 @@
   </telecom>
   <description value="Status of the supply"/>
   <status value="draft"/>
-  <date value="2014-01-22T23:46:10.706-06:00"/>
+  <date value="2014-01-23T01:20:03.266-06:00"/>
   <define>
     <system value="http://hl7.org/fhir/valueset-supply-status"/>
     <caseSensitive value="true"/>

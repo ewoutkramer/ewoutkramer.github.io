@@ -49,7 +49,7 @@
   </telecom>
   <description value="The nature of the relationship with this procedure"/>
   <status value="draft"/>
-  <date value="2014-01-22T23:46:10.703-06:00"/>
+  <date value="2014-01-23T01:20:03.264-06:00"/>
   <define>
     <system value="http://hl7.org/fhir/procedure-relationship-type"/>
     <caseSensitive value="true"/>

@@ -77,7 +77,7 @@
   </telecom>
   <description value="Data types allowed to be used for search parameters"/>
   <status value="draft"/>
-  <date value="2014-01-22T23:46:10.707-06:00"/>
+  <date value="2014-01-23T01:20:03.267-06:00"/>
   <define>
     <system value="http://hl7.org/fhir/search-param-type"/>
     <caseSensitive value="true"/>

@@ -19,7 +19,7 @@
   ],
   "description": "The status of a resource narrative",
   "status": "draft",
-  "date": "2014-01-22T23:46:10.706-06:00",
+  "date": "2014-01-23T01:20:03.266-06:00",
   "define": {
     "system": "http://hl7.org/fhir/narrative-status",
     "caseSensitive": true,

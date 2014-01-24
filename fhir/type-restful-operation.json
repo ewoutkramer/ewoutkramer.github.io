@@ -19,7 +19,7 @@
   ],
   "description": "Operations supported by REST at the type or instance level",
   "status": "draft",
-  "date": "2014-01-22T23:46:10.708-06:00",
+  "date": "2014-01-23T01:20:03.269-06:00",
   "compose": {
     "include": [
       {

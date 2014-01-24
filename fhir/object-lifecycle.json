@@ -19,7 +19,7 @@
   ],
   "description": "Identifier for the data life-cycle stage for the participant object",
   "status": "draft",
-  "date": "2014-01-22T23:46:10.712-06:00",
+  "date": "2014-01-23T01:20:03.273-06:00",
   "define": {
     "system": "http://hl7.org/fhir/object-lifecycle",
     "caseSensitive": true,

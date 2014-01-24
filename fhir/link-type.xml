@@ -56,7 +56,7 @@
   </telecom>
   <description value="The type of link between this patient resource and another patient resource."/>
   <status value="draft"/>
-  <date value="2014-01-22T23:46:10.714-06:00"/>
+  <date value="2014-01-23T01:20:03.275-06:00"/>
   <define>
     <system value="http://hl7.org/fhir/link-type"/>
     <caseSensitive value="true"/>
