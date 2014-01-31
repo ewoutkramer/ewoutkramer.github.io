@@ -1,1 +1,0 @@
-{"resourceType":"Medication","name":"Paracetamol","code":{"coding":[{"system":"http://snomed.info/sct","code":"387517004","display":"Paracetamol"}]},"isBrand":false,"kind":"product","product":{"form":{"coding":[{"system":"http://snomed.info/sct","code":"385055001","display":"Tablet"}]}}}
